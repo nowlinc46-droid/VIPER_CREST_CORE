@@ -1,0 +1,1021 @@
+{
+  "observations": [
+    {
+      "id": "foundry-test-suite-execution",
+      "baseline": {
+        "status": "expected_pass",
+        "failures": 0
+      },
+      "candidate": {
+        "status": "executed",
+        "exit_code": 0,
+        "summary": {
+          "test/unit/migration/LockedMigrationController.t.sol:LockedMigrationControllerTest": {
+            "duration": "12s 439ms 398\u00c2\u00b5s 400ns",
+            "test_results": {
+              "test_MIN_DATA_SIZE()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 5317
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "363\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_checkIfMigrated()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 915145
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 250\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_constructor_controller()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 89710
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "413\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_constructor_registry()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 43184
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "203\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_finishERC1155Migration_unauthorizedCaller()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 33869
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "538\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_implementationIsNameable()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 13221
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "164\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1362646
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "4ms 204\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrateBatch(uint8)": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Fuzz": {
+                    "first_case": {
+                      "gas": 71218,
+                      "stipend": 21192
+                    },
+                    "runs": 4096,
+                    "mean_gas": 1145412,
+                    "median_gas": 969307,
+                    "failed_corpus_replays": 0
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "12s 422ms 387\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrateBatch_lastOneWrong(uint8)": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Fuzz": {
+                    "first_case": {
+                      "gas": 2147501,
+                      "stipend": 21204
+                    },
+                    "runs": 4096,
+                    "mean_gas": 1954886,
+                    "median_gas": 2126297,
+                    "failed_corpus_replays": 0
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "12s 409ms 268\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_canCreateChildren_canRevive()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1416482
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "3ms 776\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_canExtendExpiry()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1666534
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "3ms 762\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_cannotCreateChildren()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 986689
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 328\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_cannotCreateChildren_cannotRevive()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1466719
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "3ms 560\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_detachedChildren_unwrapped()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1687478
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "4ms 569\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_detachedChildren_unwrappedAndAbandoned()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1300469
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "3ms 381\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_detachedChildren_wrapped()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1995720
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "6ms 531\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_emancipated_canExtendExpiry()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1833207
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "5ms 321\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_frozenTokenApproval()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 605991
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 89\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_invalidArrayLength()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 525802
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 998\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_invalidData(bytes)": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Fuzz": {
+                    "first_case": {
+                      "gas": 484553,
+                      "stipend": 22284
+                    },
+                    "runs": 4096,
+                    "mean_gas": 461902,
+                    "median_gas": 461667,
+                    "failed_corpus_replays": 0
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "6s 296ms 998\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_invalidOwner()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 481977
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 418\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_invalidReceiver()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 849877
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 313\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_lockedChildren()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 2253517
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "6ms 178\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_lockedFuses()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 958147
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 298\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_lockedResolver()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1104184
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x9f73961e731211c96fcc9ba11e4d9edf21e91c9c": "frozenResolver",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "4ms 5\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_lockedResolver_publicResolver()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1176181
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor",
+                  "0xf914bcd7b7be5e065171bf52200ebdb4a867ebf1": "oldPublicResolver"
+                },
+                "duration": "4ms 54\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_lockedTransfer()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 459433
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 558\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_nameDataMismatch()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 503417
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 699\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_nameNotLocked()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 504827
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 23\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_notReserved()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 763025
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "2ms 762\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_migrate_transferRegistryControl()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 1476658
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "3ms 714\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_onERC1155Received_invalidData()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 38956
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "261\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_onERC1155Received_unauthorizedCaller()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 59671
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "569\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_safeTransferFrom_unauthorizedCaller()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 170654
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "750\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_controller()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 16315
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "164\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_registry()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 34169
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "248\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_wrapperRegistryUpgrade_allowsApprovedTarget()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 5832685
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 710\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_wrapperRegistryUpgrade_requiresUpgradeRole()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 5824096
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 648\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_wrapperRegistryUpgrade_revertsForUnapprovedTarget()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 5765393
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x22583dd4891b0c1310fdfd068e2f1cb8f9f4dec3": "premigrationController",
+                  "0x667c914a5ea92bed9703d0793e476b0df029d90e": "resolver",
+                  "0x26097a3bc5814e69ca3ec555c4e4e19d23e902bd": "registry",
+                  "0x718998a89d369c9b1e7a2e327fa5acf83f297621": "ethControllerV1",
+                  "0x1274f21f224018c02a946755d1bb9b07f3af5b96": "ownerV1",
+                  "0xd4c046589193963e508f6c2f04195449c33cd0ce": "friend",
+                  "0x14f52fe4550bc97a41c7f8e8a3558eb2774a39d8": "actor"
+                },
+                "duration": "1ms 644\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              }
+            },
+            "warnings": []
+          }
+        }
+      }
+    }
+  ]
+}

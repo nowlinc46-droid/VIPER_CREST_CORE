@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "classification": "synthetic_offline_test_data",
+    "description": "Local authorization regression cases for patient record tenant isolation.",
+    "no_real_patient_data": true,
+    "policy": {
+      "allow_read": "Caller must belong to the patient's tenant and be assigned to the patient.",
+      "deny_status_codes": [403, 404]
+    }
+  },
+  "observations": [
+    {
+      "id": "cross-tenant-read",
+      "context": {
+        "caller": {
+          "user_id": "clinician-north",
+          "tenant_id": "tenant-north",
+          "assigned_patient_ids": ["patient-north-001"]
+        },
+        "requested_patient": {
+          "patient_id": "patient-south-009",
+          "tenant_id": "tenant-south"
+        }
+      },
+      "baseline": {
+        "status_code": 404,
+        "body": {
+          "detail": "Records not found"
+        }
+      },
+      "candidate": {
+        "status_code": 200,
+        "body": {
+          "patient_id": "patient-south-009",
+          "data": [
+            {
+              "record_id": "synthetic-record-south-001",
+              "patient_id": "patient-south-009",
+              "tenant_id": "tenant-south",
+              "observation": "synthetic sample only"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "same-tenant-assigned-read",
+      "context": {
+        "caller": {
+          "user_id": "clinician-north",
+          "tenant_id": "tenant-north",
+          "assigned_patient_ids": ["patient-north-001"]
+        },
+        "requested_patient": {
+          "patient_id": "patient-north-001",
+          "tenant_id": "tenant-north"
+        }
+      },
+      "baseline": {
+        "status_code": 200,
+        "body": {
+          "patient_id": "patient-north-001",
+          "data": [
+            {
+              "record_id": "synthetic-record-north-001",
+              "patient_id": "patient-north-001",
+              "tenant_id": "tenant-north",
+              "observation": "synthetic sample only"
+            }
+          ]
+        }
+      },
+      "candidate": {
+        "status_code": 200,
+        "body": {
+          "patient_id": "patient-north-001",
+          "data": [
+            {
+              "record_id": "synthetic-record-north-001",
+              "patient_id": "patient-north-001",
+              "tenant_id": "tenant-north",
+              "observation": "synthetic sample only"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "same-tenant-unassigned-read",
+      "context": {
+        "caller": {
+          "user_id": "clinician-north",
+          "tenant_id": "tenant-north",
+          "assigned_patient_ids": ["patient-north-001"]
+        },
+        "requested_patient": {
+          "patient_id": "patient-north-002",
+          "tenant_id": "tenant-north"
+        }
+      },
+      "baseline": {
+        "status_code": 404,
+        "body": {
+          "detail": "Records not found"
+        }
+      },
+      "candidate": {
+        "status_code": 200,
+        "body": {
+          "patient_id": "patient-north-002",
+          "data": [
+            {
+              "record_id": "synthetic-record-north-002",
+              "patient_id": "patient-north-002",
+              "tenant_id": "tenant-north",
+              "observation": "synthetic sample only"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

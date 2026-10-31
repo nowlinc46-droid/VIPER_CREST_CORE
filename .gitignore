@@ -1,0 +1,41 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# IDE & Editor metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test & coverage artifacts
+.pytest_cache/
+**/__pycache__/
+**/.pytest_cache/
+.coverage
+htmlcov/
+
+# Obsidian workspace dynamic state
+.obsidian/workspace*
+.obsidian/cache/
+
+# Large binary archives
+*.zip
+*.tar.gz
+*.7z
+*.iso
+
+# Dynamic runtime sessions and temporary staging
+runtime/sessions/
+runtime/staging/
+runtime/*.tmp
+runtime/*.log
+runtime/*.db-shm
+runtime/*.db-wal

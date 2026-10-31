@@ -1,0 +1,1684 @@
+{
+  "observations": [
+    {
+      "id": "M_JSON::.vscode/settings.json",
+      "baseline": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 0,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 0,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 0,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": ".vscode/settings.json",
+          "sha256": "2bfc74703e3eaf55718bdd1ec25029f1aa139312e76f65bd37bea9a3e63c662c",
+          "bytes": 1126,
+          "lines": 40
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M_Markdown::AGENTS.md",
+      "baseline": {
+        "language_module": "M_Markdown",
+        "language_name": "Markdown",
+        "paradigm": "declarative_specification",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M_Markdown",
+        "language_name": "Markdown",
+        "paradigm": "declarative_specification",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 5,
+          "F2_scoping_control": 6,
+          "F3_functions_closures": 0,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 0,
+          "F8_tooling_ecosystem": 9
+        },
+        "F9_production_provenance": {
+          "relative_path": "AGENTS.md",
+          "sha256": "a5523d7055e7938fb8ede142a686b1e031297cc099df3f8118709cd49202d969",
+          "bytes": 2438,
+          "lines": 44
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M_JSON::alto/alto-config-local.json",
+      "baseline": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 0,
+          "F2_scoping_control": 4,
+          "F3_functions_closures": 0,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 1,
+          "F7_memory_concurrency": 0,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "alto/alto-config-local.json",
+          "sha256": "d2537419dee3bcbff3f89f296699b1fb74a520aea9165baed4ae253c756f3908",
+          "bytes": 980,
+          "lines": 17
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M_JSON::alto/alto-config.json",
+      "baseline": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 0,
+          "F2_scoping_control": 3,
+          "F3_functions_closures": 0,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 1,
+          "F7_memory_concurrency": 0,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "alto/alto-config.json",
+          "sha256": "478f9a2ac5e6f35dbd4edbb9b468a916dbd1a7df48c138d8a22167cdaa154432",
+          "bytes": 966,
+          "lines": 17
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M_JSON::biome.json",
+      "baseline": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M_JSON",
+        "language_name": "JSON",
+        "paradigm": "structured_state_fixture",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 0,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 0,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 0,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "biome.json",
+          "sha256": "d41ad45f384412266b6eee83895f8a54c4cffdbd88bb6b20f6ed0c964867aaa1",
+          "bytes": 553,
+          "lines": 30
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_ContractNamer.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 2,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_ContractNamer.ts",
+          "sha256": "243a07c4ac99cc0e848d9bf87f0d2d67f5d50081ae9318cc27ac5fc4e6b0e31c",
+          "bytes": 499,
+          "lines": 23
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_DNSSECGatewayProvider.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 2,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_DNSSECGatewayProvider.ts",
+          "sha256": "ae9462a8b88130029a5052be4dff1ad34b67caa4bf79e55280f810b7abe12dde",
+          "bytes": 389,
+          "lines": 14
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_DNSTXTResolver.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 3,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_DNSTXTResolver.ts",
+          "sha256": "37cb0dda4bbd62fc52e8a8d9b85bb676cbd11ddc341dc364e21e5508e16687f6",
+          "bytes": 486,
+          "lines": 18
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_ENSV1Resolver.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 5,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 4,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_ENSV1Resolver.ts",
+          "sha256": "d9383b41e217dd8d7b3c3ea510da99b7a6ce133420581db1cbd3ec3895884bd1",
+          "bytes": 893,
+          "lines": 31
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_ENSV2Resolver.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 14,
+          "F2_scoping_control": 3,
+          "F3_functions_closures": 6,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 2,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 10,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_ENSV2Resolver.ts",
+          "sha256": "198c74a025220f5b1e702afb499fd3e73cf3c7873bb031ee312a15213493ffd1",
+          "bytes": 2935,
+          "lines": 90
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_MockTokens.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 3,
+          "F2_scoping_control": 1,
+          "F3_functions_closures": 2,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 1
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_MockTokens.ts",
+          "sha256": "a91e0883c7f9283bd4a5cf1a204d277b76a8c7a37ea6de792e3a532fdcfc2e9c",
+          "bytes": 694,
+          "lines": 26
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_RootRegistry.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 6,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_RootRegistry.ts",
+          "sha256": "0589569d03a3d24802005bb59edea8619659e10847648e866608d70ac9731d68",
+          "bytes": 893,
+          "lines": 30
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/00_VerifiableFactory.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 2,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/00_VerifiableFactory.ts",
+          "sha256": "91c90e02df1d938a16da1313db86e367b9a2b61c25cc566ec14396f2b0b2c9d8",
+          "bytes": 344,
+          "lines": 13
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_DNSAliasResolver.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 6,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_DNSAliasResolver.ts",
+          "sha256": "56c5b725a17f9fddaea4afc0c64524eb39d436343996e40b67c79ec3ddb9c13f",
+          "bytes": 902,
+          "lines": 31
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_DNSTLDResolver.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 16,
+          "F2_scoping_control": 3,
+          "F3_functions_closures": 2,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 11,
+          "F8_tooling_ecosystem": 1
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_DNSTLDResolver.ts",
+          "sha256": "f04f369c904d73a007aaa119e852079209f1104da28bdce96ac892ec3f7dd823",
+          "bytes": 2922,
+          "lines": 106
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_DNSV1MirrorTLDs.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 11,
+          "F2_scoping_control": 2,
+          "F3_functions_closures": 6,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 6,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_DNSV1MirrorTLDs.ts",
+          "sha256": "08478b7938eed3a9161b5a9432bb338f90066bad39ec476c17ee0b9e761194e6",
+          "bytes": 1952,
+          "lines": 76
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_ETHRegistry.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 11,
+          "F2_scoping_control": 2,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 7,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_ETHRegistry.ts",
+          "sha256": "cf6aacc6c0f0c0b21783041c50b66d4af6bf7d63676595e5c64a1986bb8e2769",
+          "bytes": 2116,
+          "lines": 77
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_Graveyard.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 4,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_Graveyard.ts",
+          "sha256": "4a517bf2afd5463fef8633bd754508d35dd6da632d5462441f33886e4725feb5",
+          "bytes": 615,
+          "lines": 21
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_LabelStore.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 3,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_LabelStore.ts",
+          "sha256": "3c8a0bda2967c6ea64bf1ece341bbe61c43e68483d2ba8df73a39877d695d65c",
+          "bytes": 474,
+          "lines": 18
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_PermissionedResolverImpl.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 2,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_PermissionedResolverImpl.ts",
+          "sha256": "a32b59c2de1cbe31bdb3a32b526568d2f9110090d38812e9d189f305c69148db",
+          "bytes": 398,
+          "lines": 14
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_PublicResolverSet.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 9,
+          "F2_scoping_control": 4,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 1,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 5,
+          "F8_tooling_ecosystem": 1
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_PublicResolverSet.ts",
+          "sha256": "4a02d3fe6434dd3e4f70359d966ebf72f9963d2047e876723658a4162b86e9d3",
+          "bytes": 1861,
+          "lines": 55
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_PublicResolverV2.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 5,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_PublicResolverV2.ts",
+          "sha256": "ee780f3f476529b59a5500a2f14d8a8c53c495b455fed9f304f50a4d449c14aa",
+          "bytes": 778,
+          "lines": 24
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_ReverseMirror.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 8,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_ReverseMirror.ts",
+          "sha256": "e0dedcd73db26dd9e94743179b780a9a55876b914cfdfdcd0523295c4af76d82",
+          "bytes": 887,
+          "lines": 31
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_StandardRentPriceOracle.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 21,
+          "F2_scoping_control": 3,
+          "F3_functions_closures": 15,
+          "F4_data_modeling": 1,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 1,
+          "F7_memory_concurrency": 11,
+          "F8_tooling_ecosystem": 3
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_StandardRentPriceOracle.ts",
+          "sha256": "04e2fdb4c95e237b1315354268ded60af9ab29cfd925fd2bd4cd0ee49d361ab4",
+          "bytes": 4947,
+          "lines": 157
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/01_UserRegistryImpl.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 3,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/01_UserRegistryImpl.ts",
+          "sha256": "17b55a20bd823b3b8aeec8f14b5321d34977b377406ac252fa2f5e30e2fb6570",
+          "bytes": 510,
+          "lines": 17
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/02_DefaultReverseRegistrarAdapter.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 6,
+          "F2_scoping_control": 1,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 5,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/02_DefaultReverseRegistrarAdapter.ts",
+          "sha256": "3e4fee80ec2f48fa27128780125a7b2aafbd612a7255c6c52b47ab7f6bf483e9",
+          "bytes": 1453,
+          "lines": 45
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/02_ReverseRegistrarAdapter.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 6,
+          "F2_scoping_control": 1,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 5,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/02_ReverseRegistrarAdapter.ts",
+          "sha256": "4a4129d17684875942605f328fb76ab88f3c12ae79655effa3ec1cd638f696e1",
+          "bytes": 1395,
+          "lines": 46
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/02_UnlockedMigrationController.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 9,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 4,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/02_UnlockedMigrationController.ts",
+          "sha256": "326cca52e4df8dc18b8c5a6620cbe64e35cc0669305f61970e7487346dec0cd1",
+          "bytes": 1377,
+          "lines": 42
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/03_ApprovedUpgradeGate.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 2,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/03_ApprovedUpgradeGate.ts",
+          "sha256": "6b19cab0568c8d2d95ff5e405b1e7fcda09012f14caaa1e02791d21b7bee1921",
+          "bytes": 349,
+          "lines": 14
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/03_ETHRegistrar.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 7,
+          "F2_scoping_control": 1,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/03_ETHRegistrar.ts",
+          "sha256": "bcaad735f0854a01d79e63e9971cdce1d8275f82c9797c2d367c5ebff07f6968",
+          "bytes": 1391,
+          "lines": 55
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/03_ETHRenewerV1.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 9,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 5,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/03_ETHRenewerV1.ts",
+          "sha256": "46bfd604067d982971d974aa48741f66fb611cfbca1f45246691940f9f884d2c",
+          "bytes": 1613,
+          "lines": 60
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/03_WrapperRegistryImpl.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 10,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/03_WrapperRegistryImpl.ts",
+          "sha256": "dbda6bde64cf4626d64869b6226891b9dbd78dc510593974b77efe93ec574d42",
+          "bytes": 1711,
+          "lines": 57
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/04_BatchRegistrar.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 6,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/04_BatchRegistrar.ts",
+          "sha256": "caaa39f201b582c2c716530c90953bcfb507d8f6bfc508dde37600f71da760b2",
+          "bytes": 814,
+          "lines": 25
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/04_LockedMigrationController.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 13,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 4,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/04_LockedMigrationController.ts",
+          "sha256": "104e026a5714235c24839cb759364a8d7edeeec6c3f8e387c000f7b0caa3c493",
+          "bytes": 2100,
+          "lines": 67
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/05_MigrationHelper.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 6,
+          "F2_scoping_control": 0,
+          "F3_functions_closures": 1,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 2,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/05_MigrationHelper.ts",
+          "sha256": "f08521cb4ac6e584ce5032406e74fe5d6cddee0b79abb80ee30c3ba3ee50abf6",
+          "bytes": 1165,
+          "lines": 39
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/testnet/00_FastETHRegistrar.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 8,
+          "F2_scoping_control": 1,
+          "F3_functions_closures": 2,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/testnet/00_FastETHRegistrar.ts",
+          "sha256": "d0b2c086aa8524286dafa011953ceb78954a5fa9231ca1b045368bfd82f472e6",
+          "bytes": 1340,
+          "lines": 51
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/testnet/00_MockPremigrator.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 8,
+          "F2_scoping_control": 4,
+          "F3_functions_closures": 3,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 4,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/testnet/00_MockPremigrator.ts",
+          "sha256": "4ca6324eb868a63bfa2a381d769feb3d53d15f6ac16f019b377541cd2b939b49",
+          "bytes": 1284,
+          "lines": 47
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/testnet/00_setup_oracle.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 12,
+          "F2_scoping_control": 2,
+          "F3_functions_closures": 2,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 0,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 3,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/testnet/00_setup_oracle.ts",
+          "sha256": "253064565fffaced29ef8e74a53f23689ac337f4f5d21e325daea06ca8cc137c",
+          "bytes": 1429,
+          "lines": 53
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/testnet/01_TestnetV1PremigrationRegistrar.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 19,
+          "F2_scoping_control": 7,
+          "F3_functions_closures": 3,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 1,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 16,
+          "F8_tooling_ecosystem": 0
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/testnet/01_TestnetV1PremigrationRegistrar.ts",
+          "sha256": "f61177e7a562c36105d2bb1066225c87e80bc644c5a1333367db87012cbe062e",
+          "bytes": 4352,
+          "lines": 132
+        },
+        "status": "ingested_and_classified"
+      }
+    },
+    {
+      "id": "M3_TypeScript::contracts/deploy/universalResolver/00_deploy_UniversalResolver.ts",
+      "baseline": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M3_TypeScript",
+        "language_name": "TypeScript",
+        "paradigm": "static_structural",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 11,
+          "F2_scoping_control": 6,
+          "F3_functions_closures": 4,
+          "F4_data_modeling": 0,
+          "F5_error_architecture": 1,
+          "F6_collections_iteration": 0,
+          "F7_memory_concurrency": 5,
+          "F8_tooling_ecosystem": 2
+        },
+        "F9_production_provenance": {
+          "relative_path": "contracts/deploy/universalResolver/00_deploy_UniversalResolver.ts",
+          "sha256": "7d6fa8325baa42cf85b8267766d90be9355f88b4ed6db91a376d8ef48fe3dbe2",
+          "bytes": 2429,
+          "lines": 73
+        },
+        "status": "ingested_and_classified"
+      }
+    }
+  ]
+}

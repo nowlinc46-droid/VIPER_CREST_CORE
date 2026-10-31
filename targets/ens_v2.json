@@ -1,0 +1,26 @@
+{
+  "project": "ensdomains/contracts-v2",
+  "commit": "602dd8e",
+  "audit_baseline_commit": "ffe4a73",
+  "root_path": "C:/Users/nowli/Downloads/contracts-v2/contracts",
+  "candidates": [
+    {
+      "id": "ENS-V2-01",
+      "title": "L2ReverseRegistrar.syncName fails to advance inceptionOf replay fence and bypasses owner name overrides",
+      "file": "src/reverse-registrar/L2ReverseRegistrar.sol",
+      "function": "syncName(address)",
+      "lines": [143, 145],
+      "introduced_in_post_audit": true,
+      "regression_commit": "602dd8e"
+    },
+    {
+      "id": "ENS-V2-02",
+      "title": "WrapperRegistry._getRoles virtual-owner replacement breaks revokeRootRoles for 2LD owner and shadows direct roles",
+      "file": "src/registry/WrapperRegistry.sol",
+      "function": "_getRoles(uint256,address)",
+      "lines": [251, 262],
+      "introduced_in_post_audit": true,
+      "regression_commit": "48b3e2d"
+    }
+  ]
+}

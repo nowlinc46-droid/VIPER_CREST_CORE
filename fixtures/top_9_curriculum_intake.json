@@ -1,0 +1,46 @@
+{
+  "observations": [
+    {
+      "id": "M_Markdown::top_9_code_writing_languages_curriculum.md",
+      "baseline": {
+        "language_module": "M_Markdown",
+        "language_name": "Markdown",
+        "paradigm": "declarative_specification",
+        "stages_expected": [
+          "F1_syntax_primitives",
+          "F2_scoping_control",
+          "F3_functions_closures",
+          "F4_data_modeling",
+          "F5_error_architecture",
+          "F6_collections_iteration",
+          "F7_memory_concurrency",
+          "F8_tooling_ecosystem",
+          "F9_production_provenance"
+        ],
+        "status": "baseline_reference"
+      },
+      "candidate": {
+        "language_module": "M_Markdown",
+        "language_name": "Markdown",
+        "paradigm": "declarative_specification",
+        "F1_F8_stage_signals": {
+          "F1_syntax_primitives": 67,
+          "F2_scoping_control": 96,
+          "F3_functions_closures": 22,
+          "F4_data_modeling": 94,
+          "F5_error_architecture": 26,
+          "F6_collections_iteration": 27,
+          "F7_memory_concurrency": 84,
+          "F8_tooling_ecosystem": 14
+        },
+        "F9_production_provenance": {
+          "relative_path": "top_9_code_writing_languages_curriculum.md",
+          "sha256": "b4576cd0eac9295b2e79d7e4225981d7403db252e3bdb4fbeb162d6bba51dbfa",
+          "bytes": 53140,
+          "lines": 550
+        },
+        "status": "ingested_and_classified"
+      }
+    }
+  ]
+}

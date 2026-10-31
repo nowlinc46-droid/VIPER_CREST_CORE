@@ -1,0 +1,1388 @@
+{
+  "observations": [
+    {
+      "id": "foundry-test-suite-execution",
+      "baseline": {
+        "status": "expected_pass",
+        "failures": 0
+      },
+      "candidate": {
+        "status": "executed",
+        "exit_code": 0,
+        "summary": {
+          "test/unit/reverse-registrar/L2ReverseRegistrar.t.sol:L2ReverseRegistrarTest": {
+            "duration": "1s 112ms 401\u00c2\u00b5s 200ns",
+            "test_results": {
+              "testFuzz_resolve_differentAddresses(address,string)": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Fuzz": {
+                    "first_case": {
+                      "gas": 122976,
+                      "stipend": 22128
+                    },
+                    "runs": 4096,
+                    "mean_gas": 124718,
+                    "median_gas": 100920,
+                    "failed_corpus_replays": 0
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "581ms 993\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "testFuzz_setName(address,string)": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Fuzz": {
+                    "first_case": {
+                      "gas": 125480,
+                      "stipend": 21960
+                    },
+                    "runs": 4096,
+                    "mean_gas": 127243,
+                    "median_gas": 103544,
+                    "failed_corpus_replays": 0
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "527ms 225\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_constructor_setChainId()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 8687
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "95\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_constructor_setParentNode()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 9185
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "121\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_fullFlow_setAndResolve()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 124907
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "486\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_multipleUsers()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 208537
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "645\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_name_returnsEmptyForUnsetAddress()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 22981
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "322\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_name_returnsSetName()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 104680
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "515\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_resolve_canResolveNameForAddress()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 101951
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "627\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_resolve_returnsEmptyForUnsetAddress()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 20438
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "632\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsLargeChainIdArray_100()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 391210
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "4ms 928\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsLargeChainIdArray_200()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 737515
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "10ms 929\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsLargeChainIdArray_25()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 210072
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 690\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsLargeChainIdArray_50()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 267967
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 986\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsMultipleChainIds()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 165776
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 506\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsNewerSignature()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 253464
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 605\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsRelayerToClaim()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 158263
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 52\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsScaSignaturesERC1271()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 162012
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 636\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_allowsUndeployedScaSignaturesERC6492()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 473975
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "3ms 988\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_emitsNameChangedEvent()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 155490
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 74\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_chainIdsNotAscending()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 72815
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "841\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_currentChainIdNotInArray()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 72325
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "829\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_duplicateChainIds()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 70408
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "790\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_emptyChainIdArray()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 65092
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "733\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_olderSignatureAfterNewerUsed()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 218223
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 652\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_replayProtection()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 191987
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 635\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_signatureParametersDoNotMatch()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 86204
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 223\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_signedAtInFuture()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 88992
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 316\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_signedAtNotAfterInception()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 217745
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 591\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_revert_signedByWrongAccount()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 86114
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 672\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddrWithSignature_updatesInception()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 158833
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 466\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_callerCanSetOwnName()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 105528
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "360\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_emitsNameChangedEvent()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 109739
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "352\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_invalidatesPriorUnusedOwnableSignature()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 212119
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 832\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_revert_callerNotOwnerOfTargetAddress()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 42119
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "193\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_revert_callerNotOwnerOfTargetContractViaOwnable()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 42053
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "564\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_revert_callerTriesToSetNameForAnotherEOA()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 38959
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "217\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_setsNameForOwnedContract()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 112966
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "529\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForAddr_updatesInceptionForTarget()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 103298
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "381\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_allowsEoaOwner()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 195891
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 77\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_allowsLargeChainIdArray()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 305482
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "3ms 505\u00c2\u00b5s 700ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_allowsMultipleChainIds()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 203373
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 8\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_allowsScaOwner()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 198603
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 891\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_chainIdsNotAscending()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 96019
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 56\u00c2\u00b5s 500ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_currentChainIdNotInArray()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 95571
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 85\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_duplicateChainIds()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 93698
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 74\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_emptyChainIdArray()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 88342
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 151\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_invalidSignature()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 123719
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 676\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_ownerAddressNotOwnerOfContract()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 96438
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 16\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_replayProtection()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 244533
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "2ms 495\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_signedAtInFuture()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 126564
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 749\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_signedAtNotAfterInception()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 290699
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "3ms 504\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_targetAddressIsEOA()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 93147
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 26\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_revert_targetDoesNotImplementOwnable()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 89728
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 66\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setNameForContractWithSignature_updatesInception()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 196363
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "1ms 824\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setName_canSetToEmptyString()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 153093
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "584\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setName_canUpdateNameRecord()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 158788
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "597\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setName_emitsNameChangedEvent()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 101459
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "394\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setName_invalidatesPriorUnusedSignature()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 168338
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "3ms 269\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setName_setsNameRecord()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 104718
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "537\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_setName_updatesInception()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 94954
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "283\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_erc165()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 12870
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "122\u00c2\u00b5s 300ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_extendedResolver()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 9079
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "165\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_ierc165()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 9152
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "94\u00c2\u00b5s 400ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_il2ReverseRegistrar()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 8965
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "93\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_invalidInterface()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 9129
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "114\u00c2\u00b5s 800ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_supportsInterface_nameResolver()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 9047
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "109\u00c2\u00b5s 900ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_syncName()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 294135
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer",
+                  "0x022a70d64ad71e7cb615a0df171a916987a6b372": "anyone"
+                },
+                "duration": "901\u00c2\u00b5s 200ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_syncName_empty()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 330946
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "779\u00c2\u00b5s 600ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_syncName_notContract()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 34319
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer",
+                  "0x6efde6be48d40dbbdac461caa6657d5272ccfe9c": "dne"
+                },
+                "duration": "526\u00c2\u00b5s 100ns",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              },
+              "test_syncName_notImplemented()": {
+                "status": "Success",
+                "reason": null,
+                "counterexample": null,
+                "logs": [],
+                "decoded_logs": [],
+                "kind": {
+                  "Unit": {
+                    "gas": 30400
+                  }
+                },
+                "traces": [],
+                "labeled_addresses": {
+                  "0x011f44c68a9877b052c5de168e499e05573f8db8": "relayer"
+                },
+                "duration": "156\u00c2\u00b5s",
+                "breakpoints": {},
+                "gas_snapshots": {}
+              }
+            },
+            "warnings": []
+          }
+        }
+      }
+    }
+  ]
+}

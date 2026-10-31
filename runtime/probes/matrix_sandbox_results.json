@@ -1,0 +1,94 @@
+{
+  "scope": "Disposable local simulation, not an OS security sandbox.",
+  "source_adjustments": [
+    "Removed inline user prose to allow compilation.",
+    "Redirected WORKSPACE_DIR to a fresh temporary directory for every test.",
+    "No assessment, signing, dispatch, or cleanup logic was corrected."
+  ],
+  "project_changes": false,
+  "tests_run": 16,
+  "tests_passed": 16,
+  "interpretation": "Passing CONFIRMED tests reproduce defects, not production readiness.",
+  "cases": [
+    {
+      "test": "test_01_inline_prose_is_a_syntax_error",
+      "claim": "CONFIRMED: the literal pasted prose prevents compilation.",
+      "reproduced": true
+    },
+    {
+      "test": "test_02_happy_path_writes_receipt_and_clears_staging",
+      "claim": "WORKS: nine mock verdicts, one receipt, and empty inboxes.",
+      "reproduced": true
+    },
+    {
+      "test": "test_03_failed_sector_still_exits_zero",
+      "claim": "CONFIRMED: CLI exits 0 even when F3 reports FAILED.",
+      "reproduced": true
+    },
+    {
+      "test": "test_04_keyword_false_positive",
+      "claim": "CONFIRMED: describing correctly denied access causes a failure.",
+      "reproduced": true
+    },
+    {
+      "test": "test_05_real_fixture_false_negative",
+      "claim": "CONFIRMED: existing cross-tenant patient fixture gets nine passes.",
+      "reproduced": true
+    },
+    {
+      "test": "test_06_signature_ignores_payload_and_reason",
+      "claim": "CONFIRMED: different payloads share the same mock signature.",
+      "reproduced": true
+    },
+    {
+      "test": "test_07_cleanup_removes_other_session_data",
+      "claim": "CONFIRMED: scrub deletes another run's inbox file and shared cache.",
+      "reproduced": true
+    },
+    {
+      "test": "test_08_exception_leaves_staging_without_audit",
+      "claim": "CONFIRMED: evaluator exception leaves payloads and no audit receipt.",
+      "reproduced": true
+    },
+    {
+      "test": "test_09_same_second_overwrites_receipt",
+      "claim": "CONFIRMED: two same-second runs overwrite a single session receipt.",
+      "reproduced": true
+    },
+    {
+      "test": "test_10_dispatch_is_sequential_not_broadcast",
+      "claim": "CONFIRMED: F1 evaluates before the F2-F9 payloads are staged.",
+      "reproduced": true
+    },
+    {
+      "test": "test_11_no_input_schema_validation",
+      "claim": "CONFIRMED: a top-level JSON list passes every sector.",
+      "reproduced": true
+    },
+    {
+      "test": "test_12_malformed_input_has_no_structured_audit",
+      "claim": "CONFIRMED: malformed JSON raises directly with no audit.",
+      "reproduced": true
+    },
+    {
+      "test": "test_13_not_compatible_with_vipercrest_session_loader",
+      "claim": "CONFIRMED: actual ViperCrest loader rejects both identity and file schema.",
+      "reproduced": true
+    },
+    {
+      "test": "test_14_cleanup_can_report_success_without_deleting",
+      "claim": "CONFIRMED: ignored deletion failure still prints self-scrub complete.",
+      "reproduced": true
+    },
+    {
+      "test": "test_15_parent_and_current_hash_are_identical",
+      "claim": "CONFIRMED: parent/current provenance hashes describe the same payload.",
+      "reproduced": true
+    },
+    {
+      "test": "test_16_missing_target_exits_one",
+      "claim": "WORKS: a missing target causes exit status 1.",
+      "reproduced": true
+    }
+  ]
+}

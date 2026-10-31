@@ -1,0 +1,88 @@
+{
+  "scope": "Disposable filesystem-isolated tests, not an OS security sandbox.",
+  "source_adjustments": [
+    "Comments/formatting omitted; executable logic preserved.",
+    "Only WORKSPACE_DIR redirected to a temporary directory per test."
+  ],
+  "project_changes": false,
+  "tests_run": 15,
+  "tests_passed": 15,
+  "interpretation": "Passing REMAINS checks confirm remaining defects.",
+  "cases": [
+    {
+      "test": "test_01_five_files_and_success_exit",
+      "claim": "IMPROVED: normal execution creates exactly five named files and exits 0.",
+      "reproduced": true
+    },
+    {
+      "test": "test_02_failed_verdict_cli_exits_one",
+      "claim": "FIXED: an F3 FAILED verdict now causes actual CLI exit 1.",
+      "reproduced": true
+    },
+    {
+      "test": "test_03_malformed_json_reported",
+      "claim": "FIXED: malformed JSON prints an error and exits 1, without a JSON traceback.",
+      "reproduced": true
+    },
+    {
+      "test": "test_04_other_session_staging_survives",
+      "claim": "FIXED: cleanup preserves other sessions' inbox files.",
+      "reproduced": true
+    },
+    {
+      "test": "test_05_shared_cache_still_deleted",
+      "claim": "REMAINS: session cleanup deletes the entire shared workspace cache.",
+      "reproduced": true
+    },
+    {
+      "test": "test_06_existing_patient_fixture_still_passes",
+      "claim": "REMAINS: existing cross-tenant patient fixture gets nine passes.",
+      "reproduced": true
+    },
+    {
+      "test": "test_07_legitimate_patient_read_fails",
+      "claim": "REMAINS: allowed same-tenant patient read is labeled cross-tenant exposure.",
+      "reproduced": true
+    },
+    {
+      "test": "test_08_no_payload_bound_signature_or_state_evolution",
+      "claim": "REMAINS: different payloads have identical output hashes and signatures.",
+      "reproduced": true
+    },
+    {
+      "test": "test_09_loader_rejects_identity_then_contents",
+      "claim": "REMAINS: real ViperCrest loader rejects both ID and five-file contents.",
+      "reproduced": true
+    },
+    {
+      "test": "test_10_evaluator_exception_skips_cleanup_and_audit",
+      "claim": "REMAINS: an evaluator exception leaves payloads and an empty session folder.",
+      "reproduced": true
+    },
+    {
+      "test": "test_11_microseconds_improve_but_do_not_enforce_uniqueness",
+      "claim": "REMAINS: repeated full timestamp reuses and overwrites a session.",
+      "reproduced": true
+    },
+    {
+      "test": "test_12_still_sequential_and_not_chained",
+      "claim": "REMAINS: staging/evaluation is sequential and no sector consumes prior output.",
+      "reproduced": true
+    },
+    {
+      "test": "test_13_non_object_input_can_pass_or_crash",
+      "claim": "REMAINS: [1,2,3] passes; a list containing patient_id crashes at .get().",
+      "reproduced": true
+    },
+    {
+      "test": "test_14_scrub_failure_still_announces_success",
+      "claim": "REMAINS: ignored deletion failures leave staged payloads but exit 0.",
+      "reproduced": true
+    },
+    {
+      "test": "test_15_partial_session_on_write_failure",
+      "claim": "REMAINS: receipt write failure leaves a partially published three-file bundle.",
+      "reproduced": true
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "node-hub",
+      "type": "text",
+      "text": "# 🐍 [[Home|ViperCrest Hub]]\n\nCentralized operations and offline-first matrix engine.",
+      "x": 400,
+      "y": -200,
+      "width": 320,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "node-cli",
+      "type": "text",
+      "text": "## ⚡ [[Shorthand Commands Quick Reference|CLI & Shorthand Layer]]\n\n- `vc` / `vcm` / `vco` / `vcoff`\n- `vcb` (Syntax Bridge)\n- `vcf` (Foundry Bridge)\n- `vcp` (Probes) / `vct` (Tests)\n- `vcs` (Status Analytics)",
+      "x": 400,
+      "y": 20,
+      "width": 320,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "node-router",
+      "type": "text",
+      "text": "## 🧭 [[Session Router & Intent Management|Session Router]]\n\n- Execution Isolation\n- Path Traversal Defense\n- Manifest & SHA-256 Hashing\n- Session Storage (`runtime/sessions/`)",
+      "x": 400,
+      "y": 280,
+      "width": 320,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "node-matrix",
+      "type": "text",
+      "text": "## 🧮 [[Agnostic 9x9 Matrix Protocol|9x9 Matrix Engine]]\n\n- F1: Syntax / Schema\n- F2: Hash & Identity\n- F3-F5: Temporal, Policy, Variance\n- F6-F9: Invariants, Signatures, Seals",
+      "x": 100,
+      "y": 520,
+      "width": 320,
+      "height": 180,
+      "color": "2"
+    },
+    {
+      "id": "node-http",
+      "type": "text",
+      "text": "## 🛡️ [[HTTPS Intake & Security Model|HTTPS Intake]]\n\n- Gated by `network_config.json`\n- Allowed Host Whitelisting\n- Payload Inspection & Size Limits\n- Observation Normalization",
+      "x": 700,
+      "y": 520,
+      "width": 320,
+      "height": 180,
+      "color": "1"
+    },
+    {
+      "id": "node-bridge",
+      "type": "text",
+      "text": "## 🌉 [[Universal 9x9 Syntax Bridge (vcb)|Syntax & Foundry Bridges]]\n\n- `bridge_9x9_syntax.py`\n- `bridge_foundry.py`\n- Agnostic Schema Translation",
+      "x": -250,
+      "y": 520,
+      "width": 300,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "node-storage",
+      "type": "text",
+      "text": "## 🗄️ [[SQLite Database Schema & WAL|State & Audit Storage]]\n\n- `runtime/viper_state.db` (WAL Mode)\n- `runtime/signing_key.pem`\n- Immutable Runs & Evaluations Table",
+      "x": 400,
+      "y": 760,
+      "width": 320,
+      "height": 180,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-hub-cli",
+      "fromNode": "node-hub",
+      "fromSide": "bottom",
+      "toNode": "node-cli",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-cli-router",
+      "fromNode": "node-cli",
+      "fromSide": "bottom",
+      "toNode": "node-router",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-router-matrix",
+      "fromNode": "node-router",
+      "fromSide": "bottom",
+      "toNode": "node-matrix",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-router-http",
+      "fromNode": "node-router",
+      "fromSide": "bottom",
+      "toNode": "node-http",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-matrix-storage",
+      "fromNode": "node-matrix",
+      "fromSide": "bottom",
+      "toNode": "node-storage",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-http-storage",
+      "fromNode": "node-http",
+      "fromSide": "bottom",
+      "toNode": "node-storage",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-bridge-matrix",
+      "fromNode": "node-bridge",
+      "fromSide": "right",
+      "toNode": "node-matrix",
+      "toSide": "left"
+    }
+  ]
+}
