@@ -1,0 +1,4204 @@
+{
+  "observations": [
+    {
+      "id": "F9::M_Solidity::bascule/Bascule.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 299,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 28,
+          "F2_chronology_scoping_control": 43,
+          "F3_evidence_functions_closures": 15,
+          "F4_artifacts_data_modeling": 7,
+          "F5_governing_rules_error_arch": 13,
+          "F6_interaction_collections": 18,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 6
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/Bascule.sol",
+          "extension": ".sol",
+          "sha256": "78845cd22be94d2a3d90671cc49a96158603123df38cf41019733960be581c87",
+          "bytes": 12559,
+          "lines": 307
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F9::M_Solidity::bascule/BasculeV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 309,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 27,
+          "F2_chronology_scoping_control": 43,
+          "F3_evidence_functions_closures": 15,
+          "F4_artifacts_data_modeling": 9,
+          "F5_governing_rules_error_arch": 12,
+          "F6_interaction_collections": 21,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 6
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/BasculeV2.sol",
+          "extension": ".sol",
+          "sha256": "8183e03726079c240ba98cce14b2fcaf4748a1d1172e215ca101b21041847b13",
+          "bytes": 12933,
+          "lines": 314
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F9::M_Solidity::bascule/BasculeV3.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 355,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 31,
+          "F2_chronology_scoping_control": 57,
+          "F3_evidence_functions_closures": 30,
+          "F4_artifacts_data_modeling": 10,
+          "F5_governing_rules_error_arch": 17,
+          "F6_interaction_collections": 25,
+          "F7_discovery_memory_concurrency": 4,
+          "F8_opposing_transition_testing": 6
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/BasculeV3.sol",
+          "extension": ".sol",
+          "sha256": "9430126d51a186f3e9e3a0e11de442f86decef945d8b80d422323cd71f1d8f91",
+          "bytes": 15387,
+          "lines": 393
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::bascule/GMPBasculeV1.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 324,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 21,
+          "F2_chronology_scoping_control": 46,
+          "F3_evidence_functions_closures": 23,
+          "F4_artifacts_data_modeling": 11,
+          "F5_governing_rules_error_arch": 17,
+          "F6_interaction_collections": 19,
+          "F7_discovery_memory_concurrency": 8,
+          "F8_opposing_transition_testing": 6
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/GMPBasculeV1.sol",
+          "extension": ".sol",
+          "sha256": "18f02a81f97ae53459f25cecef4e42b9e8505e1dd3482bfd8de522231e7eef28",
+          "bytes": 11748,
+          "lines": 311
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F9::M_Solidity::bascule/GMPBasculeV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 322,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 21,
+          "F2_chronology_scoping_control": 46,
+          "F3_evidence_functions_closures": 23,
+          "F4_artifacts_data_modeling": 10,
+          "F5_governing_rules_error_arch": 17,
+          "F6_interaction_collections": 18,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 6
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/GMPBasculeV2.sol",
+          "extension": ".sol",
+          "sha256": "e1d1409d612d9f17ff84cc6531d12f4fad5a1c2310d2cd25275d6f8c64b08a54",
+          "bytes": 11628,
+          "lines": 306
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::bascule/interfaces/IBascule.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 68,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 5,
+          "F2_chronology_scoping_control": 7,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 4,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/interfaces/IBascule.sol",
+          "extension": ".sol",
+          "sha256": "567e8d289ad00c61dd8849ee6e5b0980a87eefab4cbe581aa5260405f47bf509",
+          "bytes": 1854,
+          "lines": 50
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::bascule/interfaces/IGMPBascule.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 146,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 14,
+          "F2_chronology_scoping_control": 9,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 21,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/interfaces/IGMPBascule.sol",
+          "extension": ".sol",
+          "sha256": "ea5750b8fe0096a2b841720dfa915b22384bdd0a44002fe2c9cd1a3e226d6c9e",
+          "bytes": 4142,
+          "lines": 119
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Markdown::bascule/README.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 195,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 5,
+          "F2_chronology_scoping_control": 17,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 10,
+          "F5_governing_rules_error_arch": 11,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 5
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bascule/README.md",
+          "extension": ".md",
+          "sha256": "410843371ba43363ef0395dc9ff67bd3638b7f80cbc74d058e523d97636b7e0e",
+          "bytes": 3568,
+          "lines": 75
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/adapters/AbstractAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 102,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 12,
+          "F3_evidence_functions_closures": 10,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/adapters/AbstractAdapter.sol",
+          "extension": ".sol",
+          "sha256": "d672bf5d202f53ca7d8be7e42c92c1b26ab502e208eae8631ecc273537be1c60",
+          "bytes": 2681,
+          "lines": 99
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/adapters/CLAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 230,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 42,
+          "F2_chronology_scoping_control": 40,
+          "F3_evidence_functions_closures": 25,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 11,
+          "F6_interaction_collections": 17,
+          "F7_discovery_memory_concurrency": 14,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/adapters/CLAdapter.sol",
+          "extension": ".sol",
+          "sha256": "73823a21c64294364a07b36ed5f91194f7e44ae2481df2b926127c0028d78f22",
+          "bytes": 10224,
+          "lines": 299
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/adapters/IAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 45,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/adapters/IAdapter.sol",
+          "extension": ".sol",
+          "sha256": "5f2114edaa3326b15cfd350cb2fff3be53de74bcf104e22c511e66b48ea3fac4",
+          "bytes": 810,
+          "lines": 28
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::bridge/adapters/TokenPool.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 101,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 17,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/adapters/TokenPool.sol",
+          "extension": ".sol",
+          "sha256": "ddcf448332b1b6800842890f6ddbf1ce3537375542f644cd25ecbb3d85e815b1",
+          "bytes": 3280,
+          "lines": 87
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::bridge/Bridge.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 309,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 46,
+          "F2_chronology_scoping_control": 74,
+          "F3_evidence_functions_closures": 71,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 30,
+          "F6_interaction_collections": 28,
+          "F7_discovery_memory_concurrency": 42,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/Bridge.sol",
+          "extension": ".sol",
+          "sha256": "ace669d4b7fb3cfab5f1e5f1ecf7b4b3b872ce08312628aa03c0d0727fa249e3",
+          "bytes": 20299,
+          "lines": 610
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/BridgeV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 369,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 73,
+          "F2_chronology_scoping_control": 98,
+          "F3_evidence_functions_closures": 87,
+          "F4_artifacts_data_modeling": 18,
+          "F5_governing_rules_error_arch": 53,
+          "F6_interaction_collections": 29,
+          "F7_discovery_memory_concurrency": 38,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/BridgeV2.sol",
+          "extension": ".sol",
+          "sha256": "4b07a6d66415a9c8316d60e008c5f3b3d171925f92f608ccfb6c0a889e930ffd",
+          "bytes": 29188,
+          "lines": 821
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::bridge/IBridge.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 113,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 12,
+          "F2_chronology_scoping_control": 6,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 12,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/IBridge.sol",
+          "extension": ".sol",
+          "sha256": "b1ac6d68aa6d65a01b20da73e22a6160b8c39eae7459cd5cd19402fda289e1b9",
+          "bytes": 3862,
+          "lines": 120
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Solidity::bridge/IBridgeV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 90,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 18,
+          "F2_chronology_scoping_control": 8,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 7,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/IBridgeV2.sol",
+          "extension": ".sol",
+          "sha256": "59acdd20a5da77b821ca99150f3995b323d6ba2d51517c4095a2ba952e4e6660",
+          "bytes": 3630,
+          "lines": 119
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::bridge/interfaces/LegacyTokenPoolV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 32,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 4,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/interfaces/LegacyTokenPoolV2.sol",
+          "extension": ".sol",
+          "sha256": "0a5c1e4a0be0957c6e943baa24ff1fee245c96580e2ac93df126982f9342bc3b",
+          "bytes": 517,
+          "lines": 18
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/oft/EfficientRateLimitedOFTAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 108,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 19,
+          "F2_chronology_scoping_control": 8,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/oft/EfficientRateLimitedOFTAdapter.sol",
+          "extension": ".sol",
+          "sha256": "f0730370eb1a148a630aa730848845e7104b355c0cde30057626a3be42e2c7a6",
+          "bytes": 2793,
+          "lines": 73
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/oft/EfficientRateLimiter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 195,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 41,
+          "F2_chronology_scoping_control": 32,
+          "F3_evidence_functions_closures": 18,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 7,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/oft/EfficientRateLimiter.sol",
+          "extension": ".sol",
+          "sha256": "ca9010e367d50175d09e52cee8b4f45c0ace7c8382859741e32be0a1ba733793",
+          "bytes": 9513,
+          "lines": 235
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F5::M_Solidity::bridge/oft/LBTCBurnMintOFTAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 83,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 21,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/oft/LBTCBurnMintOFTAdapter.sol",
+          "extension": ".sol",
+          "sha256": "db3c74b427d62e16e57db2baf2fcb02f07d365d40d4e02cf695a151b0303ef43",
+          "bytes": 2861,
+          "lines": 82
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::bridge/oft/LBTCOFTAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 50,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/oft/LBTCOFTAdapter.sol",
+          "extension": ".sol",
+          "sha256": "79921d5919451ada2d5d4906bcf70de3df2847dca0c1a5cfb6c54e4f2b85f860",
+          "bytes": 956,
+          "lines": 26
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/providers/BridgeTokenPool.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 147,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 18,
+          "F2_chronology_scoping_control": 10,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 5,
+          "F5_governing_rules_error_arch": 4,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 4,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/providers/BridgeTokenPool.sol",
+          "extension": ".sol",
+          "sha256": "f19aea34ccbc0a6f1b6eb5aebfa482e0bf64c90b0b1609aedc0fbdf7b97086d7",
+          "bytes": 4348,
+          "lines": 107
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::bridge/providers/LombardTokenPoolV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 241,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 29,
+          "F2_chronology_scoping_control": 28,
+          "F3_evidence_functions_closures": 18,
+          "F4_artifacts_data_modeling": 8,
+          "F5_governing_rules_error_arch": 14,
+          "F6_interaction_collections": 17,
+          "F7_discovery_memory_concurrency": 10,
+          "F8_opposing_transition_testing": 5
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/providers/LombardTokenPoolV2.sol",
+          "extension": ".sol",
+          "sha256": "5cb18de630250a829bdec32c970312678d737400b3a01313d8eb22eca3c078d5",
+          "bytes": 11077,
+          "lines": 294
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Markdown::bridge/README.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 292,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 12,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 5,
+          "F6_interaction_collections": 11,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 5
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "bridge/README.md",
+          "extension": ".md",
+          "sha256": "913513b30ce33f4dfaf78ab3557fade337f93ff66f766fb5a63d4243a88743ba",
+          "bytes": 6502,
+          "lines": 113
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::consortium/Consortium.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 224,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 34,
+          "F2_chronology_scoping_control": 41,
+          "F3_evidence_functions_closures": 29,
+          "F4_artifacts_data_modeling": 6,
+          "F5_governing_rules_error_arch": 15,
+          "F6_interaction_collections": 6,
+          "F7_discovery_memory_concurrency": 24,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/Consortium.sol",
+          "extension": ".sol",
+          "sha256": "01a4472c321a2c9dcf1328d081937450b0e3697b5cc480fad44cc8b206ede747",
+          "bytes": 9410,
+          "lines": 255
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::consortium/DepositNotarizationBlacklist.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 96,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 12,
+          "F2_chronology_scoping_control": 14,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 4,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/DepositNotarizationBlacklist.sol",
+          "extension": ".sol",
+          "sha256": "661d6582e0239ce8abc959ae82a0a69c0d5af4722ba5638a5cba59511cc4fc9d",
+          "bytes": 3013,
+          "lines": 89
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::consortium/IDepositNotarizationBlacklist.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 34,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/IDepositNotarizationBlacklist.sol",
+          "extension": ".sol",
+          "sha256": "9cf81c90a121549e20ee20972174ef0930736622854d184c274d4e4290fae619",
+          "bytes": 823,
+          "lines": 29
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::consortium/ILombardTimelockController.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 139,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 24,
+          "F2_chronology_scoping_control": 24,
+          "F3_evidence_functions_closures": 18,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 6,
+          "F6_interaction_collections": 4,
+          "F7_discovery_memory_concurrency": 12,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/ILombardTimelockController.sol",
+          "extension": ".sol",
+          "sha256": "78191d4545b7f105f2e8385d1a5d2b7513d84d41c27d56af2a9a3ab4df483f3a",
+          "bytes": 5323,
+          "lines": 167
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::consortium/INotaryConsortium.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 66,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 7,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/INotaryConsortium.sol",
+          "extension": ".sol",
+          "sha256": "91ab476b711b7a32b73d10a46eb3df6b46b72f90d638666ffa4019df7f59bc29",
+          "bytes": 1242,
+          "lines": 41
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::consortium/LombardTimeLock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 37,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/LombardTimeLock.sol",
+          "extension": ".sol",
+          "sha256": "acd9f07db431bfb787f86f4cbbcbb4c9b10a4ea22836322d74e125c64a7bc2d9",
+          "bytes": 664,
+          "lines": 18
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Markdown::consortium/README.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 39,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/README.md",
+          "extension": ".md",
+          "sha256": "358465343749b1456953db42a4b118036d1a1e318595fb14dd6ffff8d82f3b53",
+          "bytes": 483,
+          "lines": 12
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::consortium/test/VerifySignatureTest.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 38,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 6,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 3,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "consortium/test/VerifySignatureTest.sol",
+          "extension": ".sol",
+          "sha256": "78f4ba90768ba97e175368445fb27be0aae49a607d9a4b5237c12c1d992d0246",
+          "bytes": 1009,
+          "lines": 35
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::factory/ProxyFactory.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 56,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "factory/ProxyFactory.sol",
+          "extension": ".sol",
+          "sha256": "fdf0d5ab4c97effddad8b81fa514b69d135377662634232c13471cae69160b8c",
+          "bytes": 1409,
+          "lines": 41
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Solidity::fbtc/PartnerVault.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 273,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 60,
+          "F2_chronology_scoping_control": 47,
+          "F3_evidence_functions_closures": 30,
+          "F4_artifacts_data_modeling": 10,
+          "F5_governing_rules_error_arch": 10,
+          "F6_interaction_collections": 28,
+          "F7_discovery_memory_concurrency": 18,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "fbtc/PartnerVault.sol",
+          "extension": ".sol",
+          "sha256": "ec3788e5cc4041e5ed7a1e9e3e42bfabb451539797413e0a28314b64439b686f",
+          "bytes": 13001,
+          "lines": 353
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F7::M_Solidity::gmp/IHandler.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F7",
+        "canonical_role": "Discovery / Unknown (What is unknown or still required?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F7",
+        "canonical_role": "Discovery / Unknown (What is unknown or still required?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 36,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "gmp/IHandler.sol",
+          "extension": ".sol",
+          "sha256": "32aea6ed5a4bc256f8a2dcdd5f05344e5ba1e11f2595895bc4e7e5ae44fbf27b",
+          "bytes": 536,
+          "lines": 15
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::gmp/IMailbox.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 90,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 16,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 6,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 12,
+          "F7_discovery_memory_concurrency": 5,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "gmp/IMailbox.sol",
+          "extension": ".sol",
+          "sha256": "0f0bef5cadd2f2028c787faf6d88c6beee505333ee88048b12e5ba08ba8eb5b8",
+          "bytes": 3000,
+          "lines": 105
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::gmp/libs/GMPUtils.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 118,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 19,
+          "F2_chronology_scoping_control": 19,
+          "F3_evidence_functions_closures": 18,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 5,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "gmp/libs/GMPUtils.sol",
+          "extension": ".sol",
+          "sha256": "a0b9db595c1dc71f9aa828e06ac90fc347c5f89ea6afe6794909c34f7c78dd9c",
+          "bytes": 4580,
+          "lines": 136
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::gmp/libs/MessagePath.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 27,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "gmp/libs/MessagePath.sol",
+          "extension": ".sol",
+          "sha256": "0290696ca162f2782bebca362283073c6f5dc904ede062e333ef138a1f3dc9c0",
+          "bytes": 577,
+          "lines": 22
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::gmp/Mailbox.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 355,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 73,
+          "F2_chronology_scoping_control": 73,
+          "F3_evidence_functions_closures": 67,
+          "F4_artifacts_data_modeling": 12,
+          "F5_governing_rules_error_arch": 33,
+          "F6_interaction_collections": 38,
+          "F7_discovery_memory_concurrency": 47,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "gmp/Mailbox.sol",
+          "extension": ".sol",
+          "sha256": "7ae08623ee3120559b75e5fe51e482d0cd433d2629c74fadfb8c61549407cb8e",
+          "bytes": 20892,
+          "lines": 625
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::ibc/IBCVoucher.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 219,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 70,
+          "F2_chronology_scoping_control": 60,
+          "F3_evidence_functions_closures": 46,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 8,
+          "F6_interaction_collections": 8,
+          "F7_discovery_memory_concurrency": 22,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "ibc/IBCVoucher.sol",
+          "extension": ".sol",
+          "sha256": "51f3ac02f7d5ef72f074e85f0734c08e54376dd94339554a14a6e6d77695152e",
+          "bytes": 12715,
+          "lines": 385
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F5::M_Solidity::ibc/IIBCVoucher.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 90,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 31,
+          "F2_chronology_scoping_control": 12,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 10,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "ibc/IIBCVoucher.sol",
+          "extension": ".sol",
+          "sha256": "873425ed2334c5918509396e3cf78a95a1ba4ab78f97f27e81e3e5b4ec9da46d",
+          "bytes": 3342,
+          "lines": 88
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::interfaces/IBridgeToken.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 37,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "interfaces/IBridgeToken.sol",
+          "extension": ".sol",
+          "sha256": "6a392dc4f961c6538e56fb4b131c3f5fcba0182979e4d39709c13246e4d10b42",
+          "bytes": 654,
+          "lines": 22
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::interfaces/IConsortiumConsumer.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 34,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 4,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "interfaces/IConsortiumConsumer.sol",
+          "extension": ".sol",
+          "sha256": "52d749c34a61c3b2e922ac8b5a15e3c945d95166c83d0019823f8a81caf310d6",
+          "bytes": 656,
+          "lines": 20
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::interfaces/IEfficientRateLimiterV1.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 31,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "interfaces/IEfficientRateLimiterV1.sol",
+          "extension": ".sol",
+          "sha256": "30f99a885f09bf7e4fcda0628d5f23b0d8d6ef7cd71da7ca6324f01da2819a0f",
+          "bytes": 522,
+          "lines": 22
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::interfaces/IERC20MintableBurnable.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 25,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 5,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "interfaces/IERC20MintableBurnable.sol",
+          "extension": ".sol",
+          "sha256": "56dc94fd9da931a9c275e6386674444d20a96509c5c8eb7e8951757ea40c889f",
+          "bytes": 340,
+          "lines": 10
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::interfaces/IProxyAdmin.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 60,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 4,
+          "F2_chronology_scoping_control": 11,
+          "F3_evidence_functions_closures": 7,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 4,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "interfaces/IProxyAdmin.sol",
+          "extension": ".sol",
+          "sha256": "c9a2f6dfc5549d32ddfdb4b5269f339b3d59b815fdf1dd751c28a6fa891d41cd",
+          "bytes": 1360,
+          "lines": 31
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::LBTC/AssetRouter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 441,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 115,
+          "F2_chronology_scoping_control": 121,
+          "F3_evidence_functions_closures": 113,
+          "F4_artifacts_data_modeling": 12,
+          "F5_governing_rules_error_arch": 26,
+          "F6_interaction_collections": 37,
+          "F7_discovery_memory_concurrency": 81,
+          "F8_opposing_transition_testing": 9
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/AssetRouter.sol",
+          "extension": ".sol",
+          "sha256": "995ce058216214c5c4f0699d43f7f0fa8db6b261d8ffe242e4e2f3b034210b22",
+          "bytes": 36042,
+          "lines": 1024
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F8::M_Solidity::LBTC/BaseLBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 389,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 52,
+          "F2_chronology_scoping_control": 58,
+          "F3_evidence_functions_closures": 41,
+          "F4_artifacts_data_modeling": 7,
+          "F5_governing_rules_error_arch": 14,
+          "F6_interaction_collections": 10,
+          "F7_discovery_memory_concurrency": 19,
+          "F8_opposing_transition_testing": 7
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/BaseLBTC.sol",
+          "extension": ".sol",
+          "sha256": "37e369d19f2214520b69355eddf87284954560fb5ab69bb28493c6a59e074d8b",
+          "bytes": 14044,
+          "lines": 297
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::LBTC/BridgeTokenAdapter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 414,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 72,
+          "F2_chronology_scoping_control": 65,
+          "F3_evidence_functions_closures": 89,
+          "F4_artifacts_data_modeling": 25,
+          "F5_governing_rules_error_arch": 14,
+          "F6_interaction_collections": 18,
+          "F7_discovery_memory_concurrency": 30,
+          "F8_opposing_transition_testing": 17
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/BridgeTokenAdapter.sol",
+          "extension": ".sol",
+          "sha256": "7ee4ef0c1f0c17578bb942d931856c199bf56e4a959ebd952a1dc22ef0464a93",
+          "bytes": 22553,
+          "lines": 551
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::LBTC/interfaces/AggregatorV3Interface.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 21,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/AggregatorV3Interface.sol",
+          "extension": ".sol",
+          "sha256": "15ca827b321893668d564f205df8cfa245456c861f531255eafd31378b9408f5",
+          "bytes": 406,
+          "lines": 16
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::LBTC/interfaces/IAssetOperation.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 15,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/IAssetOperation.sol",
+          "extension": ".sol",
+          "sha256": "de56dabc091d4b0067b11a2b509185bb331a2f887d9d30add6c44753f53401e2",
+          "bytes": 270,
+          "lines": 9
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::LBTC/interfaces/IAssetRouter.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 136,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 39,
+          "F2_chronology_scoping_control": 25,
+          "F3_evidence_functions_closures": 29,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 17,
+          "F7_discovery_memory_concurrency": 17,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/IAssetRouter.sol",
+          "extension": ".sol",
+          "sha256": "58e4f94af6733ecc089f711f51027153e52d8ca394e2454e9dc61891b6d3dfb6",
+          "bytes": 5962,
+          "lines": 198
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::LBTC/interfaces/IBaseLBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 123,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 33,
+          "F2_chronology_scoping_control": 20,
+          "F3_evidence_functions_closures": 19,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 15,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/IBaseLBTC.sol",
+          "extension": ".sol",
+          "sha256": "1eb6b1331e0920e27ae206b2a76eb397a034a0eada84c47ce23a708fbe71dbb8",
+          "bytes": 3642,
+          "lines": 97
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Solidity::LBTC/interfaces/INativeLBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 23,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/INativeLBTC.sol",
+          "extension": ".sol",
+          "sha256": "93e3fbe21d8179c1de1b33a7ab21a8155814237c4a3c2c020f9620a0e4f6886c",
+          "bytes": 319,
+          "lines": 11
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F9::M_Solidity::LBTC/interfaces/IOracle.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 57,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 4,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/IOracle.sol",
+          "extension": ".sol",
+          "sha256": "18082057862291cdd1b5ee6b403ddfcb247db3549ae7c1609cab7ee8920b562c",
+          "bytes": 805,
+          "lines": 19
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::LBTC/interfaces/IStakedLBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 90,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 9,
+          "F2_chronology_scoping_control": 6,
+          "F3_evidence_functions_closures": 9,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 2,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/interfaces/IStakedLBTC.sol",
+          "extension": ".sol",
+          "sha256": "6752bfb75dbee752c31fc8d7fedfe6e48856d53aa705d2e7b04941afe5f23fd8",
+          "bytes": 1456,
+          "lines": 30
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::LBTC/libraries/Assert.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 54,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 8,
+          "F2_chronology_scoping_control": 10,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 5,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/libraries/Assert.sol",
+          "extension": ".sol",
+          "sha256": "3461844ff00fe58d35c125905ba7188c5ba7c17d795d529e39cfcd3701c97d1b",
+          "bytes": 1433,
+          "lines": 47
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Solidity::LBTC/libraries/Assets.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 112,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 24,
+          "F2_chronology_scoping_control": 33,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 13,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/libraries/Assets.sol",
+          "extension": ".sol",
+          "sha256": "46edcafd023fde1a9bea190c81653b5e8f394cb35efbac9335b17423c156302a",
+          "bytes": 5962,
+          "lines": 186
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F7::M_Solidity::LBTC/libraries/Redeem.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F7",
+        "canonical_role": "Discovery / Unknown (What is unknown or still required?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F7",
+        "canonical_role": "Discovery / Unknown (What is unknown or still required?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 40,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 5,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/libraries/Redeem.sol",
+          "extension": ".sol",
+          "sha256": "f7d414f9aebec339ff08ce938e038deec6b9c678d9c3f8749cd9d910c41bf88b",
+          "bytes": 715,
+          "lines": 24
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Solidity::LBTC/libraries/Validation.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 55,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 20,
+          "F2_chronology_scoping_control": 6,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 3,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/libraries/Validation.sol",
+          "extension": ".sol",
+          "sha256": "d14ef136cecf9e6798a76be4787536bb787e8eb7ef5503327c03c53354d479c0",
+          "bytes": 1747,
+          "lines": 57
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::LBTC/NativeLBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 405,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 77,
+          "F2_chronology_scoping_control": 75,
+          "F3_evidence_functions_closures": 101,
+          "F4_artifacts_data_modeling": 6,
+          "F5_governing_rules_error_arch": 6,
+          "F6_interaction_collections": 12,
+          "F7_discovery_memory_concurrency": 53,
+          "F8_opposing_transition_testing": 15
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/NativeLBTC.sol",
+          "extension": ".sol",
+          "sha256": "211222788d5d10887462c81a6c68b984929e7212a53b2ea255284fbea5da621f",
+          "bytes": 20556,
+          "lines": 565
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::LBTC/StakedLBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 395,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 98,
+          "F2_chronology_scoping_control": 83,
+          "F3_evidence_functions_closures": 90,
+          "F4_artifacts_data_modeling": 9,
+          "F5_governing_rules_error_arch": 13,
+          "F6_interaction_collections": 19,
+          "F7_discovery_memory_concurrency": 57,
+          "F8_opposing_transition_testing": 4
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/StakedLBTC.sol",
+          "extension": ".sol",
+          "sha256": "bb89e4eeb85e73e68749bfd0d8d51bf832cbc5486ab8ddaffd5a74c0c9ba9f5d",
+          "bytes": 20461,
+          "lines": 532
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::LBTC/StakedLBTCOracle.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 185,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 60,
+          "F2_chronology_scoping_control": 49,
+          "F3_evidence_functions_closures": 51,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 8,
+          "F6_interaction_collections": 10,
+          "F7_discovery_memory_concurrency": 21,
+          "F8_opposing_transition_testing": 6
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "LBTC/StakedLBTCOracle.sol",
+          "extension": ".sol",
+          "sha256": "22d28d6d597d90ffe8c668102a64174562883e3713bc6c218221ea9a3231e074",
+          "bytes": 11000,
+          "lines": 313
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F8::M_Solidity::libs/Actions.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 281,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 74,
+          "F2_chronology_scoping_control": 64,
+          "F3_evidence_functions_closures": 14,
+          "F4_artifacts_data_modeling": 8,
+          "F5_governing_rules_error_arch": 35,
+          "F6_interaction_collections": 10,
+          "F7_discovery_memory_concurrency": 23,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/Actions.sol",
+          "extension": ".sol",
+          "sha256": "0b94425c0cd7414373b13203914535a19b032aad26db5b14c7d542eda0c35315",
+          "bytes": 14146,
+          "lines": 414
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::libs/BitcoinUtils.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 130,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 13,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/BitcoinUtils.sol",
+          "extension": ".sol",
+          "sha256": "e401d4d28cc01fa4a27490d15b322c0358451f67831759be207eddcee0dcef52",
+          "bytes": 3225,
+          "lines": 92
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::libs/EIP1271SignatureUtils.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 81,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 13,
+          "F3_evidence_functions_closures": 9,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 3
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/EIP1271SignatureUtils.sol",
+          "extension": ".sol",
+          "sha256": "95140d747a61cedb4e647413628f76cc50e092e5e335e5b555d5cab926a4c399",
+          "bytes": 2145,
+          "lines": 58
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::libs/FeeUtils.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 41,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 8,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/FeeUtils.sol",
+          "extension": ".sol",
+          "sha256": "c4757b893df03aba0437fd45cbdb3ea77f442f5d4e9cbe635c0ef04506e76d9e",
+          "bytes": 1064,
+          "lines": 37
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::libs/LChainId.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 27,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/LChainId.sol",
+          "extension": ".sol",
+          "sha256": "6f18dcfe630fedb31190dd3799971fd1411a00dc01a32ca71038c3be154f7a2c",
+          "bytes": 440,
+          "lines": 14
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::libs/RateLimits.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 98,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 22,
+          "F2_chronology_scoping_control": 20,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 5,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 4,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/RateLimits.sol",
+          "extension": ".sol",
+          "sha256": "2f9bf564159fd821cd990275788b911f08784a8ded1b5dcbe314cfa7f80deb40",
+          "bytes": 4393,
+          "lines": 118
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::libs/RateLimitsV2.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 237,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 17,
+          "F2_chronology_scoping_control": 32,
+          "F3_evidence_functions_closures": 7,
+          "F4_artifacts_data_modeling": 5,
+          "F5_governing_rules_error_arch": 4,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 7,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "libs/RateLimitsV2.sol",
+          "extension": ".sol",
+          "sha256": "ce67e2bf46405f516c291afda5e0961b4072e37bad9229c49be2a2ee1a934480",
+          "bytes": 7394,
+          "lines": 153
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::mock/Auth.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 137,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 20,
+          "F2_chronology_scoping_control": 25,
+          "F3_evidence_functions_closures": 20,
+          "F4_artifacts_data_modeling": 5,
+          "F5_governing_rules_error_arch": 20,
+          "F6_interaction_collections": 17,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/Auth.sol",
+          "extension": ".sol",
+          "sha256": "4e7087ad7cbcbe7bf786640478c1c4ead84bb40cfb9e172dce7449d29ab637f7",
+          "bytes": 6942,
+          "lines": 204
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/BoringVault.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 107,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 45,
+          "F2_chronology_scoping_control": 20,
+          "F3_evidence_functions_closures": 14,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 4,
+          "F6_interaction_collections": 5,
+          "F7_discovery_memory_concurrency": 8,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/BoringVault.sol",
+          "extension": ".sol",
+          "sha256": "d8516c4585256fdac219c2ece68137974499ccd7881c77fcbfea88acc6484c74",
+          "bytes": 4945,
+          "lines": 154
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/BridgeTokenMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 163,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 46,
+          "F2_chronology_scoping_control": 27,
+          "F3_evidence_functions_closures": 24,
+          "F4_artifacts_data_modeling": 7,
+          "F5_governing_rules_error_arch": 10,
+          "F6_interaction_collections": 11,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/BridgeTokenMock.sol",
+          "extension": ".sol",
+          "sha256": "bc1d6900811327b50337e54aade515243d18fa387509671c7c71d39db6a4a12f",
+          "bytes": 6811,
+          "lines": 206
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F5::M_Solidity::mock/BTCBMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 190,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 80,
+          "F2_chronology_scoping_control": 47,
+          "F3_evidence_functions_closures": 47,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 17,
+          "F6_interaction_collections": 24,
+          "F7_discovery_memory_concurrency": 4,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/BTCBMock.sol",
+          "extension": ".sol",
+          "sha256": "48bf4083817a92d9bde8a890acbfdac7a33e9caa965152d7509d54f9504f1e66",
+          "bytes": 12522,
+          "lines": 411
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/CCIPMocks.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 215,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 46,
+          "F2_chronology_scoping_control": 34,
+          "F3_evidence_functions_closures": 24,
+          "F4_artifacts_data_modeling": 9,
+          "F5_governing_rules_error_arch": 8,
+          "F6_interaction_collections": 33,
+          "F7_discovery_memory_concurrency": 12,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/CCIPMocks.sol",
+          "extension": ".sol",
+          "sha256": "3f080c31eab4204dd33a9af9d15ab756bf63cadccca021887a32cd7e8964eb38",
+          "bytes": 8789,
+          "lines": 222
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::mock/CCIPRMNMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 70,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 15,
+          "F2_chronology_scoping_control": 14,
+          "F3_evidence_functions_closures": 14,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 5,
+          "F6_interaction_collections": 3,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/CCIPRMNMock.sol",
+          "extension": ".sol",
+          "sha256": "cc6707303223628fdccf027e03f507d068db4b79aab72d24699335fd8388b51b",
+          "bytes": 1960,
+          "lines": 59
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/ChainlinkFeedMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 42,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 9,
+          "F2_chronology_scoping_control": 12,
+          "F3_evidence_functions_closures": 7,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/ChainlinkFeedMock.sol",
+          "extension": ".sol",
+          "sha256": "95b5bd264c0d87444db0b8824d57e7462f9c068e506333bcdb27f10b08f0dce0",
+          "bytes": 1165,
+          "lines": 43
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/ConsortiumMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 23,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/ConsortiumMock.sol",
+          "extension": ".sol",
+          "sha256": "45fcee3640de28c703ad87ca3093c6dab6440a57dc1f635ce31ce5d25aef8f66",
+          "bytes": 340,
+          "lines": 12
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/ERC4626Mock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 20,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/ERC4626Mock.sol",
+          "extension": ".sol",
+          "sha256": "e83d0eecd3948f16e0c1da3c5a968a64a4c6a939640eb56455fed1cc650b01a3",
+          "bytes": 406,
+          "lines": 10
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/GMPHandlerMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 48,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 8,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 7,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 3,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/GMPHandlerMock.sol",
+          "extension": ".sol",
+          "sha256": "bd8e6c41fe32e4718432b585de7e7ed7effd1c4cdedef0fc532d6ea6bf27ae64",
+          "bytes": 1123,
+          "lines": 42
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::mock/IRateProvider.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 57,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 10,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 3
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/IRateProvider.sol",
+          "extension": ".sol",
+          "sha256": "f333561987b5858ed0738f052924f86f9184b6ad5f63acf50a40a04c1a1b8e5e",
+          "bytes": 891,
+          "lines": 20
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/LockedFBTCMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 65,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 12,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 10,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 5,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/LockedFBTCMock.sol",
+          "extension": ".sol",
+          "sha256": "01817c61bb15ae493ab437becd1ba1f3d562402d22708b4e5b22db7726988853",
+          "bytes": 1476,
+          "lines": 48
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/LZEndpointMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 16,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/LZEndpointMock.sol",
+          "extension": ".sol",
+          "sha256": "3ce0ed431f061fe8d2886c449d9c8fb13a7270a1f6523b92034c4543b063e449",
+          "bytes": 273,
+          "lines": 8
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/MailboxMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 32,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 4,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/MailboxMock.sol",
+          "extension": ".sol",
+          "sha256": "cfa3f63dd45d97fa4b4a0dbeb98b8849b45268de4a6babd399969053800dc43b",
+          "bytes": 515,
+          "lines": 19
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/MailboxTreasuryMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 26,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 7,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/MailboxTreasuryMock.sol",
+          "extension": ".sol",
+          "sha256": "a5cf7f69ad9bb0859b55c3e9ef145f7137a9fdb3a6c27e610bd9431fca61666a",
+          "bytes": 696,
+          "lines": 33
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/ProxyMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 27,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/ProxyMock.sol",
+          "extension": ".sol",
+          "sha256": "5b7981464ebd980ae24a0c08d2b554774192b8752c921f01f5868183351ccc4f",
+          "bytes": 484,
+          "lines": 14
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F4::M_Solidity::mock/RatioFeedMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 58,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 13,
+          "F2_chronology_scoping_control": 11,
+          "F3_evidence_functions_closures": 13,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 4,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/RatioFeedMock.sol",
+          "extension": ".sol",
+          "sha256": "601a2eae7e1b11cd585a63e6374a1464a28dfaa33ea2daeba1587d878847f8e2",
+          "bytes": 1730,
+          "lines": 63
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/SanctionListMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 29,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/SanctionListMock.sol",
+          "extension": ".sol",
+          "sha256": "0f8346d26e5e07ccfcc5d39e211b92dc9cb263c3d6d44dc51e59b55a55bd8523",
+          "bytes": 548,
+          "lines": 18
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/ShardStrategyMocks.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 44,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 10,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/ShardStrategyMocks.sol",
+          "extension": ".sol",
+          "sha256": "47671d0ad08ec80a10bb01a9b819599b314b756a33ba3c92c0bcb3ff5cff9720",
+          "bytes": 703,
+          "lines": 19
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/StakedLBTCMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 28,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/StakedLBTCMock.sol",
+          "extension": ".sol",
+          "sha256": "c98a6827f4d157bcd19efaff2281c9af4316c90223d819fc724874c3a07028d7",
+          "bytes": 375,
+          "lines": 15
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/TellerWithMultiAssetSupportMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 8,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 309,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 78,
+          "F2_chronology_scoping_control": 74,
+          "F3_evidence_functions_closures": 31,
+          "F4_artifacts_data_modeling": 7,
+          "F5_governing_rules_error_arch": 15,
+          "F6_interaction_collections": 7,
+          "F7_discovery_memory_concurrency": 8,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/TellerWithMultiAssetSupportMock.sol",
+          "extension": ".sol",
+          "sha256": "8d1ba06b014c81a696c89acfd7e3aa4efc9f488669aab4edc8f4cfe04b17db4b",
+          "bytes": 14028,
+          "lines": 380
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::mock/TokenMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 34,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 8,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/TokenMock.sol",
+          "extension": ".sol",
+          "sha256": "97e90f4b3bb8dd6c66b87147ba8642ec32258df81689d80cde8ab19be3bd8c85",
+          "bytes": 582,
+          "lines": 24
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::mock/WBTCMock.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 56,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 5,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "mock/WBTCMock.sol",
+          "extension": ".sol",
+          "sha256": "1c2345dc6dee7b8ab6971c04d861193c3db5d63e5bcc31a1513971a68bc0d711",
+          "bytes": 1025,
+          "lines": 35
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::pmm/BTCB/BTCB.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 128,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 36,
+          "F2_chronology_scoping_control": 26,
+          "F3_evidence_functions_closures": 21,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 6,
+          "F7_discovery_memory_concurrency": 9,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "pmm/BTCB/BTCB.sol",
+          "extension": ".sol",
+          "sha256": "89e0f0e9bdcb70a1b886bcd10ba41d4306d0bb5a3216c0b4df3dc6e3fcde364f",
+          "bytes": 6520,
+          "lines": 198
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Solidity::pmm/CBBTC.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 124,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 36,
+          "F2_chronology_scoping_control": 26,
+          "F3_evidence_functions_closures": 21,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 6,
+          "F7_discovery_memory_concurrency": 9,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "pmm/CBBTC.sol",
+          "extension": ".sol",
+          "sha256": "973be59e931f8ce44cfb9c7d3bcf4fcfba02c5f00ace345f6b80cdd3105d585a",
+          "bytes": 6484,
+          "lines": 191
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_Solidity::PoR/IPoR.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 44,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "PoR/IPoR.sol",
+          "extension": ".sol",
+          "sha256": "17713e45c9cef52875662d8ec08eeadfe806b515c448a358672f63c32500faf5",
+          "bytes": 1238,
+          "lines": 36
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Solidity::PoR/PoR.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 159,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 54,
+          "F2_chronology_scoping_control": 44,
+          "F3_evidence_functions_closures": 34,
+          "F4_artifacts_data_modeling": 4,
+          "F5_governing_rules_error_arch": 10,
+          "F6_interaction_collections": 9,
+          "F7_discovery_memory_concurrency": 47,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "PoR/PoR.sol",
+          "extension": ".sol",
+          "sha256": "9e551622c021f06f999615af6d842fe4205a61d0937d635f034c1e9d3437eb97",
+          "bytes": 12399,
+          "lines": 327
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::stakeAndBake/depositor/erc4626/ERC4626Depositor.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 97,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 19,
+          "F2_chronology_scoping_control": 10,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "stakeAndBake/depositor/erc4626/ERC4626Depositor.sol",
+          "extension": ".sol",
+          "sha256": "7d6e0f0d43e6194113941a213423ac8584357769ff523c30ea900c9981d92a92",
+          "bytes": 2641,
+          "lines": 73
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::stakeAndBake/depositor/IDepositor.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 64,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 7,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "stakeAndBake/depositor/IDepositor.sol",
+          "extension": ".sol",
+          "sha256": "7b03559c01d3ed04186049b51945377017cfaa414c94a6ec3e7502cdd8bd42fb",
+          "bytes": 958,
+          "lines": 25
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Solidity::stakeAndBake/depositor/strategy/MultiAssetDepositStrategyDepositor.sol",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Solidity",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Solidity",
+        "paradigm": "static_evm_contract",
+        "text_available": true,
+        "token_count": 88,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 16,
+          "F2_chronology_scoping_control": 9,
+          "F3_evidence_functions_closures": 5,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "stakeAndBake/depositor/strategy/MultiAssetDepositStrategyDepositor.sol",
+          "extension": ".sol",
+          "sha256": "a4c3a963aa1e421c552cbc47be1fea9ae21315e66806912583685f5afa36a881",
+          "bytes": 2551,
+          "lines": 73
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    }
+  ]
+}
