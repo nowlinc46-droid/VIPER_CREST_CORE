@@ -13,9 +13,11 @@ Welcome to the **ViperCrest Obsidian Vault**. This vault serves as the centraliz
 - [[HTTPS Intake & Security Model|HTTPS Intake & Security Boundary]]: Domain allowlisting, cryptographic request signing, TLS validation, and payload integrity.
 
 ### 2. ⚡ [[Shorthand Commands Quick Reference]]
-- [[CLI Launcher (vc & vipercrest)|CLI Launcher]]: Universal entrypoints (`vc`, `vipercrest`, `vcm`, `vco`, `vcoff`).
+- [[CLI Launcher (vc & vipercrest)|CLI Launcher]]: Universal entrypoints (`vc`, `vipercrest`, `vcm`, `vco`, `vcoff`, `vci`).
 - [[Universal 9x9 Syntax Bridge (vcb)|Universal 9x9 Syntax Bridge]]: `vcb` / `vc-bridge` syntax transformation engine.
 - [[Foundry Bridge (vcf)|Foundry Bridge]]: `vcf` / `vc-foundry` simulation environment adapter.
+- [[Phone & USB Intake (vci)|Phone & USB Intake Pipeline]]: `vci` / `vc-intake` Stage F1 ground-truth extraction and dropzone intake.
+- [[Immunefi Top 10 Audit (vca)|Immunefi Security Audit]]: `vca` / `vc-audit` automated invariant verification engine.
 - [[Diagnostic Probes (vcp)|Diagnostic Probes]]: `vcp` / `vc-probe` matrix verification routines.
 - [[Offline Analytics & Database (vcs)|Offline Analytics]]: `vcs` / `vc-status` state database queries and variance auditing.
 
@@ -49,6 +51,8 @@ Open the interactive canvas to explore the visual node graph and data flow:
 | `vcp` | Run Diagnostics Probes | `probes\` |
 | `vcb` | Universal 9x9 Agnostic Syntax | `bridge_9x9_syntax.py` |
 | `vcf` | Foundry Simulation Bridge | `bridge_foundry.py` |
+| `vci` | Phone / USB Data Intake Pipeline | `phone_intake.py` |
+| `vca` | Immunefi Top 10 Security Audit | `audit_immunefi.py` |
 | `vch` | Interactive Command Help | Command Catalog |
 
 ---

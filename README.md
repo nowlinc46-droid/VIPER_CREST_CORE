@@ -93,6 +93,8 @@ For rapid command-line execution from any directory on PATH:
 | `vcoff` | `vc-offline` | Run offline management, intent replay, or analytics (`vipercrest offline %*`) |
 | `vcb` | `vc-bridge` | Run Universal Agnostic F1-F9 Syntax Bridge (`bridge_9x9_syntax.py %*`) |
 | `vcf` | `vc-foundry` | Run Foundry Simulation Bridge (`bridge_foundry.py %*`) |
+| `vci` | `vc-intake` | Run Phone / USB Device Data Intake Engine (`phone_intake.py %*`) |
+| `vca` | `vc-audit` | Run Immunefi Top 10 Invariant Security Audit (`audit_immunefi.py %*`) |
 | `vct` | `vc-test` | Execute full test suite via unittest discovery (`tests\`) |
 | `vcp` | `vc-probe` | Run diagnostic matrix probes (`probe_matrix.py` & `probe_matrix_v2.py`) |
 | `vcs` | `vc-status` | Run database analytics and state check (`vipercrest offline --analytics`) |

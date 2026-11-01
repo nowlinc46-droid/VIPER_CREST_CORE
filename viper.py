@@ -9,12 +9,15 @@ COMMANDS = {
     "online": "network_adapter",
     "matrix": "viper_matrix",
     "offline": "viper_core",
+    "intake": "phone_intake",
 }
 
 ALIASES = {
     "on": "online",
     "m": "matrix",
     "off": "offline",
+    "in": "intake",
+    "i": "intake",
 }
 
 

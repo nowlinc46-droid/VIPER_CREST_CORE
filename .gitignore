@@ -35,6 +35,10 @@ htmlcov/
 # Dynamic runtime sessions and temporary staging
 runtime/sessions/
 runtime/staging/
+runtime/fixtures/
+runtime/dropzone/
+runtime/intents/
+runtime/probes/
 runtime/*.tmp
 runtime/*.log
 runtime/*.db-shm
