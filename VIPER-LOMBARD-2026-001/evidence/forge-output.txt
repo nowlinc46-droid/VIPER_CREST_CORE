@@ -1,0 +1,20 @@
+﻿Compiling 3 files with Solc 0.8.24
+Solc 0.8.24 finished in 578.18ms
+Compiler run successful!
+
+Ran 12 tests for test/RateLimitsValidationTest.t.sol:RateLimitsValidationTest
+[PASS] test_BackwardHydration_PredecessorBaselineDerived() (gas: 9839)
+[PASS] test_BridgeV2_ABControl_NonzeroWindowVsZeroWindow() (gas: 398788)
+[PASS] test_BridgeV2_Authorization_NonOwnerReverted() (gas: 39875)
+[PASS] test_BridgeV2_Reachability_RateLimitBypass() (gas: 264750)
+[PASS] test_FixValidation_PatchedRateLimits_PreservesNormalOperation() (gas: 126288)
+[PASS] test_FixValidation_PatchedRateLimits_RejectsZeroWindow() (gas: 24268)
+[PASS] test_ForwardCandidate_PredictiveContainment_RateLimitExceeded() (gas: 62961)
+[PASS] test_ForwardCandidate_RevertPreservesState() (gas: 66549)
+[PASS] test_PresentState_NominalTransfer_Succeeds() (gas: 32081)
+[PASS] test_ZeroLimitConfiguration_AcceptedOrRejected() (gas: 10068)
+[PASS] test_ZeroWindowConfiguration_AcceptedOrRejected() (gas: 9625)
+[PASS] test_ZeroWindow_SilentlyBypassesRateLimiting() (gas: 33836)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 7.85ms (10.59ms CPU time)
+
+Ran 1 test suite in 15.17ms (7.85ms CPU time): 12 tests passed, 0 failed, 0 skipped (12 total tests)

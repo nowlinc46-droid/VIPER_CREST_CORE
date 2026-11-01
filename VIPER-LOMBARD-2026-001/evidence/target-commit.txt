@@ -1,0 +1,9 @@
+Repository: lombard-finance/evm-smart-contracts
+Target Commit: 7fe83e54b6305a415951d3e8e19c3c13ff95f419
+Commit Message: Merge pull request #571 from lombard-finance/fix/bridge-doc-about-replay-protection
+Compiler: Solc 0.8.24
+Affected Files:
+- contracts/libs/RateLimits.sol
+- contracts/bridge/BridgeV2.sol
+Target Deployed Address (Ethereum Mainnet):
+- BridgeV2: 0x451c54981C7DA5d95901b770C540547cF5FE0A2D (as listed in mainnet.json)
