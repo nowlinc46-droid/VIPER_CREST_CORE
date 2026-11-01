@@ -1,0 +1,32 @@
+{
+  "project": "raydium-io/raydium-cp-swap",
+  "name": "Raydium Constant Product Swap (CP-Swap)",
+  "ecosystem": "solana",
+  "framework": "anchor",
+  "root_path": "C:/ViperCrest/targets/raydium-cp-swap/programs/cp-swap",
+  "modules": [
+    "lib.rs",
+    "curve/calculator.rs",
+    "curve/constant_product.rs",
+    "curve/fees.rs",
+    "instructions/initialize.rs",
+    "instructions/deposit.rs",
+    "instructions/withdraw.rs",
+    "instructions/swap_base_input.rs",
+    "instructions/swap_base_output.rs",
+    "states/pool.rs",
+    "states/config.rs"
+  ],
+  "roles": [
+    "admin",
+    "creator",
+    "fund_fee_recipient",
+    "protocol_fee_recipient"
+  ],
+  "invariants": [
+    "Constant-product curve invariant (x * y = k)",
+    "Slippage bounds (minimum output / maximum input limits)",
+    "PDA authorization and SPL token account validation",
+    "Fee bounds strictly capped by configuration max limits"
+  ]
+}

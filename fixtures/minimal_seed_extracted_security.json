@@ -445,6 +445,8 @@
         "status": "POSSIBLE",
         "rule": "bounded_reachability_candidate"
       }
-    ]
+    ],
+    "plain_english_report": null,
+    "grammar_envelope": null
   }
 }

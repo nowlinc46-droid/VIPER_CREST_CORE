@@ -53,3 +53,7 @@ runtime/foundry_validation/cache/
 consolidated/
 consolidated_versions/
 consolidation/
+
+# Cloned target repositories
+targets/ethena-usdtb/
+targets/raydium-cp-swap/

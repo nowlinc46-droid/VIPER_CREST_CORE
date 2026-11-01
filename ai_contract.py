@@ -312,7 +312,10 @@ class ViperCrestContractExecutor:
                 break
 
         # 2. ViperCrest Natural Hydration (VIPERCREST_AUTHORITY)
-        is_code = bool(re.search(r"pragma solidity|\bcontract\b|\blibrary\b|\binterface\b", combined_seed, re.IGNORECASE)) or (bool(target_filename) and target_filename.endswith(".sol"))
+        is_code = (
+            bool(re.search(r"pragma solidity|\bcontract\b|\blibrary\b|\binterface\b|\bpub fn\b|\buse anchor_lang\b|#\[program\]", combined_seed, re.IGNORECASE))
+            or (bool(target_filename) and any(target_filename.endswith(ext) for ext in [".sol", ".rs", ".py"]))
+        )
         is_manifest = (bool(target_filename) and target_filename.endswith(".json")) and '"project"' in combined_seed
         if is_code:
             tms = re_eng.parse_raw_code_stream(combined_seed, filename=target_filename or "TargetSource.sol", cartridge=cart_spec)

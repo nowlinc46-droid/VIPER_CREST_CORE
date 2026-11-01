@@ -382,6 +382,8 @@
         "status": "POSSIBLE",
         "rule": "forward_adjudication_candidate"
       }
-    ]
+    ],
+    "plain_english_report": null,
+    "grammar_envelope": null
   }
 }

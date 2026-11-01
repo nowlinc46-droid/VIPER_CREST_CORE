@@ -1,0 +1,23 @@
+{
+  "project": "ethena-labs/ethena-usdtb-contest",
+  "name": "Ethena USDtb Peg Stability Module (PSM)",
+  "address": "0x73E35C5c35A274E34AdE6EB13cC7f62aEE323728",
+  "chain": "ethereum-mainnet",
+  "root_path": "C:/ViperCrest/targets/ethena-usdtb/contracts",
+  "modules": [
+    "USDtb.sol",
+    "USDtbMinting.sol",
+    "SingleAdminAccessControl.sol"
+  ],
+  "roles": [
+    "DEFAULT_ADMIN_ROLE",
+    "MINTER_ROLE",
+    "GATEKEEPER_ROLE",
+    "BURNER_ROLE"
+  ],
+  "invariants": [
+    "Mint and redeem volume bounded by per-block rate limits",
+    "Custody addresses protected by zero-address checks and access control",
+    "Reentrancy guards on external asset transfers"
+  ]
+}
