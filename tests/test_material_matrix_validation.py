@@ -81,7 +81,7 @@ class MaterialMatrixValidationTests(unittest.TestCase):
         suite = test_data.get("test/RateLimitsValidationTest.t.sol:RateLimitsValidationTest", {})
         test_results = suite.get("test_results", {})
 
-        # Assert all 3 independent test cases PASSED
+        # Assert all independent test cases PASSED
         backward_test = test_results.get("test_BackwardHydration_PredecessorBaselineDerived()")
         self.assertIsNotNone(backward_test)
         self.assertEqual(backward_test.get("status"), "Success", "Backward hydration baseline test must PASS")
@@ -89,6 +89,22 @@ class MaterialMatrixValidationTests(unittest.TestCase):
         forward_test = test_results.get("test_ForwardCandidate_PredictiveContainment_RateLimitExceeded()")
         self.assertIsNotNone(forward_test)
         self.assertEqual(forward_test.get("status"), "Success", "Forward containment candidate test must PASS")
+
+        revert_preserve_test = test_results.get("test_ForwardCandidate_RevertPreservesState()")
+        self.assertIsNotNone(revert_preserve_test)
+        self.assertEqual(revert_preserve_test.get("status"), "Success", "State preservation after revert must PASS")
+
+        zero_limit_test = test_results.get("test_ZeroLimitConfiguration_AcceptedOrRejected()")
+        self.assertIsNotNone(zero_limit_test)
+        self.assertEqual(zero_limit_test.get("status"), "Success", "Zero limit acceptance test must PASS")
+
+        zero_window_test = test_results.get("test_ZeroWindowConfiguration_AcceptedOrRejected()")
+        self.assertIsNotNone(zero_window_test)
+        self.assertEqual(zero_window_test.get("status"), "Success", "Zero window execution test must PASS")
+
+        bypass_test = test_results.get("test_ZeroWindow_SilentlyBypassesRateLimiting()")
+        self.assertIsNotNone(bypass_test)
+        self.assertEqual(bypass_test.get("status"), "Success", "Zero window rate limit bypass proof must PASS")
 
         present_test = test_results.get("test_PresentState_NominalTransfer_Succeeds()")
         self.assertIsNotNone(present_test)
