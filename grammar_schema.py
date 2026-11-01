@@ -11,10 +11,11 @@ The universal receiving grammar schema for ViperCrest:
 """
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import asdict, dataclass, field
 from enum import Enum
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 
 class PrimitiveWordClass(str, Enum):
@@ -179,6 +180,23 @@ class GrammarEnvelope:
     clauses: List[GrammarClause] = field(default_factory=list)
     transitions: List[StateTransitionPair] = field(default_factory=list)
 
+    def canonical_summary(self) -> Dict[str, str]:
+        """Returns canonical reduction summary (e.g. {'ENTITY': 'door', 'ACTION': 'open'})."""
+        res = {}
+        if self.entities:
+            res["ENTITY"] = self.entities[0].value
+        if self.actions:
+            res["ACTION"] = self.actions[0].value
+        elif self.state:
+            res["ACTION"] = self.state
+        if self.properties:
+            res["PROPERTY"] = self.properties[0].value
+        if self.state and "ACTION" not in res:
+            res["STATE"] = self.state
+        if self.time:
+            res["TIME"] = self.time
+        return res
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "grammar": {
@@ -295,13 +313,63 @@ def classify_word(token: str) -> Tuple[PrimitiveWordClass, str]:
     return PrimitiveWordClass.NOUN, lowered
 
 
-def parse_basic_grammar(text: str) -> GrammarEnvelope:
+def parse_basic_grammar(text_or_data: Union[str, Dict[str, Any]]) -> GrammarEnvelope:
     """
-    Parses natural language text into the ViperCrest Basic Grammar Schema v0.1.
-    Preserves element provenance, character offsets, relationships, and state transitions.
+    Parses natural language, OS/sensor telemetry, or structured device events
+    into the ViperCrest Basic Grammar Schema v0.1.
+    All three input modalities converge toward equivalent canonical reductions:
+      - English: "The door opened."
+      - OS/sensor: door.state = open
+      - Device event: {"device": "door", "event": "opened"}
+      ==> ENTITY = door, ACTION = open
     """
-    clean_text = text.strip()
     envelope = GrammarEnvelope()
+
+    # 1. Modality: Structured Device Event (JSON object or dict)
+    if isinstance(text_or_data, dict) or (isinstance(text_or_data, str) and text_or_data.strip().startswith("{") and text_or_data.strip().endswith("}")):
+        try:
+            data = text_or_data if isinstance(text_or_data, dict) else json.loads(text_or_data)
+        except Exception:
+            data = {}
+
+        ent_key = next((k for k in ["device", "entity", "target", "subject", "unit_id", "id"] if k in data), None)
+        ent_val = str(data[ent_key]).lower() if ent_key else "device"
+        ent_elem = GrammarElement(type="ENTITY", value=ent_val, source_text=str(data.get(ent_key, ent_val)), position=0, word_class="NOUN")
+        envelope.entities.append(ent_elem)
+
+        evt_key = next((k for k in ["event", "action", "predicate", "verb", "state", "status"] if k in data), None)
+        if evt_key:
+            raw_evt = str(data[evt_key])
+            w_cls, lemma = classify_word(raw_evt)
+            act_elem = GrammarElement(type="ACTION", value=lemma, source_text=raw_evt, position=1, word_class=w_cls.value)
+            envelope.actions.append(act_elem)
+            if raw_evt.lower() in STATE_WORDS:
+                envelope.state = lemma
+            envelope.relations.append(GrammarRelation(source=ent_val, relation_type="PERFORMS", target=lemma, source_element=ent_elem, target_element=act_elem))
+            envelope.clauses.append(GrammarClause(subject=ent_elem, predicate=act_elem, state=act_elem if raw_evt.lower() in STATE_WORDS else None))
+        return envelope
+
+    clean_text = str(text_or_data).strip()
+
+    # 2. Modality: OS / Sensor Key-Value Telemetry (e.g. door.state = open or door.status: open)
+    match_sensor = re.match(r"^([a-zA-Z0-9_\-]+)\.(state|status|event|action|mode)\s*[:=]\s*([a-zA-Z0-9_\-]+)$", clean_text, re.IGNORECASE)
+    if match_sensor:
+        ent_raw = match_sensor.group(1)
+        val_raw = match_sensor.group(3)
+
+        ent_elem = GrammarElement(type="ENTITY", value=ent_raw.lower(), source_text=ent_raw, position=0, word_class="NOUN")
+        envelope.entities.append(ent_elem)
+
+        w_cls, lemma = classify_word(val_raw)
+        act_elem = GrammarElement(type="ACTION", value=lemma, source_text=val_raw, position=clean_text.find(val_raw), word_class=w_cls.value)
+        envelope.actions.append(act_elem)
+        if val_raw.lower() in STATE_WORDS:
+            envelope.state = lemma
+        envelope.relations.append(GrammarRelation(source=ent_raw.lower(), relation_type="PERFORMS", target=lemma, source_element=ent_elem, target_element=act_elem))
+        envelope.clauses.append(GrammarClause(subject=ent_elem, predicate=act_elem, state=act_elem if val_raw.lower() in STATE_WORDS else None))
+        return envelope
+
+    # 3. Modality: Natural Language Sentence / Clause
 
     # Split into raw token spans with exact start positions
     token_spans: List[Tuple[str, int]] = []

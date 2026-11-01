@@ -152,6 +152,30 @@ class GrammarSchemaTests(unittest.TestCase):
         self.assertIn("clauses", g)
         self.assertIn("transitions", g)
 
+    def test_09_tri_source_convergence_english_sensor_event(self):
+        """Test 9: English ('The door opened.'), OS/sensor ('door.state = open'), and Device Event (JSON) converge."""
+        # 1. English
+        env_eng = gs.parse_basic_grammar("The door opened.")
+        # 2. OS/sensor
+        env_sensor = gs.parse_basic_grammar("door.state = open")
+        # 3. Device event
+        env_event = gs.parse_basic_grammar('{"device": "door", "event": "opened"}')
+
+        # All three must produce identical canonical summaries: ENTITY = door, ACTION = open
+        self.assertEqual(env_eng.canonical_summary(), {"ENTITY": "door", "ACTION": "open"})
+        self.assertEqual(env_sensor.canonical_summary(), {"ENTITY": "door", "ACTION": "open"})
+        self.assertEqual(env_event.canonical_summary(), {"ENTITY": "door", "ACTION": "open"})
+
+        # Entity values identical
+        self.assertEqual(env_eng.entities[0].value, "door")
+        self.assertEqual(env_sensor.entities[0].value, "door")
+        self.assertEqual(env_event.entities[0].value, "door")
+
+        # Action values identical
+        self.assertEqual(env_eng.actions[0].value, "open")
+        self.assertEqual(env_sensor.actions[0].value, "open")
+        self.assertEqual(env_event.actions[0].value, "open")
+
 
 if __name__ == "__main__":
     unittest.main()
