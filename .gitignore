@@ -45,6 +45,7 @@ runtime/*.log
 runtime/*.db-shm
 runtime/*.db-wal
 fixtures/ai_contract_*.json
+evm-smart-contracts/
 
 # Archived consolidation dumps
 consolidated/

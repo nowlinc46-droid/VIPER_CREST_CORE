@@ -1,0 +1,19 @@
+{
+  "project": "lombard-finance/evm-smart-contracts",
+  "commit": "7fe83e5",
+  "root_path": "C:/ViperCrest/evm-smart-contracts/contracts",
+  "alternate_path": "C:/Users/nowli/Downloads/evm-smart-contracts/contracts",
+  "modules": [
+    "bridge",
+    "LBTC",
+    "bascule",
+    "consortium",
+    "gmp",
+    "ibc",
+    "PoR",
+    "pmm",
+    "stakeAndBake",
+    "strategy"
+  ],
+  "candidates": []
+}
