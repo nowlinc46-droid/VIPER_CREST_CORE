@@ -43,3 +43,8 @@ runtime/*.tmp
 runtime/*.log
 runtime/*.db-shm
 runtime/*.db-wal
+
+# Archived consolidation dumps
+consolidated/
+consolidated_versions/
+consolidation/
