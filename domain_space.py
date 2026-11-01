@@ -209,6 +209,7 @@ class TemporalMatrixSpace:
     cartridge: CartridgeSpec = field(default_factory=lambda: DEFAULT_SECURITY_CARTRIDGE)
     transition_receipts: List[Dict[str, Any]] = field(default_factory=list)
     plain_english_report: Optional[Dict[str, Any]] = None
+    grammar_envelope: Optional[Dict[str, Any]] = None
 
     def __post_init__(self):
         if not self.positions:
@@ -239,6 +240,7 @@ class TemporalMatrixSpace:
                 },
                 "relationships": self.relationships,
                 "plain_english_report": self.plain_english_report,
+                "grammar_envelope": self.grammar_envelope,
             }
         }
 
@@ -250,6 +252,7 @@ class TemporalMatrixSpace:
         tms = cls(center=center, cartridge=cartridge or DEFAULT_SECURITY_CARTRIDGE)
         tms.relationships = ts.get("relationships", [])
         tms.plain_english_report = ts.get("plain_english_report")
+        tms.grammar_envelope = ts.get("grammar_envelope")
 
         for phase in TEMPORAL_PHASES:
             raw_space = positions_raw.get(phase)

@@ -251,6 +251,7 @@ class AuthoritativeResponseEnvelope:
     f7_uncertainty_preserved: bool
     question_answers: List[Dict[str, Any]] = field(default_factory=list)
     plain_english_report: Optional[Dict[str, Any]] = None
+    grammar_envelope: Optional[Dict[str, Any]] = None
     error_message: Optional[str] = None
     timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 
@@ -320,6 +321,15 @@ class ViperCrestContractExecutor:
         else:
             tms = hydrate_from_minimal_seed(combined_seed, cart_spec)
 
+        import grammar_schema as gs
+        grammar_env = getattr(tms, "grammar_envelope", None)
+        if not grammar_env:
+            try:
+                grammar_env = gs.parse_basic_grammar(combined_seed).to_dict()
+                tms.grammar_envelope = grammar_env
+            except Exception:
+                grammar_env = None
+
         plain_report = getattr(tms, "plain_english_report", None)
         coords_81 = tms.get_all_81_coordinates()
         for c in coords_81:
@@ -377,6 +387,7 @@ class ViperCrestContractExecutor:
             f7_uncertainty_preserved=tensor_eval["summary"]["unresolved_f7_cells"] > 0,
             question_answers=question_answers,
             plain_english_report=plain_report,
+            grammar_envelope=grammar_env,
             error_message=error_msg,
         )
 
