@@ -39,10 +39,12 @@ runtime/fixtures/
 runtime/dropzone/
 runtime/intents/
 runtime/probes/
+runtime/ai/
 runtime/*.tmp
 runtime/*.log
 runtime/*.db-shm
 runtime/*.db-wal
+fixtures/ai_contract_*.json
 
 # Archived consolidation dumps
 consolidated/
