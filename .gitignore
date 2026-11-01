@@ -46,6 +46,8 @@ runtime/*.db-shm
 runtime/*.db-wal
 fixtures/ai_contract_*.json
 evm-smart-contracts/
+runtime/foundry_validation/out/
+runtime/foundry_validation/cache/
 
 # Archived consolidation dumps
 consolidated/
