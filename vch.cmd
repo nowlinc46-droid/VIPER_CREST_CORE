@@ -1,39 +1,31 @@
 @echo off
 echo ================================================================================
-echo                    VIPERCREST COMMAND AND SHORTHAND INDEX                        
+echo               VIPERCREST REAL-WORLD ACTION COMMAND INDEX                        
 echo ================================================================================
 echo.
-echo [1] CLI EXECUTION SHORTHANDS
-echo   vcai   (vc-ai)        : AI Plain-English Reader and Invariant Scanner
-echo   vcm    (vc-matrix)    : F1-F9 Temporal Matrix Engine (81 states / 729 tensor)
-echo   vcf    (vc-foundry)   : Foundry EVM Simulation and Fuzzing Bridge
-echo   vcb    (vc-bridge)    : Universal 9x9 Agnostic Syntax Bridge
-echo   vci    (vc-intake)    : Phone / USB / Dropzone Telemetry Intake Pipeline
-echo   vcread (vc-reader)    : Multi-Cartridge Raw Stream Reader (Security/Legal/WMS)
-echo   vca    (vc-audit)     : Immunefi Top 10 Invariant Security Audit
-echo   vcbk   (vc-benchmark) : Tri-Cartridge Domain Benchmark and Tensor Proof
-echo   vchyd  (vc-hydrate)   : Minimal Seed -^> Natural Tensor Hydration Benchmark
-echo   vct    (vc-test)      : Full Unit Test Suite (120/120 passing)
-echo   vcs    (vc-status)    : Runtime State Ledger and SQLite Health Check
-echo   vcp    (vc-probe)     : Diagnostic Probes (probe_matrix.py)
-echo   vch    (vc-help)      : Display this complete shorthand index
+echo [1] REAL-WORLD OPERATIONAL JOBS
+echo   vc-scan         (vcscan) : Universal Scanner for any contract, file, or address
+echo   vc-audit-evm    (vcae)   : Immunefi Top 10 Invariant Audit for Solidity/EVM targets
+echo   vc-audit-solana (vcas)   : Invariant Audit for Solana / Anchor Rust targets
+echo   vc-device-audit (vcda)   : Live Hardware Forensic and Rootkit Detection (USB/Phone)
+echo   vc-drop-intake  (vcdrop) : Ingest, SHA-256 hash, and ledger dropped incident files
+echo   vc-sandbox      (vcsb)   : Launch private local Anvil testnet (http://127.0.0.1:8545)
+echo   vc-purge        (vcpurge): Safe self-scrub of ephemeral caches (preserves ledger)
+echo   vc-ledger       (vcl)    : Inspect SQLite state ledger, block counts, and receipts
 echo.
-echo [2] TARGET RESOLUTION SHORTHANDS  (Usage: vcai "Scan <target>")
-echo   lombard               : Lombard LBTC Bridge and Vaults (targets/lombard.json)
-echo   ethena                : Ethena USDtb Peg Stability Module (targets/ethena_usdtb.json)
-echo   raydium               : Raydium Solana CP-Swap AMM (targets/raydium_cp_swap.json)
-echo   0x73E3...             : Ethereum USDtb Mainnet Contract
-echo   USDtb.sol             : Ethena RWA Token Contract
-echo   USDtbMinting.sol      : Ethena PSM and Minting Engine
-echo   constant_product.rs   : Solana AMM Curve Math Engine (Rust)
-echo   lib.rs                : Solana Anchor Program Entrypoint (Rust)
-echo   hospital              : Medical Device / Network Incident Stream (raw_hospital.log)
-echo   lease                 : CourtForge Commercial Lease Breach (raw_lease_dispute.txt)
-echo   reefer                : HACCP Cold-Chain Cargo Telemetry (raw_reefer_telemetry.csv)
+echo [2] CORE MATRIX AND COMPUTATIONAL TOOLS
+echo   vcai   (vc-ai)           : Interactive Plain-English AI Security Shell
+echo   vcm    (vc-matrix)       : F1-F9 Temporal Matrix Engine (81 states / 729 tensor)
+echo   vcf    (vc-foundry)      : Foundry EVM Simulation and Fuzzing Bridge
+echo   vcb    (vc-bridge)       : Universal 9x9 Agnostic Syntax Bridge
+echo   vct    (vc-test)         : Run Complete Unit Test Suite (120/120 passing)
+echo   vcp    (vc-probe)        : Run Diagnostic Stress Probes (probe_matrix.py)
+echo   vch    (vc-help)         : Display this real-world command index
 echo.
-echo [3] INTERACTIVE AND REPL SHORTCUTS
-echo   vcai                  : Launch interactive plain-English conversation shell
-echo   anvil                 : Launch local private testnet node (http://127.0.0.1:8545)
+echo [3] UNIVERSAL SYNTAX SUPPORT (Zero-Configuration Intake)
+echo   Smart Contracts : Solidity (.sol), Vyper (.vy), Rust Anchor (.rs), Move (.move), Cairo (.cairo)
+echo   Systems / Web3  : Go (.go), Python (.py), TypeScript (.ts), JavaScript (.js), C/C++ (.c, .cpp)
+echo   Bytecode / Drops: EVM Bytecode (.hex, .bin), Telemetry (.json, .csv, .log, .raw)
 echo.
 echo ================================================================================
 exit /b 0

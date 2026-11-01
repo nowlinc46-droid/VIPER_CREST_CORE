@@ -313,8 +313,8 @@ class ViperCrestContractExecutor:
 
         # 2. ViperCrest Natural Hydration (VIPERCREST_AUTHORITY)
         is_code = (
-            bool(re.search(r"pragma solidity|\bcontract\b|\blibrary\b|\binterface\b|\bpub fn\b|\buse anchor_lang\b|#\[program\]", combined_seed, re.IGNORECASE))
-            or (bool(target_filename) and any(target_filename.endswith(ext) for ext in [".sol", ".rs", ".py"]))
+            bool(re.search(r"pragma solidity|\bcontract\b|\blibrary\b|\binterface\b|\bpub fn\b|\buse anchor_lang\b|#\[program\]|@external|@internal|\bmodule \b|\bpackage \b", combined_seed, re.IGNORECASE))
+            or (bool(target_filename) and any(target_filename.endswith(ext) for ext in [".sol", ".rs", ".vy", ".move", ".cairo", ".go", ".py", ".ts", ".js", ".c", ".cpp", ".hex"]))
         )
         is_manifest = (bool(target_filename) and target_filename.endswith(".json")) and '"project"' in combined_seed
         if is_code:
