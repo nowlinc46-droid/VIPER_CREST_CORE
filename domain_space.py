@@ -53,6 +53,10 @@ DOMAIN_SEEDS: Tuple[str, ...] = (
     "S6", "S7", "S8", "S9",
 )
 
+# Total Dimensional Tensor Coordinate Count (F_i x S_j x T_k = 9 x 9 x 9 = 729)
+TENSOR_DIMENSIONS: Tuple[int, int, int] = (len(RUNTIME_STAGES), len(DOMAIN_SEEDS), len(TEMPORAL_PHASES))
+TOTAL_TENSOR_COORDINATES: int = len(RUNTIME_STAGES) * len(DOMAIN_SEEDS) * len(TEMPORAL_PHASES)  # 729
+
 # Valid Epistemic Hydration States
 HYDRATION_STATES = {
     "OBSERVED",
@@ -78,9 +82,9 @@ class CartridgeSpec:
                 self.seed_meanings[s] = f"seed_{s.lower()}"
 
 
-# Predefined Default Security IR Cartridge
-DEFAULT_SECURITY_CARTRIDGE = CartridgeSpec(
-    cartridge_id="SECURITY_IR_DEFAULT",
+# 1. Security IR Cartridge (cartridge_security_ir)
+cartridge_security_ir = CartridgeSpec(
+    cartridge_id="SECURITY_IR",
     name="CISA-Aligned Security Incident Response Cartridge",
     seed_meanings={
         "S1": "Identity / Credentials",
@@ -98,6 +102,72 @@ DEFAULT_SECURITY_CARTRIDGE = CartridgeSpec(
         {"id": "INV_CONTAIN_MALICIOUS", "rule": "Endpoints with confirmed anomaly must have containment asserted"},
     ],
 )
+CARTRIDGE_SECURITY_IR = cartridge_security_ir
+DEFAULT_SECURITY_CARTRIDGE = cartridge_security_ir
+
+# 2. CourtForge Legal Cartridge (cartridge_courtforge_legal)
+cartridge_courtforge_legal = CartridgeSpec(
+    cartridge_id="COURTFORGE_LEGAL",
+    name="CourtForge Legal Claims & Evidentiary Cartridge",
+    seed_meanings={
+        "S1": "Case Ingress / Party Identity",
+        "S2": "Chronological Timeline Events",
+        "S3": "Party Admissions & Key Testimony",
+        "S4": "Contradictions & Irreconcilable Conflicts",
+        "S5": "Core Claims & Dispute State",
+        "S6": "Discovery Motions & Routing",
+        "S7": "Unproduced Evidence / Unknown Claims",
+        "S8": "Statutory Bedrock & Legal Authority",
+        "S9": "Sealed Exhibit Vault / Bates-Stamped Records",
+    },
+    invariants=[
+        {"id": "INV_BATES_INTEGRITY", "rule": "All submitted exhibits must possess valid Bates stamp provenance"},
+        {"id": "INV_CONTRADICTION_LOCK", "rule": "Irreconcilable testimony must be flagged and routed to F7/F8"},
+    ],
+)
+CARTRIDGE_COURTFORGE_LEGAL = cartridge_courtforge_legal
+
+# 3. WMS Logistics Cartridge (cartridge_wms_logistics)
+cartridge_wms_logistics = CartridgeSpec(
+    cartridge_id="WMS_LOGISTICS",
+    name="Warehouse & Cold-Chain Logistics Cartridge",
+    seed_meanings={
+        "S1": "Shipper / Consignee Identity",
+        "S2": "Transit Milestone & Timestamp",
+        "S3": "Cold-Chain Sensor Telemetry",
+        "S4": "Pallet Cargo / Weight / Bill of Lading",
+        "S5": "Current Shipment Condition",
+        "S6": "Quarantine / Routing State",
+        "S7": "Uninspected Seals / Shortages",
+        "S8": "HACCP / Regulatory Invariants",
+        "S9": "Signed Proof of Delivery / Cryptographic Manifest",
+    },
+    invariants=[
+        {"id": "INV_HACCP_TEMP_BOUND", "rule": "Cold-chain temperature must not breach -18C excursion limit"},
+        {"id": "INV_CHAIN_OF_CUSTODY", "rule": "Broken container seals require immediate quarantine routing"},
+    ],
+)
+CARTRIDGE_WMS_LOGISTICS = cartridge_wms_logistics
+
+# Registry of Available Domain Cartridges
+CARTRIDGES: Dict[str, CartridgeSpec] = {
+    "security": cartridge_security_ir,
+    "security_ir": cartridge_security_ir,
+    "legal": cartridge_courtforge_legal,
+    "courtforge_legal": cartridge_courtforge_legal,
+    "logistics": cartridge_wms_logistics,
+    "wms_logistics": cartridge_wms_logistics,
+}
+
+
+def generate_tensor_coordinates() -> List[Tuple[str, str, str]]:
+    """Returns the 729 dimensional coordinates (F_i, S_j, T_k)."""
+    return [
+        (f_stage, s_seed, t_phase)
+        for f_stage in RUNTIME_STAGES
+        for s_seed in DOMAIN_SEEDS
+        for t_phase in TEMPORAL_PHASES
+    ]
 
 
 @dataclass

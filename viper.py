@@ -10,6 +10,8 @@ COMMANDS = {
     "matrix": "viper_matrix",
     "offline": "viper_core",
     "intake": "phone_intake",
+    "reader": "reader_engine",
+    "benchmark": "benchmark_runner",
 }
 
 ALIASES = {
@@ -18,6 +20,10 @@ ALIASES = {
     "off": "offline",
     "in": "intake",
     "i": "intake",
+    "read": "reader",
+    "r": "reader",
+    "bk": "benchmark",
+    "bench": "benchmark",
 }
 
 

@@ -1,0 +1,387 @@
+{
+  "case_id": "reader_extracted_logistics",
+  "observations": [
+    {
+      "id": "T4_PREDECESSOR_vs_T5_OBSERVED",
+      "baseline": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "DISPATCH_AUTHORIZED",
+          "evidence": "Origin hub sign-off"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "DEPARTURE_MILESTONE",
+          "evidence": "Departed Chicago Hub 06:00Z"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "TEMPERATURE_NOMINAL",
+          "evidence": "Baseline temp -20.2C steady"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "PALLET_CARGO_AUTHENTICATED",
+          "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "NOMINAL_TRANSIT_STABLE",
+          "evidence": "Pre-excursion nominal transit"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "ORIGINAL_ROUTE",
+          "evidence": "En route via I-55 South"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "UNINSPECTED_REAR_SEAL",
+          "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MANIFEST_DIGEST_SEALED",
+          "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "SHIPPER_CONSIGNEE_BOUND",
+          "evidence": "Shipper: BioPharma Direct -> Consignee: Metro Health Depot (Carrier: PolarLogistics)"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "TRANSIT_MILESTONE_EXCURSION",
+          "evidence": "2026-10-31T06:00Z Chicago -> 2026-10-31T14:30Z Excursion Alarm (-12.4C)"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "THERMAL_EXCURSION_ACTIVE",
+          "evidence": "Sensor temp breached -18.0C HACCP threshold (recorded -12.4C vs setpoint -20.0C)"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "PALLET_CARGO_AUTHENTICATED",
+          "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "COLD_CHAIN_COMPROMISED",
+          "evidence": "Reefer compressor fault triggered 42-minute thermal excursion above limit"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "QUARANTINE_REROUTE_ACTIVE",
+          "evidence": "Rerouted to Dallas Cold-Storage Quarantine Vault B for inspection"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "UNINSPECTED_REAR_SEAL",
+          "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MANIFEST_DIGEST_SEALED",
+          "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+        }
+      },
+      "context": {
+        "transition": "backward_provenance_bound",
+        "cartridge": "WMS_LOGISTICS"
+      }
+    },
+    {
+      "id": "T5_OBSERVED_vs_T6_SUCCESSOR",
+      "baseline": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "SHIPPER_CONSIGNEE_BOUND",
+          "evidence": "Shipper: BioPharma Direct -> Consignee: Metro Health Depot (Carrier: PolarLogistics)"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "TRANSIT_MILESTONE_EXCURSION",
+          "evidence": "2026-10-31T06:00Z Chicago -> 2026-10-31T14:30Z Excursion Alarm (-12.4C)"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "THERMAL_EXCURSION_ACTIVE",
+          "evidence": "Sensor temp breached -18.0C HACCP threshold (recorded -12.4C vs setpoint -20.0C)"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "PALLET_CARGO_AUTHENTICATED",
+          "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "COLD_CHAIN_COMPROMISED",
+          "evidence": "Reefer compressor fault triggered 42-minute thermal excursion above limit"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "QUARANTINE_REROUTE_ACTIVE",
+          "evidence": "Rerouted to Dallas Cold-Storage Quarantine Vault B for inspection"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "UNINSPECTED_REAR_SEAL",
+          "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MANIFEST_DIGEST_SEALED",
+          "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "CONSIGNEE_NOTIFIED_HOLD",
+          "evidence": "Quality hold alert transmitted"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "QUARANTINE_ARRIVAL_CHECK",
+          "evidence": "Arrival at Quarantine Vault B"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "VAULT_COOLED_STABILIZED",
+          "evidence": "Quarantine chamber at -25.0C"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "PALLET_CARGO_AUTHENTICATED",
+          "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "DISPOSITION_PENDING_QA",
+          "evidence": "Awaiting biologic potency test"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "CUSTODY_TRANSFERRED_TO_QA",
+          "evidence": "QA custody sign-off"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "UNINSPECTED_REAR_SEAL",
+          "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MANIFEST_DIGEST_SEALED",
+          "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+        }
+      },
+      "context": {
+        "transition": "forward_containment_candidate",
+        "cartridge": "WMS_LOGISTICS"
+      }
+    }
+  ],
+  "temporal_space": {
+    "center": "T5_COMPOUNDING",
+    "cartridge_id": "WMS_LOGISTICS",
+    "positions": {
+      "T1_ROOT": null,
+      "T2_VEIL": null,
+      "T3_PATH_IN": null,
+      "T4_STABILITY": {
+        "space_id": "T_MINUS_1_NOMINAL_TRANSIT",
+        "phase": "T4_STABILITY",
+        "provenance_hash": "8b319ceb8f67d433545897792d68cc797e0350784b26d7be8bcff9d0be5a6572",
+        "seeds": {
+          "S1": {
+            "label": "Shipper / Consignee Identity",
+            "state": "DISPATCH_AUTHORIZED",
+            "evidence": "Origin hub sign-off"
+          },
+          "S2": {
+            "label": "Transit Milestone & Timestamp",
+            "state": "DEPARTURE_MILESTONE",
+            "evidence": "Departed Chicago Hub 06:00Z"
+          },
+          "S3": {
+            "label": "Cold-Chain Sensor Telemetry",
+            "state": "TEMPERATURE_NOMINAL",
+            "evidence": "Baseline temp -20.2C steady"
+          },
+          "S4": {
+            "label": "Pallet Cargo / Weight / Bill of Lading",
+            "state": "PALLET_CARGO_AUTHENTICATED",
+            "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+          },
+          "S5": {
+            "label": "Current Shipment Condition",
+            "state": "NOMINAL_TRANSIT_STABLE",
+            "evidence": "Pre-excursion nominal transit"
+          },
+          "S6": {
+            "label": "Quarantine / Routing State",
+            "state": "ORIGINAL_ROUTE",
+            "evidence": "En route via I-55 South"
+          },
+          "S7": {
+            "label": "Uninspected Seals / Shortages",
+            "state": "UNINSPECTED_REAR_SEAL",
+            "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "HACCP / Regulatory Invariants",
+            "state": "HACCP_INVARIANT_PINNED",
+            "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+          },
+          "S9": {
+            "label": "Signed Proof of Delivery / Cryptographic Manifest",
+            "state": "MANIFEST_DIGEST_SEALED",
+            "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+          }
+        }
+      },
+      "T5_COMPOUNDING": {
+        "space_id": "T0_LOGISTICS_TELEMETRY",
+        "phase": "T5_COMPOUNDING",
+        "provenance_hash": "0b458b61727ae95acb3820d1f30ba621673f367046202e892874fbf1778f9106",
+        "seeds": {
+          "S1": {
+            "label": "Shipper / Consignee Identity",
+            "state": "SHIPPER_CONSIGNEE_BOUND",
+            "evidence": "Shipper: BioPharma Direct -> Consignee: Metro Health Depot (Carrier: PolarLogistics)"
+          },
+          "S2": {
+            "label": "Transit Milestone & Timestamp",
+            "state": "TRANSIT_MILESTONE_EXCURSION",
+            "evidence": "2026-10-31T06:00Z Chicago -> 2026-10-31T14:30Z Excursion Alarm (-12.4C)"
+          },
+          "S3": {
+            "label": "Cold-Chain Sensor Telemetry",
+            "state": "THERMAL_EXCURSION_ACTIVE",
+            "evidence": "Sensor temp breached -18.0C HACCP threshold (recorded -12.4C vs setpoint -20.0C)"
+          },
+          "S4": {
+            "label": "Pallet Cargo / Weight / Bill of Lading",
+            "state": "PALLET_CARGO_AUTHENTICATED",
+            "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+          },
+          "S5": {
+            "label": "Current Shipment Condition",
+            "state": "COLD_CHAIN_COMPROMISED",
+            "evidence": "Reefer compressor fault triggered 42-minute thermal excursion above limit"
+          },
+          "S6": {
+            "label": "Quarantine / Routing State",
+            "state": "QUARANTINE_REROUTE_ACTIVE",
+            "evidence": "Rerouted to Dallas Cold-Storage Quarantine Vault B for inspection"
+          },
+          "S7": {
+            "label": "Uninspected Seals / Shortages",
+            "state": "UNINSPECTED_REAR_SEAL",
+            "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "HACCP / Regulatory Invariants",
+            "state": "HACCP_INVARIANT_PINNED",
+            "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+          },
+          "S9": {
+            "label": "Signed Proof of Delivery / Cryptographic Manifest",
+            "state": "MANIFEST_DIGEST_SEALED",
+            "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+          }
+        }
+      },
+      "T6_REFRACTING": {
+        "space_id": "T_PLUS_1_QUARANTINE_CANDIDATE",
+        "phase": "T6_REFRACTING",
+        "provenance_hash": "e47176e6191e11520c6c97d281e5bb2fa9a2c632145f0e9b53e98657ebc9d1a8",
+        "seeds": {
+          "S1": {
+            "label": "Shipper / Consignee Identity",
+            "state": "CONSIGNEE_NOTIFIED_HOLD",
+            "evidence": "Quality hold alert transmitted"
+          },
+          "S2": {
+            "label": "Transit Milestone & Timestamp",
+            "state": "QUARANTINE_ARRIVAL_CHECK",
+            "evidence": "Arrival at Quarantine Vault B"
+          },
+          "S3": {
+            "label": "Cold-Chain Sensor Telemetry",
+            "state": "VAULT_COOLED_STABILIZED",
+            "evidence": "Quarantine chamber at -25.0C"
+          },
+          "S4": {
+            "label": "Pallet Cargo / Weight / Bill of Lading",
+            "state": "PALLET_CARGO_AUTHENTICATED",
+            "evidence": "BOL-994102-WMS: 14 Pallets mRNA Biologics (Lot VAX-2026-A, 4,200 kg)"
+          },
+          "S5": {
+            "label": "Current Shipment Condition",
+            "state": "DISPOSITION_PENDING_QA",
+            "evidence": "Awaiting biologic potency test"
+          },
+          "S6": {
+            "label": "Quarantine / Routing State",
+            "state": "CUSTODY_TRANSFERRED_TO_QA",
+            "evidence": "QA custody sign-off"
+          },
+          "S7": {
+            "label": "Uninspected Seals / Shortages",
+            "state": "UNINSPECTED_REAR_SEAL",
+            "evidence": "Rear container seal SEAL-8891 status unverified/tampered; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "HACCP / Regulatory Invariants",
+            "state": "HACCP_INVARIANT_PINNED",
+            "evidence": "FDA 21 CFR Part 211 / HACCP -18.0C maximum temperature boundary invariant"
+          },
+          "S9": {
+            "label": "Signed Proof of Delivery / Cryptographic Manifest",
+            "state": "MANIFEST_DIGEST_SEALED",
+            "evidence": "Cryptographic manifest SHA256: 438ddf29d06de88a..."
+          }
+        }
+      },
+      "T7_FLAME": null,
+      "T8_PATH_OUT": null,
+      "T9_STONE": null
+    },
+    "relationships": [
+      {
+        "phase": "T4_STABILITY",
+        "status": "DERIVED",
+        "rule": "bounded_predecessor_nominal_transit"
+      },
+      {
+        "phase": "T6_REFRACTING",
+        "status": "POSSIBLE",
+        "rule": "forward_quarantine_candidate"
+      }
+    ]
+  }
+}
