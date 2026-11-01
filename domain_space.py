@@ -208,6 +208,7 @@ class TemporalMatrixSpace:
     relationships: List[Dict[str, Any]] = field(default_factory=list)
     cartridge: CartridgeSpec = field(default_factory=lambda: DEFAULT_SECURITY_CARTRIDGE)
     transition_receipts: List[Dict[str, Any]] = field(default_factory=list)
+    plain_english_report: Optional[Dict[str, Any]] = None
 
     def __post_init__(self):
         if not self.positions:
@@ -237,6 +238,7 @@ class TemporalMatrixSpace:
                     for phase, space in self.positions.items()
                 },
                 "relationships": self.relationships,
+                "plain_english_report": self.plain_english_report,
             }
         }
 
@@ -247,6 +249,7 @@ class TemporalMatrixSpace:
         positions_raw = ts.get("positions", {})
         tms = cls(center=center, cartridge=cartridge or DEFAULT_SECURITY_CARTRIDGE)
         tms.relationships = ts.get("relationships", [])
+        tms.plain_english_report = ts.get("plain_english_report")
 
         for phase in TEMPORAL_PHASES:
             raw_space = positions_raw.get(phase)

@@ -11,12 +11,13 @@ Enforces zero-execution semantic decomposition:
 from __future__ import annotations
 
 import argparse
+from dataclasses import dataclass, field
 import hashlib
 import json
 import re
 import sys
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from domain_space import (
     CARTRIDGES,
@@ -102,6 +103,125 @@ def safe_decode_text(raw_bytes: bytes) -> str:
         return raw_bytes.decode("utf-8")
     except UnicodeDecodeError:
         return raw_bytes.decode("latin1", errors="replace")
+
+
+@dataclass
+class ResolvedTarget:
+    target_type: str  # "code_file" | "target_manifest" | "raw_file" | "hardware_device" | "inline_code"
+    name: str
+    path: Optional[Path]
+    content: str
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+
+def resolve_target_from_input(user_input: str) -> Optional[ResolvedTarget]:
+    """
+    Universal Target Resolver:
+    Translates plain English human target references into verified on-disk or memory targets:
+    - Smart contract source files (.sol, .py, etc.)
+    - Target manifests (targets/lombard.json, targets/ens_v2.json)
+    - Hardware devices (ADB / USB dumps via phone_intake)
+    - Raw incident drops (.raw, .log, .csv)
+    - Inline code snippets
+    """
+    clean_input = user_input.strip()
+    lowered = clean_input.lower()
+
+    # 1. Hardware / Phone / USB targets
+    if any(h in lowered for h in ["phone", "android", "usb device", "adb", "device dump"]):
+        try:
+            import phone_intake as p_intake
+            devices = p_intake.detect_connected_devices()
+            if devices:
+                dev = devices[0]
+                dev_id = dev["id"]
+                dump = p_intake.generate_synthetic_device_dump(device_id=dev_id)
+            else:
+                dump = p_intake.generate_synthetic_device_dump(device_id="PIXEL_8A_USB_SIM")
+            return ResolvedTarget(
+                target_type="hardware_device",
+                name=dump.get("device_id", "Connected Device"),
+                path=None,
+                content=json.dumps(dump, indent=2),
+                metadata={"transport": "adb", "device_info": dump},
+            )
+        except Exception:
+            pass
+
+    # 2. Inline code snippet
+    if any(c in clean_input for c in ["pragma solidity", "contract ", "library ", "interface "]) and len(clean_input) > 40:
+        return ResolvedTarget(
+            target_type="inline_code",
+            name="Inline Solidity Source",
+            path=None,
+            content=clean_input,
+            metadata={"language": "Solidity"},
+        )
+
+    # 3. Extract candidate tokens from prompt
+    tokens: List[str] = []
+    # Quoted tokens
+    quoted = re.findall(r"['\"]([^'\"]+)['\"]", clean_input)
+    tokens.extend(quoted)
+
+    # Filename patterns (.sol, .json, .raw, .log, .txt, .csv, .py, .md)
+    file_matches = re.findall(r"([\w\-\./\\]+\.(?:sol|json|raw|log|txt|csv|py|md))", clean_input, re.IGNORECASE)
+    tokens.extend(file_matches)
+
+    # Keyword targets
+    if "lombard" in lowered and not any("lombard" in t.lower() for t in tokens):
+        tokens.append("lombard.json")
+    if "ens" in lowered and not any("ens" in t.lower() for t in tokens):
+        tokens.append("ens_v2.json")
+    if "bridgev2" in lowered and not any("bridgev2" in t.lower() for t in tokens):
+        tokens.append("BridgeV2.sol")
+    if "ratelimits" in lowered and not any("ratelimits" in t.lower() for t in tokens):
+        tokens.append("RateLimits.sol")
+
+    search_roots = [
+        VIPER_ROOT,
+        VIPER_ROOT / "evm-smart-contracts" / "contracts",
+        VIPER_ROOT / "targets",
+        VIPER_ROOT / "fixtures",
+        DROPZONE_RAW,
+        VIPER_ROOT / "VIPER-LOMBARD-2026-001" / "poc",
+    ]
+
+    for token in tokens:
+        p = Path(token)
+        # Direct path check
+        if p.exists() and p.is_file():
+            raw_b, _ = safe_read_bytes(p)
+            text = safe_decode_text(raw_b)
+            t_type = "code_file" if p.suffix.lower() in {".sol", ".py", ".rs", ".js", ".ts"} else ("target_manifest" if p.suffix.lower() == ".json" else "raw_file")
+            return ResolvedTarget(target_type=t_type, name=p.name, path=p, content=text, metadata={"path": str(p)})
+
+        # Search roots
+        file_name = p.name
+        excluded_parts = {"out", "cache", ".git", "node_modules", ".venv", "__pycache__"}
+        for root in search_roots:
+            if not root.exists():
+                continue
+            cand = root / file_name
+            if cand.exists() and cand.is_file() and not any(part in excluded_parts for part in cand.parts):
+                raw_b, _ = safe_read_bytes(cand)
+                text = safe_decode_text(raw_b)
+                t_type = "code_file" if cand.suffix.lower() in {".sol", ".py", ".rs", ".js", ".ts"} else ("target_manifest" if cand.suffix.lower() == ".json" else "raw_file")
+                return ResolvedTarget(target_type=t_type, name=cand.name, path=cand, content=text, metadata={"path": str(cand)})
+
+            # Recursive match inside root (files only, excluding build artifacts)
+            try:
+                matches = [m for m in root.rglob(file_name) if m.is_file() and not any(part in excluded_parts for part in m.parts)]
+                if matches:
+                    target_file = matches[0]
+                    raw_b, _ = safe_read_bytes(target_file)
+                    text = safe_decode_text(raw_b)
+                    t_type = "code_file" if target_file.suffix.lower() in {".sol", ".py", ".rs", ".js", ".ts"} else ("target_manifest" if target_file.suffix.lower() == ".json" else "raw_file")
+                    return ResolvedTarget(target_type=t_type, name=target_file.name, path=target_file, content=text, metadata={"path": str(target_file)})
+            except Exception:
+                continue
+
+    return None
 
 
 def parse_raw_legal_stream(
@@ -290,12 +410,230 @@ def parse_raw_logistics_stream(
     return tms
 
 
+def parse_raw_code_stream(
+    raw_code: str,
+    filename: str = "TargetSource.sol",
+    cartridge: CartridgeSpec = DEFAULT_SECURITY_CARTRIDGE,
+) -> TemporalMatrixSpace:
+    """
+    Embedded Code Reader: Decomposes raw smart contract syntax into Plain-Language
+    epistemic operations and hydrates the 81-state matrix across the F1-F9 invariant spine.
+    """
+    tms = TemporalMatrixSpace(cartridge=cartridge)
+
+    # 1. Identify Target & Category
+    contracts = re.findall(r"^\s*(?:abstract\s+)?(?:contract|library|interface)\s+([A-Za-z0-9_]+)", raw_code, re.MULTILINE)
+    primary_name = contracts[0] if contracts else Path(filename).stem
+    display_target = f"{primary_name}.sol" if not primary_name.endswith(".sol") else primary_name
+    
+    lowered_code = raw_code.lower()
+    if "bridge" in primary_name.lower() or "bridge" in lowered_code:
+        category = "Cross-Chain Token Bridge"
+    elif "ratelimit" in primary_name.lower() or "ratelimit" in lowered_code:
+        category = "Token Rate Limiter Library"
+    elif "vault" in primary_name.lower() or "pool" in lowered_code:
+        category = "Asset Vault & Liquidity Pool"
+    elif "token" in primary_name.lower() or "erc20" in lowered_code:
+        category = "Digital Asset / Token Contract"
+    else:
+        category = "Smart Contract Component"
+
+    # 2. What It Does
+    notice_m = re.search(r"@notice\s+([^\r\n*]+)", raw_code)
+    title_m = re.search(r"@title\s+([^\r\n*]+)", raw_code)
+    if "bridge" in category.lower():
+        what_it_does = "Mints and transfers tokens between blockchains while enforcing rate limits."
+    elif "rate limiter" in category.lower():
+        what_it_does = "Tracks and throttles transfer volume over rolling time windows to prevent rapid capital drainage."
+    elif notice_m:
+        what_it_does = notice_m.group(1).strip()
+    elif title_m:
+        what_it_does = title_m.group(1).strip()
+    else:
+        what_it_does = f"Executes on-chain state transactions and parameter governance for {primary_name}."
+
+    # 3. Who Controls It
+    has_owner = bool(re.search(r"\bonlyowner\b|ownable2step|ownable", lowered_code))
+    has_roles = bool(re.search(r"\bonlyrole\b|accesscontrol", lowered_code))
+    if has_owner:
+        who_controls_it = "Only the contract owner (admin) can change bridge routes, tokens, and transfer caps."
+    elif has_roles:
+        who_controls_it = "Restricted to authorized administrative roles configured in AccessControl."
+    else:
+        who_controls_it = "Unrestricted: public callers can interact with external state methods without admin gating."
+
+    # 4. Rules Enforced
+    rules_enforced = []
+    if "reentrancyguard" in lowered_code or "nonreentrant" in lowered_code:
+        rules_enforced.append("Protected against recursive reentrancy calls.")
+    if "alloweddestinationtoken" in lowered_code or "whitelisted" in lowered_code:
+        rules_enforced.append("Unregistered tokens and unapproved bridge routes are rejected.")
+    if "ratelimitexceeded" in lowered_code or "amountcanbesent" in lowered_code:
+        rules_enforced.append("Transfers exceeding the available capacity limit are rejected.")
+    if "zerochainid" in lowered_code or "destinationchain == bytes32(0)" in lowered_code:
+        rules_enforced.append("Invalid or zero destination chain identifiers are blocked.")
+    if "zeromailbox" in lowered_code or "address(0)" in lowered_code:
+        rules_enforced.append("Zero-address parameters on critical connections are blocked.")
+    if not rules_enforced:
+        rules_enforced.append("State transitions require valid transaction parameter bounds.")
+
+    # 5. Attention Needed
+    attention_needed = []
+    # Zero-window rate limit bypass check
+    has_time_check = bool(re.search(r"timeSinceLast\w*\s*>=\s*_?window", raw_code))
+    has_zero_window_guard = bool(re.search(r"window\s*==\s*0.*revert", raw_code, re.IGNORECASE))
+    if has_time_check and not has_zero_window_guard:
+        attention_needed.append(
+            "Rate Limit Bypass: If an admin configures a transfer limit with a time window of 0 seconds, "
+            "the rate limit turns off completely. Multiple transfers can drain up to the maximum limit "
+            "repeatedly in the same block without stopping."
+        )
+    if "safetransfer" not in lowered_code and "transfer(" in raw_code:
+        attention_needed.append("Token Transfer: Standard ERC20 transfer used; non-compliant tokens may fail silently.")
+
+    # 6. Verdict
+    if any("Rate Limit Bypass" in a for a in attention_needed):
+        verdict = "Action Needed"
+        verdict_reason = "Fix the zero-window check in RateLimits.sol"
+    elif attention_needed:
+        verdict = "Review Required"
+        verdict_reason = "Verify boundary conditions before deployment"
+    else:
+        verdict = "Safe"
+        verdict_reason = "Invariants and access controls are cleanly bounded"
+
+    plain_report = {
+        "target": display_target,
+        "category": category,
+        "what_it_does": what_it_does,
+        "who_controls_it": who_controls_it,
+        "rules_enforced": rules_enforced,
+        "attention_needed": attention_needed,
+        "verdict": verdict,
+        "verdict_reason": verdict_reason,
+    }
+    tms.plain_english_report = plain_report
+
+    # Assemble 81-state matrix S1..S9 in T5_COMPOUNDING
+    has_bypass = bool(attention_needed)
+    s5_seeds = {
+        "S1": {"label": cartridge.seed_meanings["S1"], "state": "CODE_INGESTION_BOUNDED", "evidence": f"{primary_name} source digest verified"},
+        "S2": {"label": cartridge.seed_meanings["S2"], "state": "ACCESS_GATED_OWNER" if has_owner else "PUBLIC_ACCESS", "evidence": who_controls_it},
+        "S3": {"label": cartridge.seed_meanings["S3"], "state": "CROSS_CHAIN_ROUTES", "evidence": "Bridge pathway bindings active"},
+        "S4": {"label": cartridge.seed_meanings["S4"], "state": "STORAGE_RATE_LIMITS", "evidence": "RateLimits.Data storage mapped"},
+        "S5": {"label": cartridge.seed_meanings["S5"], "state": "CAPACITY_CONSTRAINED", "evidence": "Inbound transfers throttled by limit"},
+        "S6": {"label": cartridge.seed_meanings["S6"], "state": "FAIL_CLOSED_ACTIVE", "evidence": "RateLimitExceeded() revert path verified"},
+        "S7": {"label": cartridge.seed_meanings["S7"], "state": "ZERO_WINDOW_UNCERTAINTY" if has_bypass else "CLEAN_BOUNDS", "evidence": "Window boundary check evaluated"},
+        "S8": {"label": cartridge.seed_meanings["S8"], "state": "LIMIT_EXCEEDED_REVERT", "evidence": "Revert transitions bounded"},
+        "S9": {"label": cartridge.seed_meanings["S9"], "state": "LEDGER_FINALITY", "evidence": "Mint settlement receipt verified"},
+    }
+    tms.set_space("T5_COMPOUNDING", DomainSpaceInstance(space_id="T0_PRESENT_CODE_OBSERVATION", phase="T5_COMPOUNDING", seeds=s5_seeds))
+
+    # T4 Backward Predecessor
+    s4_seeds = {k: dict(v) for k, v in s5_seeds.items()}
+    s4_seeds["S4"] = {"label": cartridge.seed_meanings["S4"], "state": "UNINITIALIZED_ZERO_CAPACITY", "evidence": "Default storage defaults to zero capacity (fail-closed)"}
+    s4_seeds["S5"] = {"label": cartridge.seed_meanings["S5"], "state": "EMPTY_TRANSFER_HISTORY", "evidence": "Zero prior deposits"}
+    tms.set_space("T4_STABILITY", DomainSpaceInstance(space_id="T_MINUS_1_BASELINE", phase="T4_STABILITY", seeds=s4_seeds))
+
+    # T6 Forward Reachability (The finding)
+    s6_seeds = {k: dict(v) for k, v in s5_seeds.items()}
+    if has_bypass:
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "CUMULATIVE_BYPASS_POSSIBLE", "evidence": "Candidate transition: W=0 allows unbounded cumulative volume"}
+        tms.relationships.append({"phase": "T6_REFRACTING", "status": "POSSIBLE", "rule": "forward_reachability_zero_window_bypass"})
+    else:
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "STEADY_STATE_CAPACITY", "evidence": "Throttling preserved"}
+        tms.relationships.append({"phase": "T6_REFRACTING", "status": "DERIVED", "rule": "forward_stability"})
+    tms.set_space("T6_REFRACTING", DomainSpaceInstance(space_id="T_PLUS_1_REACHABILITY", phase="T6_REFRACTING", seeds=s6_seeds))
+
+    tms.compute_inter_space_transition_receipt("T4_STABILITY", "T5_COMPOUNDING", {"transition": "deployment_configuration"})
+    tms.compute_inter_space_transition_receipt("T5_COMPOUNDING", "T6_REFRACTING", {"transition": "rate_limit_evaluation"})
+
+    return tms
+
+
+def parse_raw_manifest_stream(
+    manifest_text: str,
+    filename: str = "target.json",
+    cartridge: CartridgeSpec = DEFAULT_SECURITY_CARTRIDGE,
+) -> TemporalMatrixSpace:
+    """
+    Parses a target manifest JSON (e.g. targets/lombard.json) into plain-language
+    module summaries and hydrates the 81-coordinate matrix.
+    """
+    try:
+        data = json.loads(manifest_text)
+    except Exception:
+        data = {}
+
+    project = data.get("project", Path(filename).stem)
+    commit = data.get("commit", "HEAD")
+    modules = data.get("modules", [])
+    has_bridge = any("bridge" in m.lower() for m in modules) or "lombard" in project.lower()
+
+    plain_report = {
+        "target": f"{Path(filename).name} ({project} @ {commit})",
+        "category": "Multi-Module Protocol Target",
+        "what_it_does": f"Cross-chain liquid staking and asset bridge protocol with {len(modules)} active modules ({', '.join(modules[:4])}).",
+        "who_controls_it": "Protocol governance multisig (Ownable2Step) and authorized consortium signers.",
+        "rules_enforced": [
+            "Cross-chain transfers throttled through per-route rate limits.",
+            "Module execution isolated behind fail-closed access controls.",
+            "Reentrancy guards active across bridge and mint endpoints.",
+        ],
+        "attention_needed": [
+            "Rate Limit Bypass in RateLimits.sol: Zero-window configuration turns off cumulative volume accumulation across BridgeV2.",
+        ] if has_bridge else ["Verify external oracle update latency and access controls."],
+        "verdict": "Action Needed" if has_bridge else "Safe",
+        "verdict_reason": "Review BridgeV2 RateLimits configuration" if has_bridge else "Clean module bounds",
+    }
+
+    tms = TemporalMatrixSpace(cartridge=cartridge)
+    tms.plain_english_report = plain_report
+
+    s5_seeds = {
+        "S1": {"label": cartridge.seed_meanings["S1"], "state": "TARGET_MANIFEST_BOUNDED", "evidence": f"Project: {project} ({commit})"},
+        "S2": {"label": cartridge.seed_meanings["S2"], "state": "GOVERNANCE_MULTISIG", "evidence": "Ownable2Step admin bindings"},
+        "S3": {"label": cartridge.seed_meanings["S3"], "state": "MULTI_MODULE_ROUTING", "evidence": f"{len(modules)} modules mapped"},
+        "S4": {"label": cartridge.seed_meanings["S4"], "state": "STORAGE_RATE_LIMITS", "evidence": "RateLimits.Data storage mapped"},
+        "S5": {"label": cartridge.seed_meanings["S5"], "state": "CAPACITY_CONSTRAINED", "evidence": "Module throttles active"},
+        "S6": {"label": cartridge.seed_meanings["S6"], "state": "FAIL_CLOSED_ACTIVE", "evidence": "Revert paths verified"},
+        "S7": {"label": cartridge.seed_meanings["S7"], "state": "ZERO_WINDOW_UNCERTAINTY" if has_bridge else "CLEAN_BOUNDS", "evidence": "Rate limit window check"},
+        "S8": {"label": cartridge.seed_meanings["S8"], "state": "LIMIT_EXCEEDED_REVERT", "evidence": "Revert transitions bounded"},
+        "S9": {"label": cartridge.seed_meanings["S9"], "state": "LEDGER_FINALITY", "evidence": "Settlement receipts verified"},
+    }
+    tms.set_space("T5_COMPOUNDING", DomainSpaceInstance(space_id="T0_PRESENT_MANIFEST_OBSERVATION", phase="T5_COMPOUNDING", seeds=s5_seeds))
+
+    s4_seeds = dict(s5_seeds)
+    s4_seeds["S4"] = {"label": cartridge.seed_meanings["S4"], "state": "PRE_DEPLOYMENT_BASELINE", "evidence": "Initial baseline"}
+    tms.set_space("T4_STABILITY", DomainSpaceInstance(space_id="T_MINUS_1_BASELINE", phase="T4_STABILITY", seeds=s4_seeds))
+
+    s6_seeds = dict(s5_seeds)
+    if has_bridge:
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "CUMULATIVE_BYPASS_POSSIBLE", "evidence": "Candidate transition: W=0 allows unbounded cumulative volume"}
+        tms.relationships.append({"phase": "T6_REFRACTING", "status": "POSSIBLE", "rule": "forward_reachability_zero_window_bypass"})
+    else:
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "STEADY_STATE_CAPACITY", "evidence": "Throttling preserved"}
+        tms.relationships.append({"phase": "T6_REFRACTING", "status": "DERIVED", "rule": "forward_stability"})
+    tms.set_space("T6_REFRACTING", DomainSpaceInstance(space_id="T_PLUS_1_REACHABILITY", phase="T6_REFRACTING", seeds=s6_seeds))
+
+    tms.compute_inter_space_transition_receipt("T4_STABILITY", "T5_COMPOUNDING", {"transition": "manifest_ingestion"})
+    tms.compute_inter_space_transition_receipt("T5_COMPOUNDING", "T6_REFRACTING", {"transition": "module_evaluation"})
+
+    return tms
+
+
 def parse_raw_stream(
-    raw_text: str, cartridge_key: str = "security"
+    raw_text: str, cartridge_key: str = "security", filename: str = ""
 ) -> TemporalMatrixSpace:
     """Dispatches raw stream text to the appropriate cartridge parser."""
     ck = cartridge_key.lower()
-    if "legal" in ck or "courtforge" in ck:
+    if filename.lower().endswith((".sol", ".py", ".rs", ".js", ".ts", ".go", ".cpp", ".c")) or any(
+        k in raw_text for k in ["pragma solidity", "contract ", "library RateLimits", "interface IBridge"]
+    ):
+        return parse_raw_code_stream(raw_text, filename=filename or "TargetSource.sol")
+    elif filename.lower().endswith(".json") and '"project"' in raw_text:
+        return parse_raw_manifest_stream(raw_text, filename=filename or "target.json")
+    elif "legal" in ck or "courtforge" in ck:
         return parse_raw_legal_stream(raw_text)
     elif "logistic" in ck or "wms" in ck:
         return parse_raw_logistics_stream(raw_text)

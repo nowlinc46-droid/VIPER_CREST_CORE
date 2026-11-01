@@ -91,6 +91,34 @@ def heuristic_translate_request(user_input: str) -> AIRequestEnvelope:
     clean_input = user_input.strip()
     lowered = clean_input.lower()
 
+    # 0. Check for Universal Target Resolution
+    resolved = re_eng.resolve_target_from_input(clean_input)
+    if resolved:
+        intent = "analyze"
+        action = "matrix"
+        cartridge = "security"
+        observations = [{
+            "raw_text": resolved.content,
+            "candidate_state": "INGESTION_CANDIDATE",
+            "metadata": {
+                "target_name": resolved.name,
+                "target_type": resolved.target_type,
+                "target_path": str(resolved.path) if resolved.path else "",
+            }
+        }]
+        claims = [{
+            "claim_id": "CLM-01",
+            "statement": f"Target resolved: {resolved.name} ({resolved.target_type})",
+        }]
+        return AIRequestEnvelope(
+            intent=intent,
+            cartridge=cartridge,
+            observations=observations,
+            claims=claims,
+            questions=[],
+            requested_action=action,
+        )
+
     # 1. Determine Cartridge
     if any(k in lowered for k in ["lease", "legal", "court", "breach", "tenant", "landlord", "bates"]):
         cartridge = "legal"
@@ -175,15 +203,46 @@ def translate_user_input(user_input: str) -> AIRequestEnvelope:
 
 
 def explain_response(user_input: str, auth_resp: AuthoritativeResponseEnvelope) -> str:
-    """Explains authoritative sealed results back to human language."""
-    # If Ollama is available, generate explanation with LLM
+    """Explains authoritative sealed results back to concentrated plain English."""
+    # 1. Concentrated Plain English Report (Embedded Code Reader / Target Resolver)
+    rep = auth_resp.plain_english_report
+    if rep:
+        lines = []
+        target_name = rep.get("target", "Target Component")
+        category = rep.get("category", "Component")
+        lines.append(f"\nTarget: {target_name} ({category})")
+        lines.append("")
+        lines.append("1. What It Does:")
+        lines.append(f"   {rep.get('what_it_does', 'N/A')}")
+        lines.append("")
+        lines.append("2. Who Controls It:")
+        lines.append(f"   {rep.get('who_controls_it', 'N/A')}")
+        lines.append("")
+        lines.append("3. Rules Enforced:")
+        for r in rep.get("rules_enforced", []):
+            lines.append(f"   - {r}")
+        lines.append("")
+        lines.append("4. Attention Needed:")
+        attn = rep.get("attention_needed", [])
+        if attn:
+            for a in attn:
+                lines.append(f"   - {a}")
+        else:
+            lines.append("   - None: Invariants and parameter boundaries are cleanly enforced.")
+        lines.append("")
+        verdict = rep.get("verdict", "Safe")
+        reason = rep.get("verdict_reason", "Clean")
+        lines.append(f"Verdict: {verdict} ({reason})")
+        return "\n".join(lines)
+
+    # 2. If Ollama is available, generate explanation with LLM
     if is_ollama_available():
         prompt = build_explanation_prompt(user_input, auth_resp.to_dict())
         llm_exp = call_ollama(prompt)
         if llm_exp:
             return llm_exp.strip()
 
-    # Deterministic authoritative formatter
+    # 3. Deterministic authoritative formatter (fallback)
     lines = []
     if auth_resp.question_answers:
         for qa in auth_resp.question_answers:

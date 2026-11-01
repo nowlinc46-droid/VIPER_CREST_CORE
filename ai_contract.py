@@ -36,6 +36,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import uuid
@@ -249,6 +250,7 @@ class AuthoritativeResponseEnvelope:
     session_receipt_verified: bool
     f7_uncertainty_preserved: bool
     question_answers: List[Dict[str, Any]] = field(default_factory=list)
+    plain_english_report: Optional[Dict[str, Any]] = None
     error_message: Optional[str] = None
     timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 
@@ -287,19 +289,38 @@ class ViperCrestContractExecutor:
             cart_key = "security"
 
         # 1. Synthesize Minimal / Raw Input from Observations or Claims
-        raw_seed_candidates = []
-        for obs in envelope.observations:
-            raw_seed_candidates.append(obs.get("raw_text") or obs.get("candidate_state", ""))
-        for clm in envelope.claims:
-            raw_seed_candidates.append(clm.get("statement", ""))
-
-        if raw_seed_candidates:
-            combined_seed = "\n".join(c for c in raw_seed_candidates if c)
+        if envelope.observations and envelope.observations[0].get("raw_text"):
+            combined_seed = envelope.observations[0]["raw_text"]
         else:
-            combined_seed = re_eng.SAMPLE_MINIMAL_SEEDS.get(cart_key, "ANOMALY_DETECTED")
+            raw_seed_candidates = []
+            for obs in envelope.observations:
+                raw_seed_candidates.append(obs.get("raw_text") or obs.get("candidate_state", ""))
+            for clm in envelope.claims:
+                raw_seed_candidates.append(clm.get("statement", ""))
+
+            if raw_seed_candidates:
+                combined_seed = "\n".join(c for c in raw_seed_candidates if c)
+            else:
+                combined_seed = re_eng.SAMPLE_MINIMAL_SEEDS.get(cart_key, "ANOMALY_DETECTED")
+
+        target_filename = None
+        for obs in envelope.observations:
+            meta = obs.get("metadata", {})
+            if meta.get("target_name"):
+                target_filename = meta["target_name"]
+                break
 
         # 2. ViperCrest Natural Hydration (VIPERCREST_AUTHORITY)
-        tms = hydrate_from_minimal_seed(combined_seed, cart_spec)
+        is_code = bool(re.search(r"pragma solidity|\bcontract\b|\blibrary\b|\binterface\b", combined_seed, re.IGNORECASE)) or (bool(target_filename) and target_filename.endswith(".sol"))
+        is_manifest = (bool(target_filename) and target_filename.endswith(".json")) and '"project"' in combined_seed
+        if is_code:
+            tms = re_eng.parse_raw_code_stream(combined_seed, filename=target_filename or "TargetSource.sol", cartridge=cart_spec)
+        elif is_manifest:
+            tms = re_eng.parse_raw_manifest_stream(combined_seed, filename=target_filename or "target.json", cartridge=cart_spec)
+        else:
+            tms = hydrate_from_minimal_seed(combined_seed, cart_spec)
+
+        plain_report = getattr(tms, "plain_english_report", None)
         coords_81 = tms.get_all_81_coordinates()
         for c in coords_81:
             c["contained_in_f7"] = (c.get("status") == "UNRESOLVED")
@@ -355,6 +376,7 @@ class ViperCrestContractExecutor:
             session_receipt_verified=session_verified,
             f7_uncertainty_preserved=tensor_eval["summary"]["unresolved_f7_cells"] > 0,
             question_answers=question_answers,
+            plain_english_report=plain_report,
             error_message=error_msg,
         )
 
