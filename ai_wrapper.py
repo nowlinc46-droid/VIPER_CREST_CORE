@@ -278,6 +278,13 @@ def run_single_interaction(user_input: str) -> int:
     print("VIPERCREST AI")
     print(f"> {user_input}")
 
+    if user_input.strip().lower() in {"help", "commands", "shorthand", "targets", "shorthands", "?"}:
+        help_path = VIPER_ROOT / "vc-help.cmd"
+        if help_path.exists():
+            import subprocess
+            subprocess.run([str(help_path)], shell=True)
+            return 0
+
     try:
         envelope = translate_user_input(user_input)
         executor = ViperCrestContractExecutor()
