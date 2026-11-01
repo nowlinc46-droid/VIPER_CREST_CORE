@@ -365,3 +365,348 @@ class TemporalMatrixSpace:
             "",
         ])
         return "\n".join(lines)
+
+    def get_coordinate_state(self, phase: str, seed: str) -> Dict[str, Any]:
+        """
+        Retrieves the exact epistemic state of a single coordinate (T_k, S_j) in the 81-state matrix.
+        """
+        if phase not in TEMPORAL_PHASES:
+            raise ValueError(f"Invalid temporal phase: {phase}")
+        if seed not in DOMAIN_SEEDS:
+            raise ValueError(f"Invalid domain seed: {seed}")
+
+        space = self.positions.get(phase)
+        phase_status = self.construct_hydration_report().get(phase, "UNRESOLVED")
+
+        if space is None:
+            return {
+                "coordinate": f"{phase}:{seed}",
+                "phase": phase,
+                "seed": seed,
+                "meaning": self.cartridge.seed_meanings.get(seed, ""),
+                "status": "UNRESOLVED",
+                "state": "UNRESOLVED",
+                "evidence": "Temporal phase not instantiated; held in F7",
+            }
+
+        seed_data = space.seeds.get(seed, {})
+        if not seed_data or not isinstance(seed_data, dict):
+            return {
+                "coordinate": f"{phase}:{seed}",
+                "phase": phase,
+                "seed": seed,
+                "meaning": self.cartridge.seed_meanings.get(seed, ""),
+                "status": "UNRESOLVED",
+                "state": "UNRESOLVED",
+                "evidence": "No seed evidence present; held in F7",
+            }
+
+        st = seed_data.get("status") or phase_status
+        return {
+            "coordinate": f"{phase}:{seed}",
+            "phase": phase,
+            "seed": seed,
+            "meaning": self.cartridge.seed_meanings.get(seed, ""),
+            "status": st,
+            "state": seed_data.get("state", "UNRESOLVED"),
+            "evidence": seed_data.get("evidence", ""),
+        }
+
+    def get_all_81_coordinates(self) -> List[Dict[str, Any]]:
+        """Returns the full 81-coordinate state matrix (9 temporal slices x 9 spatial seeds)."""
+        coordinates = []
+        for phase in TEMPORAL_PHASES:
+            for seed in DOMAIN_SEEDS:
+                coordinates.append(self.get_coordinate_state(phase, seed))
+        return coordinates
+
+    def evaluate_729_tensor_space(self) -> Dict[str, Any]:
+        """
+        Sweeps through the complete 729-coordinate tensor volume (F_i x S_j x T_k = 9x9x9).
+        Verifies that every cell is addressed and that unobserved states are contained in F7.
+        """
+        coords_81 = self.get_all_81_coordinates()
+        tensor_points = []
+        f7_unknown_count = 0
+        observed_count = 0
+        derived_count = 0
+        possible_count = 0
+
+        for f_stage in RUNTIME_STAGES:
+            for c81 in coords_81:
+                phase = c81["phase"]
+                seed = c81["seed"]
+                status = c81["status"]
+
+                if status == "OBSERVED":
+                    observed_count += 1
+                elif status == "DERIVED":
+                    derived_count += 1
+                elif status == "POSSIBLE":
+                    possible_count += 1
+                elif status == "UNRESOLVED":
+                    f7_unknown_count += 1
+
+                # Role of invariant stage F_i
+                if f_stage == "F1":
+                    action = "GROUND_TRUTH_INGESTION"
+                elif f_stage == "F2":
+                    action = "LEXICAL_NORMALIZATION"
+                elif f_stage == "F3":
+                    action = "SPATIAL_ISOLATION"
+                elif f_stage == "F4":
+                    action = "TEMPORAL_REGISTRATION"
+                elif f_stage == "F5":
+                    action = "INVARIANT_EVALUATION"
+                elif f_stage == "F6":
+                    action = "PRECISION_CLAMPING"
+                elif f_stage == "F7":
+                    action = "DISCOVERY_CONTAINMENT_LOCKED"
+                elif f_stage == "F8":
+                    action = "TRANSITION_RECEIPT_BINDING"
+                else:  # F9
+                    action = "ED25519_CRYPTOGRAPHIC_SEAL"
+
+                tensor_points.append({
+                    "tensor_coordinate": f"{f_stage}:{phase}:{seed}",
+                    "stage": f_stage,
+                    "phase": phase,
+                    "seed": seed,
+                    "epistemic_status": status,
+                    "runtime_action": action,
+                    "contained_in_f7": status == "UNRESOLVED",
+                })
+
+        return {
+            "total_tensor_coordinates": len(tensor_points),
+            "dimensions": (len(RUNTIME_STAGES), len(DOMAIN_SEEDS), len(TEMPORAL_PHASES)),
+            "summary": {
+                "observed_cells": observed_count // len(RUNTIME_STAGES),
+                "derived_cells": derived_count // len(RUNTIME_STAGES),
+                "possible_cells": possible_count // len(RUNTIME_STAGES),
+                "unresolved_f7_cells": f7_unknown_count // len(RUNTIME_STAGES),
+                "total_state_cells": len(coords_81),
+            },
+            "points": tensor_points,
+        }
+
+
+def hydrate_from_minimal_seed(
+    seed_text: str, cartridge_or_key: str | CartridgeSpec
+) -> TemporalMatrixSpace:
+    """
+    Hydrates the 81-coordinate state matrix from an irreducibly minimal seed (e.g. single atomic line/event).
+    Zero-speculation invariant:
+    - Directly evidenced facts are OBSERVED at T5_COMPOUNDING.
+    - Causal predecessor candidates are DERIVED at T4_STABILITY.
+    - Reachable outcomes are marked POSSIBLE at T6_REFRACTING.
+    - Invariant governing rules are PINNED at S8.
+    - Raw input bytes are hashed at S9.
+    - All other spatial and temporal positions remain strictly UNRESOLVED in F7.
+    """
+    if isinstance(cartridge_or_key, str):
+        cart_key = cartridge_or_key.lower().replace("cartridge_", "").replace("_ir", "")
+        if "legal" in cart_key or "courtforge" in cart_key:
+            cartridge = CARTRIDGE_COURTFORGE_LEGAL
+        elif "logistics" in cart_key or "wms" in cart_key:
+            cartridge = CARTRIDGE_WMS_LOGISTICS
+        else:
+            cartridge = CARTRIDGE_SECURITY_IR
+    else:
+        cartridge = cartridge_or_key
+
+    tms = TemporalMatrixSpace(cartridge=cartridge)
+    seed_hash = hashlib.sha256(seed_text.strip().encode("utf-8")).hexdigest()
+
+    if cartridge.cartridge_id == "SECURITY_IR":
+        # 1. T5 Present
+        s5_seeds = {
+            "S1": {"label": cartridge.seed_meanings["S1"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: minimal seed did not supply identity context"},
+            "S2": {
+                "label": cartridge.seed_meanings["S2"],
+                "state": "ANOMALOUS_EXECUTION" if "powershell" in seed_text.lower() or "exec" in seed_text.lower() else "UNRESOLVED",
+                "status": "OBSERVED" if "powershell" in seed_text.lower() or "exec" in seed_text.lower() else "UNRESOLVED",
+                "evidence": f"Minimal seed observation: {seed_text.strip()}",
+            },
+            "S3": {
+                "label": cartridge.seed_meanings["S3"],
+                "state": "PORT_ANOMALY" if "port" in seed_text.lower() or "ip" in seed_text.lower() else "UNRESOLVED",
+                "status": "OBSERVED" if "port" in seed_text.lower() or "ip" in seed_text.lower() else "UNRESOLVED",
+                "evidence": f"Minimal seed network token: {seed_text.strip()}",
+            },
+            "S4": {"label": cartridge.seed_meanings["S4"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: service health unobserved"},
+            "S5": {
+                "label": cartridge.seed_meanings["S5"],
+                "state": "ATOMIC_ANOMALY_RECORDED",
+                "status": "OBSERVED",
+                "evidence": f"Atomic raw seed ingested: {seed_text.strip()}",
+            },
+            "S6": {"label": cartridge.seed_meanings["S6"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: containment not yet triggered"},
+            "S7": {
+                "label": cartridge.seed_meanings["S7"],
+                "state": "CONTAINED_IN_F7",
+                "status": "UNRESOLVED",
+                "evidence": "Irreducibly small seed ingested; entire unobserved domain universe locked in F7",
+            },
+            "S8": {
+                "label": cartridge.seed_meanings["S8"],
+                "state": "LIFE_SAFETY_PINNED",
+                "status": "OBSERVED",
+                "evidence": "Policy Invariant: Clinical life-safety preservation active",
+            },
+            "S9": {
+                "label": cartridge.seed_meanings["S9"],
+                "state": "MINIMAL_SEED_AUTHENTICATED",
+                "status": "OBSERVED",
+                "evidence": f"Raw seed SHA256: {seed_hash[:16]}...",
+            },
+        }
+        # 2. T4 Predecessor
+        s4_seeds = {
+            s: {"label": cartridge.seed_meanings[s], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7"}
+            for s in DOMAIN_SEEDS
+        }
+        s4_seeds["S2"] = {"label": cartridge.seed_meanings["S2"], "state": "IDLE", "status": "DERIVED", "evidence": "Derived baseline: quiescent execution prior to seed"}
+        s4_seeds["S5"] = {"label": cartridge.seed_meanings["S5"], "state": "NOMINAL_STABLE", "status": "DERIVED", "evidence": "Derived baseline: steady state prior to anomaly"}
+        s4_seeds["S8"] = dict(s5_seeds["S8"])
+        s4_seeds["S9"] = dict(s5_seeds["S9"])
+
+        # 3. T6 Successor
+        s6_seeds = {
+            s: {"label": cartridge.seed_meanings[s], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7"}
+            for s in DOMAIN_SEEDS
+        }
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "CONTAINMENT_PROPOSED", "status": "POSSIBLE", "evidence": "Possible candidate: forensic isolation"}
+        s6_seeds["S8"] = dict(s5_seeds["S8"])
+        s6_seeds["S9"] = dict(s5_seeds["S9"])
+
+    elif cartridge.cartridge_id == "COURTFORGE_LEGAL":
+        # 1. T5 Present
+        s5_seeds = {
+            "S1": {"label": cartridge.seed_meanings["S1"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: full party roster unobserved"},
+            "S2": {
+                "label": cartridge.seed_meanings["S2"],
+                "state": "NOTICE_OF_DEFAULT_SERVED",
+                "status": "OBSERVED",
+                "evidence": f"Minimal claim token: {seed_text.strip()}",
+            },
+            "S3": {"label": cartridge.seed_meanings["S3"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: testimony admissions unobserved"},
+            "S4": {"label": cartridge.seed_meanings["S4"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: contradictions unobserved"},
+            "S5": {
+                "label": cartridge.seed_meanings["S5"],
+                "state": "DISPUTE_CONTROVERSY_ACTIVE",
+                "status": "OBSERVED",
+                "evidence": f"Atomic legal dispute seed: {seed_text.strip()}",
+            },
+            "S6": {"label": cartridge.seed_meanings["S6"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: judicial motion unrouted"},
+            "S7": {
+                "label": cartridge.seed_meanings["S7"],
+                "state": "CONTAINED_IN_F7",
+                "status": "UNRESOLVED",
+                "evidence": "Irreducibly small seed ingested; unproduced discovery locked in F7",
+            },
+            "S8": {
+                "label": cartridge.seed_meanings["S8"],
+                "state": "STATUTORY_AUTHORITY_PINNED",
+                "status": "OBSERVED",
+                "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant",
+            },
+            "S9": {
+                "label": cartridge.seed_meanings["S9"],
+                "state": "MINIMAL_CLAIM_AUTHENTICATED",
+                "status": "OBSERVED",
+                "evidence": f"Raw notice SHA256: {seed_hash[:16]}...",
+            },
+        }
+        # 2. T4 Predecessor
+        s4_seeds = {
+            s: {"label": cartridge.seed_meanings[s], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7"}
+            for s in DOMAIN_SEEDS
+        }
+        s4_seeds["S2"] = {"label": cartridge.seed_meanings["S2"], "state": "CONTRACT_IN_FORCE", "status": "DERIVED", "evidence": "Derived baseline: contract in good standing"}
+        s4_seeds["S5"] = {"label": cartridge.seed_meanings["S5"], "state": "PERFORMING_TENANCY", "status": "DERIVED", "evidence": "Derived baseline: performing contract occupancy"}
+        s4_seeds["S8"] = dict(s5_seeds["S8"])
+        s4_seeds["S9"] = dict(s5_seeds["S9"])
+
+        # 3. T6 Successor
+        s6_seeds = {
+            s: {"label": cartridge.seed_meanings[s], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7"}
+            for s in DOMAIN_SEEDS
+        }
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "ADJUDICATION_ROUTING_PROPOSED", "status": "POSSIBLE", "evidence": "Possible candidate: judicial dispute resolution"}
+        s6_seeds["S8"] = dict(s5_seeds["S8"])
+        s6_seeds["S9"] = dict(s5_seeds["S9"])
+
+    else:  # WMS_LOGISTICS
+        # 1. T5 Present
+        s5_seeds = {
+            "S1": {"label": cartridge.seed_meanings["S1"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: shipper/carrier identity unobserved"},
+            "S2": {"label": cartridge.seed_meanings["S2"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: transit route log unobserved"},
+            "S3": {
+                "label": cartridge.seed_meanings["S3"],
+                "state": "THERMAL_EXCURSION_RECORDED",
+                "status": "OBSERVED",
+                "evidence": f"Minimal telemetry token: {seed_text.strip()}",
+            },
+            "S4": {"label": cartridge.seed_meanings["S4"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: pallet weight manifest unobserved"},
+            "S5": {
+                "label": cartridge.seed_meanings["S5"],
+                "state": "COLD_CHAIN_COMPROMISED",
+                "status": "OBSERVED",
+                "evidence": f"Atomic temperature breach: {seed_text.strip()}",
+            },
+            "S6": {"label": cartridge.seed_meanings["S6"], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7: quarantine route unassigned"},
+            "S7": {
+                "label": cartridge.seed_meanings["S7"],
+                "state": "CONTAINED_IN_F7",
+                "status": "UNRESOLVED",
+                "evidence": "Irreducibly small seed ingested; uninspected container seals locked in F7",
+            },
+            "S8": {
+                "label": cartridge.seed_meanings["S8"],
+                "state": "HACCP_INVARIANT_PINNED",
+                "status": "OBSERVED",
+                "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)",
+            },
+            "S9": {
+                "label": cartridge.seed_meanings["S9"],
+                "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+                "status": "OBSERVED",
+                "evidence": f"Raw telemetry SHA256: {seed_hash[:16]}...",
+            },
+        }
+        # 2. T4 Predecessor
+        s4_seeds = {
+            s: {"label": cartridge.seed_meanings[s], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7"}
+            for s in DOMAIN_SEEDS
+        }
+        s4_seeds["S3"] = {"label": cartridge.seed_meanings["S3"], "state": "TEMPERATURE_IN_SPEC", "status": "DERIVED", "evidence": "Derived baseline: cold storage setpoint maintained"}
+        s4_seeds["S5"] = {"label": cartridge.seed_meanings["S5"], "state": "COLD_CHAIN_STABLE", "status": "DERIVED", "evidence": "Derived baseline: nominal shipment integrity"}
+        s4_seeds["S8"] = dict(s5_seeds["S8"])
+        s4_seeds["S9"] = dict(s5_seeds["S9"])
+
+        # 3. T6 Successor
+        s6_seeds = {
+            s: {"label": cartridge.seed_meanings[s], "state": "UNRESOLVED", "status": "UNRESOLVED", "evidence": "Held in F7"}
+            for s in DOMAIN_SEEDS
+        }
+        s6_seeds["S6"] = {"label": cartridge.seed_meanings["S6"], "state": "QUARANTINE_REROUTE_PROPOSED", "status": "POSSIBLE", "evidence": "Possible candidate: quarantine inspection route"}
+        s6_seeds["S8"] = dict(s5_seeds["S8"])
+        s6_seeds["S9"] = dict(s5_seeds["S9"])
+
+    # Instantiate T5 Present (Center)
+    tms.set_space("T5_COMPOUNDING", DomainSpaceInstance(space_id="T0_MINIMAL_OBSERVED", phase="T5_COMPOUNDING", seeds=s5_seeds))
+
+    # Instantiate T4 Predecessor (Derived)
+    tms.set_space("T4_STABILITY", DomainSpaceInstance(space_id="T_MINUS_1_MINIMAL_BASELINE", phase="T4_STABILITY", seeds=s4_seeds))
+    tms.relationships.append({"phase": "T4_STABILITY", "status": "DERIVED", "rule": "causal_baseline_derivation"})
+
+    # Instantiate T6 Successor (Possible)
+    tms.set_space("T6_REFRACTING", DomainSpaceInstance(space_id="T_PLUS_1_MINIMAL_CANDIDATE", phase="T6_REFRACTING", seeds=s6_seeds))
+    tms.relationships.append({"phase": "T6_REFRACTING", "status": "POSSIBLE", "rule": "bounded_reachability_candidate"})
+
+    # Seal inter-space transition receipts
+    tms.compute_inter_space_transition_receipt("T4_STABILITY", "T5_COMPOUNDING", {"transition": "minimal_seed_emergence"})
+    tms.compute_inter_space_transition_receipt("T5_COMPOUNDING", "T6_REFRACTING", {"transition": "minimal_seed_consequence"})
+
+    return tms

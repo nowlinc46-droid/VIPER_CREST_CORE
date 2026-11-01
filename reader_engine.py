@@ -32,6 +32,7 @@ from domain_space import (
     DEFAULT_SECURITY_CARTRIDGE,
     DomainSpaceInstance,
     TemporalMatrixSpace,
+    hydrate_from_minimal_seed,
 )
 
 VIPER_ROOT = Path("C:/ViperCrest")
@@ -77,6 +78,12 @@ SAMPLE_RAW_DATA = {
             "DISCOVERY: Rear container secondary security seal uninspected/tampered (HELD UNRESOLVED IN F7).\n"
         ),
     },
+}
+
+SAMPLE_MINIMAL_SEEDS = {
+    "security": "2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset",
+    "legal": "2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2",
+    "logistics": "2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0",
 }
 
 
@@ -480,6 +487,51 @@ def run_cartridge_intake(
     return fixture_path
 
 
+def run_minimal_seed_intake(
+    cartridge_key: str,
+    custom_seed: Optional[str] = None,
+    custom_case_id: Optional[str] = None,
+    print_summary: bool = True,
+) -> tuple[Path, TemporalMatrixSpace]:
+    """
+    Executes natural tensor hydration from an irreducibly minimal seed.
+    Hydrates 81 state coordinates, contains unobserved coordinates in F7,
+    and emits a normalized observation fixture for evaluation by the fixed F1-F9 engine.
+    """
+    normalized_key = cartridge_key.lower().replace("cartridge_", "").replace("_ir", "")
+    if "courtforge" in normalized_key or "legal" in normalized_key:
+        cart_name = "legal"
+        cart_spec = CARTRIDGE_COURTFORGE_LEGAL
+        default_seed = SAMPLE_MINIMAL_SEEDS["legal"]
+        default_case = "minimal_seed_extracted_legal"
+    elif "wms" in normalized_key or "logistic" in normalized_key:
+        cart_name = "logistics"
+        cart_spec = CARTRIDGE_WMS_LOGISTICS
+        default_seed = SAMPLE_MINIMAL_SEEDS["logistics"]
+        default_case = "minimal_seed_extracted_logistics"
+    else:
+        cart_name = "security"
+        cart_spec = CARTRIDGE_SECURITY_IR
+        default_seed = SAMPLE_MINIMAL_SEEDS["security"]
+        default_case = "minimal_seed_extracted_security"
+
+    seed_text = custom_seed if custom_seed else default_seed
+    case_id = custom_case_id if custom_case_id else default_case
+
+    tms = hydrate_from_minimal_seed(seed_text, cart_spec)
+
+    if print_summary:
+        print(f"\n=======================================================")
+        print(f" MINIMAL SEED HYDRATION: {cart_spec.name.upper()} ({cart_spec.cartridge_id})")
+        print(f" ATOMIC SEED: '{seed_text.strip()}'")
+        print(f"=======================================================")
+        print(tms.format_matrix_summary())
+
+    fixture_path = emit_matrix_observation_fixture(tms, case_id=case_id)
+    print(f"[READER] Successfully emitted minimal seed {cart_name} matrix fixture -> {fixture_path}")
+    return fixture_path, tms
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="ViperCrest Air-Gapped Multi-Cartridge Reader Engine")
     parser.add_argument(
@@ -490,11 +542,31 @@ def main(argv: Optional[List[str]] = None) -> int:
     )
     parser.add_argument("--input", "-i", help="Optional custom raw input file path")
     parser.add_argument("--case-id", help="Optional custom output fixture case ID")
+    parser.add_argument("--minimal-seed", "-m", nargs="?", const="", help="Execute minimal-seed natural hydration test (optional seed string)")
     parser.add_argument("--no-summary", action="store_true", help="Suppress terminal matrix summary printout")
     args = parser.parse_args(argv)
 
     print_summary = not args.no_summary
     custom_in = Path(args.input) if args.input else None
+
+    if args.minimal_seed is not None:
+        custom_seed = args.minimal_seed if args.minimal_seed != "" else None
+        if args.cartridge == "all":
+            for cart in ["security", "legal", "logistics"]:
+                run_minimal_seed_intake(
+                    cartridge_key=cart,
+                    custom_seed=custom_seed,
+                    custom_case_id=args.case_id,
+                    print_summary=print_summary,
+                )
+        else:
+            run_minimal_seed_intake(
+                cartridge_key=args.cartridge,
+                custom_seed=custom_seed,
+                custom_case_id=args.case_id,
+                print_summary=print_summary,
+            )
+        return 0
 
     if args.cartridge == "all":
         for cart in ["security", "legal", "logistics"]:

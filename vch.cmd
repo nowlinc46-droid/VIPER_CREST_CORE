@@ -11,6 +11,7 @@ echo  vcf       : Foundry Simulation Bridge (bridge_foundry.py)
 echo  vci       : Phone and USB dropzone intake pipeline (phone_intake.py)
 echo  vcread    : Air-Gapped Reader (RAW -> Normalized Matrix) (reader_engine.py)
 echo  vcbk      : Tri-Cartridge Domain Benchmark & Tensor Proof (benchmark_runner.py)
+echo  vchyd     : Minimal Seed -> Natural Tensor Hydration Benchmark (minimal_seed_benchmark.py)
 echo  vca       : Immunefi Top 10 Invariant Security Audit (audit_immunefi.py)
 echo  vct       : Run test suite (unittest)
 echo  vcp       : Execute diagnostic probes (probe_matrix.py / probe_matrix_v2.py)
@@ -19,7 +20,7 @@ echo  vcr       : Run offline verification script (run_offline.ps1)
 echo  vch       : Display this help reference
 echo.
 echo  Long-form aliases (vc-matrix, vc-online, vc-offline, vc-bridge,
-echo  vc-foundry, vc-intake, vc-reader, vc-benchmark, vc-audit, vc-test,
+echo  vc-foundry, vc-intake, vc-reader, vc-benchmark, vc-hydrate, vc-audit, vc-test,
 echo  vc-probe, vc-status, vc-run, vc-help) are also supported.
 echo ======================================================================
 exit /b 0

@@ -1,0 +1,450 @@
+{
+  "case_id": "minimal_seed_extracted_legal",
+  "observations": [
+    {
+      "id": "T4_PREDECESSOR_vs_T5_OBSERVED",
+      "baseline": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "CONTRACT_IN_FORCE",
+          "status": "DERIVED",
+          "evidence": "Derived baseline: contract in good standing"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "PERFORMING_TENANCY",
+          "status": "DERIVED",
+          "evidence": "Derived baseline: performing contract occupancy"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "MINIMAL_CLAIM_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: full party roster unobserved"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "NOTICE_OF_DEFAULT_SERVED",
+          "status": "OBSERVED",
+          "evidence": "Minimal claim token: 2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: testimony admissions unobserved"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: contradictions unobserved"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "DISPUTE_CONTROVERSY_ACTIVE",
+          "status": "OBSERVED",
+          "evidence": "Atomic legal dispute seed: 2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: judicial motion unrouted"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "CONTAINED_IN_F7",
+          "status": "UNRESOLVED",
+          "evidence": "Irreducibly small seed ingested; unproduced discovery locked in F7"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "MINIMAL_CLAIM_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+        }
+      },
+      "context": {
+        "transition": "backward_provenance_bound",
+        "cartridge": "COURTFORGE_LEGAL"
+      }
+    },
+    {
+      "id": "T5_OBSERVED_vs_T6_SUCCESSOR",
+      "baseline": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: full party roster unobserved"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "NOTICE_OF_DEFAULT_SERVED",
+          "status": "OBSERVED",
+          "evidence": "Minimal claim token: 2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: testimony admissions unobserved"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: contradictions unobserved"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "DISPUTE_CONTROVERSY_ACTIVE",
+          "status": "OBSERVED",
+          "evidence": "Atomic legal dispute seed: 2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: judicial motion unrouted"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "CONTAINED_IN_F7",
+          "status": "UNRESOLVED",
+          "evidence": "Irreducibly small seed ingested; unproduced discovery locked in F7"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "MINIMAL_CLAIM_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "ADJUDICATION_ROUTING_PROPOSED",
+          "status": "POSSIBLE",
+          "evidence": "Possible candidate: judicial dispute resolution"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "MINIMAL_CLAIM_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+        }
+      },
+      "context": {
+        "transition": "forward_containment_candidate",
+        "cartridge": "COURTFORGE_LEGAL"
+      }
+    }
+  ],
+  "temporal_space": {
+    "center": "T5_COMPOUNDING",
+    "cartridge_id": "COURTFORGE_LEGAL",
+    "positions": {
+      "T1_ROOT": null,
+      "T2_VEIL": null,
+      "T3_PATH_IN": null,
+      "T4_STABILITY": {
+        "space_id": "T_MINUS_1_MINIMAL_BASELINE",
+        "phase": "T4_STABILITY",
+        "provenance_hash": "d32549641b7d6170bb41884051280b9e9971c27dd986d0c16c108fa07c15c540",
+        "seeds": {
+          "S1": {
+            "label": "Case Ingress / Party Identity",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S2": {
+            "label": "Chronological Timeline Events",
+            "state": "CONTRACT_IN_FORCE",
+            "status": "DERIVED",
+            "evidence": "Derived baseline: contract in good standing"
+          },
+          "S3": {
+            "label": "Party Admissions & Key Testimony",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S4": {
+            "label": "Contradictions & Irreconcilable Conflicts",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S5": {
+            "label": "Core Claims & Dispute State",
+            "state": "PERFORMING_TENANCY",
+            "status": "DERIVED",
+            "evidence": "Derived baseline: performing contract occupancy"
+          },
+          "S6": {
+            "label": "Discovery Motions & Routing",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S7": {
+            "label": "Unproduced Evidence / Unknown Claims",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S8": {
+            "label": "Statutory Bedrock & Legal Authority",
+            "state": "STATUTORY_AUTHORITY_PINNED",
+            "status": "OBSERVED",
+            "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+          },
+          "S9": {
+            "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+            "state": "MINIMAL_CLAIM_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+          }
+        }
+      },
+      "T5_COMPOUNDING": {
+        "space_id": "T0_MINIMAL_OBSERVED",
+        "phase": "T5_COMPOUNDING",
+        "provenance_hash": "06cfe7e2811e5673c6c01f04bd0f00ed450ef7f5df6afb0199845f54c28dbcca",
+        "seeds": {
+          "S1": {
+            "label": "Case Ingress / Party Identity",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: full party roster unobserved"
+          },
+          "S2": {
+            "label": "Chronological Timeline Events",
+            "state": "NOTICE_OF_DEFAULT_SERVED",
+            "status": "OBSERVED",
+            "evidence": "Minimal claim token: 2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2"
+          },
+          "S3": {
+            "label": "Party Admissions & Key Testimony",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: testimony admissions unobserved"
+          },
+          "S4": {
+            "label": "Contradictions & Irreconcilable Conflicts",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: contradictions unobserved"
+          },
+          "S5": {
+            "label": "Core Claims & Dispute State",
+            "state": "DISPUTE_CONTROVERSY_ACTIVE",
+            "status": "OBSERVED",
+            "evidence": "Atomic legal dispute seed: 2026-08-15 Tenant serves Formal Notice of Default citing Lease Section 14.2"
+          },
+          "S6": {
+            "label": "Discovery Motions & Routing",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: judicial motion unrouted"
+          },
+          "S7": {
+            "label": "Unproduced Evidence / Unknown Claims",
+            "state": "CONTAINED_IN_F7",
+            "status": "UNRESOLVED",
+            "evidence": "Irreducibly small seed ingested; unproduced discovery locked in F7"
+          },
+          "S8": {
+            "label": "Statutory Bedrock & Legal Authority",
+            "state": "STATUTORY_AUTHORITY_PINNED",
+            "status": "OBSERVED",
+            "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+          },
+          "S9": {
+            "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+            "state": "MINIMAL_CLAIM_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+          }
+        }
+      },
+      "T6_REFRACTING": {
+        "space_id": "T_PLUS_1_MINIMAL_CANDIDATE",
+        "phase": "T6_REFRACTING",
+        "provenance_hash": "f5eb4e7c85c4c7bfc94bbdc3a503021b208601a2a9a7370ab0fed18705d9c81d",
+        "seeds": {
+          "S1": {
+            "label": "Case Ingress / Party Identity",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S2": {
+            "label": "Chronological Timeline Events",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S3": {
+            "label": "Party Admissions & Key Testimony",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S4": {
+            "label": "Contradictions & Irreconcilable Conflicts",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S5": {
+            "label": "Core Claims & Dispute State",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S6": {
+            "label": "Discovery Motions & Routing",
+            "state": "ADJUDICATION_ROUTING_PROPOSED",
+            "status": "POSSIBLE",
+            "evidence": "Possible candidate: judicial dispute resolution"
+          },
+          "S7": {
+            "label": "Unproduced Evidence / Unknown Claims",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S8": {
+            "label": "Statutory Bedrock & Legal Authority",
+            "state": "STATUTORY_AUTHORITY_PINNED",
+            "status": "OBSERVED",
+            "evidence": "Statutory bedrock: Habitability warranty / UCC covenants pinned invariant"
+          },
+          "S9": {
+            "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+            "state": "MINIMAL_CLAIM_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw notice SHA256: 6ae08d85494fd8d7..."
+          }
+        }
+      },
+      "T7_FLAME": null,
+      "T8_PATH_OUT": null,
+      "T9_STONE": null
+    },
+    "relationships": [
+      {
+        "phase": "T4_STABILITY",
+        "status": "DERIVED",
+        "rule": "causal_baseline_derivation"
+      },
+      {
+        "phase": "T6_REFRACTING",
+        "status": "POSSIBLE",
+        "rule": "bounded_reachability_candidate"
+      }
+    ]
+  }
+}

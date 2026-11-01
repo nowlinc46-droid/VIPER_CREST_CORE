@@ -1,0 +1,450 @@
+{
+  "case_id": "minimal_seed_extracted_security",
+  "observations": [
+    {
+      "id": "T4_PREDECESSOR_vs_T5_OBSERVED",
+      "baseline": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "IDLE",
+          "status": "DERIVED",
+          "evidence": "Derived baseline: quiescent execution prior to seed"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "NOMINAL_STABLE",
+          "status": "DERIVED",
+          "evidence": "Derived baseline: steady state prior to anomaly"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Policy Invariant: Clinical life-safety preservation active"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "MINIMAL_SEED_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: minimal seed did not supply identity context"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Minimal seed observation: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "PORT_ANOMALY",
+          "status": "OBSERVED",
+          "evidence": "Minimal seed network token: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: service health unobserved"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "ATOMIC_ANOMALY_RECORDED",
+          "status": "OBSERVED",
+          "evidence": "Atomic raw seed ingested: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: containment not yet triggered"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "CONTAINED_IN_F7",
+          "status": "UNRESOLVED",
+          "evidence": "Irreducibly small seed ingested; entire unobserved domain universe locked in F7"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Policy Invariant: Clinical life-safety preservation active"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "MINIMAL_SEED_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+        }
+      },
+      "context": {
+        "transition": "backward_provenance_bound",
+        "cartridge": "SECURITY_IR"
+      }
+    },
+    {
+      "id": "T5_OBSERVED_vs_T6_SUCCESSOR",
+      "baseline": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: minimal seed did not supply identity context"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Minimal seed observation: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "PORT_ANOMALY",
+          "status": "OBSERVED",
+          "evidence": "Minimal seed network token: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: service health unobserved"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "ATOMIC_ANOMALY_RECORDED",
+          "status": "OBSERVED",
+          "evidence": "Atomic raw seed ingested: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: containment not yet triggered"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "CONTAINED_IN_F7",
+          "status": "UNRESOLVED",
+          "evidence": "Irreducibly small seed ingested; entire unobserved domain universe locked in F7"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Policy Invariant: Clinical life-safety preservation active"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "MINIMAL_SEED_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "CONTAINMENT_PROPOSED",
+          "status": "POSSIBLE",
+          "evidence": "Possible candidate: forensic isolation"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "status": "OBSERVED",
+          "evidence": "Policy Invariant: Clinical life-safety preservation active"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "MINIMAL_SEED_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+        }
+      },
+      "context": {
+        "transition": "forward_containment_candidate",
+        "cartridge": "SECURITY_IR"
+      }
+    }
+  ],
+  "temporal_space": {
+    "center": "T5_COMPOUNDING",
+    "cartridge_id": "SECURITY_IR",
+    "positions": {
+      "T1_ROOT": null,
+      "T2_VEIL": null,
+      "T3_PATH_IN": null,
+      "T4_STABILITY": {
+        "space_id": "T_MINUS_1_MINIMAL_BASELINE",
+        "phase": "T4_STABILITY",
+        "provenance_hash": "74e80af22b30603a6fd32c76c26bf62f9a746554b9414e2ea7e124aa8e867ea3",
+        "seeds": {
+          "S1": {
+            "label": "Identity / Credentials",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S2": {
+            "label": "Endpoint Execution",
+            "state": "IDLE",
+            "status": "DERIVED",
+            "evidence": "Derived baseline: quiescent execution prior to seed"
+          },
+          "S3": {
+            "label": "Network Movement",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S4": {
+            "label": "Critical-Service Condition",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S5": {
+            "label": "Current Observed System State",
+            "state": "NOMINAL_STABLE",
+            "status": "DERIVED",
+            "evidence": "Derived baseline: steady state prior to anomaly"
+          },
+          "S6": {
+            "label": "Containment State",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S7": {
+            "label": "Unknown / Discovery",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S8": {
+            "label": "Safety / Governing Constraints",
+            "state": "LIFE_SAFETY_PINNED",
+            "status": "OBSERVED",
+            "evidence": "Policy Invariant: Clinical life-safety preservation active"
+          },
+          "S9": {
+            "label": "Evidence / Provenance",
+            "state": "MINIMAL_SEED_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+          }
+        }
+      },
+      "T5_COMPOUNDING": {
+        "space_id": "T0_MINIMAL_OBSERVED",
+        "phase": "T5_COMPOUNDING",
+        "provenance_hash": "22e3ddb2518c45b200f0c35edf88c9de1c55344b2f15e97a3e46d9198cf86cad",
+        "seeds": {
+          "S1": {
+            "label": "Identity / Credentials",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: minimal seed did not supply identity context"
+          },
+          "S2": {
+            "label": "Endpoint Execution",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Minimal seed observation: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+          },
+          "S3": {
+            "label": "Network Movement",
+            "state": "PORT_ANOMALY",
+            "status": "OBSERVED",
+            "evidence": "Minimal seed network token: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+          },
+          "S4": {
+            "label": "Critical-Service Condition",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: service health unobserved"
+          },
+          "S5": {
+            "label": "Current Observed System State",
+            "state": "ATOMIC_ANOMALY_RECORDED",
+            "status": "OBSERVED",
+            "evidence": "Atomic raw seed ingested: 2026-11-01T02:17:00Z PACS_Server_02 port 104 NO_RESPONSE ConnectionReset"
+          },
+          "S6": {
+            "label": "Containment State",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: containment not yet triggered"
+          },
+          "S7": {
+            "label": "Unknown / Discovery",
+            "state": "CONTAINED_IN_F7",
+            "status": "UNRESOLVED",
+            "evidence": "Irreducibly small seed ingested; entire unobserved domain universe locked in F7"
+          },
+          "S8": {
+            "label": "Safety / Governing Constraints",
+            "state": "LIFE_SAFETY_PINNED",
+            "status": "OBSERVED",
+            "evidence": "Policy Invariant: Clinical life-safety preservation active"
+          },
+          "S9": {
+            "label": "Evidence / Provenance",
+            "state": "MINIMAL_SEED_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+          }
+        }
+      },
+      "T6_REFRACTING": {
+        "space_id": "T_PLUS_1_MINIMAL_CANDIDATE",
+        "phase": "T6_REFRACTING",
+        "provenance_hash": "d4390e84f2c886ee3843f79a1f228da5cab3db7349bb9f7a400812678da50b61",
+        "seeds": {
+          "S1": {
+            "label": "Identity / Credentials",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S2": {
+            "label": "Endpoint Execution",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S3": {
+            "label": "Network Movement",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S4": {
+            "label": "Critical-Service Condition",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S5": {
+            "label": "Current Observed System State",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S6": {
+            "label": "Containment State",
+            "state": "CONTAINMENT_PROPOSED",
+            "status": "POSSIBLE",
+            "evidence": "Possible candidate: forensic isolation"
+          },
+          "S7": {
+            "label": "Unknown / Discovery",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S8": {
+            "label": "Safety / Governing Constraints",
+            "state": "LIFE_SAFETY_PINNED",
+            "status": "OBSERVED",
+            "evidence": "Policy Invariant: Clinical life-safety preservation active"
+          },
+          "S9": {
+            "label": "Evidence / Provenance",
+            "state": "MINIMAL_SEED_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw seed SHA256: 0510857058da3cc7..."
+          }
+        }
+      },
+      "T7_FLAME": null,
+      "T8_PATH_OUT": null,
+      "T9_STONE": null
+    },
+    "relationships": [
+      {
+        "phase": "T4_STABILITY",
+        "status": "DERIVED",
+        "rule": "causal_baseline_derivation"
+      },
+      {
+        "phase": "T6_REFRACTING",
+        "status": "POSSIBLE",
+        "rule": "bounded_reachability_candidate"
+      }
+    ]
+  }
+}
