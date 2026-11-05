@@ -1,0 +1,19 @@
+{
+  "observations": [
+    {
+      "id": "recorded-profile-response",
+      "baseline": {
+        "status": 200,
+        "body": {
+          "role": "member"
+        }
+      },
+      "candidate": {
+        "status": 200,
+        "body": {
+          "role": "administrator"
+        }
+      }
+    }
+  ]
+}

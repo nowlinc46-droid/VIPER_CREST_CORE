@@ -1,0 +1,38 @@
+{
+  "system_identifier": "VIPERCREST_STEM_AAOS_V1",
+  "target_platform": "ANDROID_AUTOMOTIVE_OS",
+  "compatible_api_levels": [31, 32, 33, 34, 35],
+  "target_architectures": ["arm64-v8a", "x86_64"],
+  "air_gap_enforced": true,
+  "device_staging_path": "/data/local/tmp/viper_stem",
+  "runtime_database": "/data/local/tmp/viper_stem/viper_state.db",
+  "vhal_interface": {
+    "protocol": "SOCKETCAN_VHAL_INTERCEPTOR",
+    "can_interface": "can0",
+    "can_bitrate": 500000,
+    "fallback_adb_mock": true,
+    "subscribed_properties": [
+      { "name": "PERF_VEHICLE_SPEED", "id": 291504647, "read_only": true },
+      { "name": "STEERING_WHEEL_ANGLE", "id": 289409984, "read_only": true },
+      { "name": "STEERING_WHEEL_TORQUE", "id": 291507137, "read_only": false },
+      { "name": "ACCELERATOR_PEDAL_POSITION", "id": 291506947, "read_only": false },
+      { "name": "BRAKE_PEDAL_POSITION", "id": 291506949, "read_only": true },
+      { "name": "GEAR_SELECTION", "id": 289408000, "read_only": true }
+    ]
+  },
+  "safety_invariants": {
+    "eps_max_torque_nm": 12.0,
+    "eps_max_current_amps": 30.0,
+    "eps_torque_constant_kt": 1.85,
+    "max_apps_pedal_divergence_pct": 5.0,
+    "max_steering_velocity_deg_s": 500.0,
+    "brake_throttle_override_enforced": true,
+    "fail_closed_torque_clamp_nm": 0.0,
+    "fail_closed_throttle_clamp_pct": 0.0
+  },
+  "signing": {
+    "algorithm": "Ed25519",
+    "key_filename": "signing_key.pem",
+    "receipt_signature_filename": "receipts_audit.sig"
+  }
+}

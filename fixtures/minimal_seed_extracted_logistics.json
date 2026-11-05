@@ -1,0 +1,452 @@
+{
+  "case_id": "minimal_seed_extracted_logistics",
+  "observations": [
+    {
+      "id": "T4_PREDECESSOR_vs_T5_OBSERVED",
+      "baseline": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "TEMPERATURE_IN_SPEC",
+          "status": "DERIVED",
+          "evidence": "Derived baseline: cold storage setpoint maintained"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "COLD_CHAIN_STABLE",
+          "status": "DERIVED",
+          "evidence": "Derived baseline: nominal shipment integrity"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "status": "OBSERVED",
+          "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: shipper/carrier identity unobserved"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: transit route log unobserved"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "THERMAL_EXCURSION_RECORDED",
+          "status": "OBSERVED",
+          "evidence": "Minimal telemetry token: 2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: pallet weight manifest unobserved"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "COLD_CHAIN_COMPROMISED",
+          "status": "OBSERVED",
+          "evidence": "Atomic temperature breach: 2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: quarantine route unassigned"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "CONTAINED_IN_F7",
+          "status": "UNRESOLVED",
+          "evidence": "Irreducibly small seed ingested; uninspected container seals locked in F7"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "status": "OBSERVED",
+          "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+        }
+      },
+      "context": {
+        "transition": "backward_provenance_bound",
+        "cartridge": "WMS_LOGISTICS"
+      }
+    },
+    {
+      "id": "T5_OBSERVED_vs_T6_SUCCESSOR",
+      "baseline": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: shipper/carrier identity unobserved"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: transit route log unobserved"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "THERMAL_EXCURSION_RECORDED",
+          "status": "OBSERVED",
+          "evidence": "Minimal telemetry token: 2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: pallet weight manifest unobserved"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "COLD_CHAIN_COMPROMISED",
+          "status": "OBSERVED",
+          "evidence": "Atomic temperature breach: 2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7: quarantine route unassigned"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "CONTAINED_IN_F7",
+          "status": "UNRESOLVED",
+          "evidence": "Irreducibly small seed ingested; uninspected container seals locked in F7"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "status": "OBSERVED",
+          "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Shipper / Consignee Identity",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S2": {
+          "label": "Transit Milestone & Timestamp",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S3": {
+          "label": "Cold-Chain Sensor Telemetry",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S4": {
+          "label": "Pallet Cargo / Weight / Bill of Lading",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S5": {
+          "label": "Current Shipment Condition",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S6": {
+          "label": "Quarantine / Routing State",
+          "state": "QUARANTINE_REROUTE_PROPOSED",
+          "status": "POSSIBLE",
+          "evidence": "Possible candidate: quarantine inspection route"
+        },
+        "S7": {
+          "label": "Uninspected Seals / Shortages",
+          "state": "UNRESOLVED",
+          "status": "UNRESOLVED",
+          "evidence": "Held in F7"
+        },
+        "S8": {
+          "label": "HACCP / Regulatory Invariants",
+          "state": "HACCP_INVARIANT_PINNED",
+          "status": "OBSERVED",
+          "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+        },
+        "S9": {
+          "label": "Signed Proof of Delivery / Cryptographic Manifest",
+          "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+          "status": "OBSERVED",
+          "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+        }
+      },
+      "context": {
+        "transition": "forward_containment_candidate",
+        "cartridge": "WMS_LOGISTICS"
+      }
+    }
+  ],
+  "temporal_space": {
+    "center": "T5_COMPOUNDING",
+    "cartridge_id": "WMS_LOGISTICS",
+    "positions": {
+      "T1_ROOT": null,
+      "T2_VEIL": null,
+      "T3_PATH_IN": null,
+      "T4_STABILITY": {
+        "space_id": "T_MINUS_1_MINIMAL_BASELINE",
+        "phase": "T4_STABILITY",
+        "provenance_hash": "fcfd13771f82418d80b29f4e45387283b0ef3ce90a5ee2f1d9e304c4f96c16cb",
+        "seeds": {
+          "S1": {
+            "label": "Shipper / Consignee Identity",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S2": {
+            "label": "Transit Milestone & Timestamp",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S3": {
+            "label": "Cold-Chain Sensor Telemetry",
+            "state": "TEMPERATURE_IN_SPEC",
+            "status": "DERIVED",
+            "evidence": "Derived baseline: cold storage setpoint maintained"
+          },
+          "S4": {
+            "label": "Pallet Cargo / Weight / Bill of Lading",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S5": {
+            "label": "Current Shipment Condition",
+            "state": "COLD_CHAIN_STABLE",
+            "status": "DERIVED",
+            "evidence": "Derived baseline: nominal shipment integrity"
+          },
+          "S6": {
+            "label": "Quarantine / Routing State",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S7": {
+            "label": "Uninspected Seals / Shortages",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S8": {
+            "label": "HACCP / Regulatory Invariants",
+            "state": "HACCP_INVARIANT_PINNED",
+            "status": "OBSERVED",
+            "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+          },
+          "S9": {
+            "label": "Signed Proof of Delivery / Cryptographic Manifest",
+            "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+          }
+        }
+      },
+      "T5_COMPOUNDING": {
+        "space_id": "T0_MINIMAL_OBSERVED",
+        "phase": "T5_COMPOUNDING",
+        "provenance_hash": "c209bbead146f5ddaa8fe9fd9366a680c0626b29d7a9d2211f6ea0718169f5b6",
+        "seeds": {
+          "S1": {
+            "label": "Shipper / Consignee Identity",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: shipper/carrier identity unobserved"
+          },
+          "S2": {
+            "label": "Transit Milestone & Timestamp",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: transit route log unobserved"
+          },
+          "S3": {
+            "label": "Cold-Chain Sensor Telemetry",
+            "state": "THERMAL_EXCURSION_RECORDED",
+            "status": "OBSERVED",
+            "evidence": "Minimal telemetry token: 2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0"
+          },
+          "S4": {
+            "label": "Pallet Cargo / Weight / Bill of Lading",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: pallet weight manifest unobserved"
+          },
+          "S5": {
+            "label": "Current Shipment Condition",
+            "state": "COLD_CHAIN_COMPROMISED",
+            "status": "OBSERVED",
+            "evidence": "Atomic temperature breach: 2026-10-31T14:30:00Z REEFER-904 EXCURSION_ALARM temp_c=-12.4 setpoint_c=-20.0"
+          },
+          "S6": {
+            "label": "Quarantine / Routing State",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7: quarantine route unassigned"
+          },
+          "S7": {
+            "label": "Uninspected Seals / Shortages",
+            "state": "CONTAINED_IN_F7",
+            "status": "UNRESOLVED",
+            "evidence": "Irreducibly small seed ingested; uninspected container seals locked in F7"
+          },
+          "S8": {
+            "label": "HACCP / Regulatory Invariants",
+            "state": "HACCP_INVARIANT_PINNED",
+            "status": "OBSERVED",
+            "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+          },
+          "S9": {
+            "label": "Signed Proof of Delivery / Cryptographic Manifest",
+            "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+          }
+        }
+      },
+      "T6_REFRACTING": {
+        "space_id": "T_PLUS_1_MINIMAL_CANDIDATE",
+        "phase": "T6_REFRACTING",
+        "provenance_hash": "648e5e860e612f59d5103eead5157b58eb2e156deca995fa731f328a159876cc",
+        "seeds": {
+          "S1": {
+            "label": "Shipper / Consignee Identity",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S2": {
+            "label": "Transit Milestone & Timestamp",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S3": {
+            "label": "Cold-Chain Sensor Telemetry",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S4": {
+            "label": "Pallet Cargo / Weight / Bill of Lading",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S5": {
+            "label": "Current Shipment Condition",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S6": {
+            "label": "Quarantine / Routing State",
+            "state": "QUARANTINE_REROUTE_PROPOSED",
+            "status": "POSSIBLE",
+            "evidence": "Possible candidate: quarantine inspection route"
+          },
+          "S7": {
+            "label": "Uninspected Seals / Shortages",
+            "state": "UNRESOLVED",
+            "status": "UNRESOLVED",
+            "evidence": "Held in F7"
+          },
+          "S8": {
+            "label": "HACCP / Regulatory Invariants",
+            "state": "HACCP_INVARIANT_PINNED",
+            "status": "OBSERVED",
+            "evidence": "HACCP / 21 CFR 211 maximum temperature boundary invariant (-18.0C)"
+          },
+          "S9": {
+            "label": "Signed Proof of Delivery / Cryptographic Manifest",
+            "state": "MINIMAL_TELEMETRY_AUTHENTICATED",
+            "status": "OBSERVED",
+            "evidence": "Raw telemetry SHA256: fc1b4eccea174196..."
+          }
+        }
+      },
+      "T7_FLAME": null,
+      "T8_PATH_OUT": null,
+      "T9_STONE": null
+    },
+    "relationships": [
+      {
+        "phase": "T4_STABILITY",
+        "status": "DERIVED",
+        "rule": "causal_baseline_derivation"
+      },
+      {
+        "phase": "T6_REFRACTING",
+        "status": "POSSIBLE",
+        "rule": "bounded_reachability_candidate"
+      }
+    ],
+    "plain_english_report": null,
+    "grammar_envelope": null
+  }
+}

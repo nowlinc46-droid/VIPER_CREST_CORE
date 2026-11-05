@@ -1,0 +1,9 @@
+{
+  "air_gap_boundary": true,
+  "architecture": "ViperCrest Core 2.0",
+  "grant_type": "SINGLE_SEAL_SOVEREIGN_NODE",
+  "issued_utc": "2026-11-05T00:00:00Z",
+  "issuer_authority": "CLIFTON_NOWLIN_MASTER_ROOT",
+  "licensee": "nowli",
+  "manifold": "1x(3x3)x(9x9)x81x(9x9)x(3x3)x1"
+}

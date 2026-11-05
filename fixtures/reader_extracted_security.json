@@ -1,0 +1,389 @@
+{
+  "case_id": "reader_extracted_security",
+  "observations": [
+    {
+      "id": "T4_PREDECESSOR_vs_T5_OBSERVED",
+      "baseline": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "PRE_INTRUSION_VALID",
+          "evidence": "Baseline auth log"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "IDLE",
+          "evidence": "No abnormal processes"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "INERT",
+          "evidence": "No lateral scan"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "DEGRADED",
+          "evidence": "Telemetry latency spike on clinical device"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "NOMINAL_STABLE",
+          "evidence": "Pre-incident steady state"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "CONTAINMENT_TRIGGER_PENDING",
+          "evidence": "Awaiting deterministic boundary assertion"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "UNRESOLVED_ENDPOINT_B",
+          "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "evidence": "Policy invariant: Do not sever clinical telemetry"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "EVIDENCE_SEALED",
+          "evidence": "Raw payload digest: 06753992b70967cf..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "COMPROMISED_TOKEN",
+          "evidence": "PowerShell invocation detected"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "ANOMALOUS_EXECUTION",
+          "evidence": "Suspicious process spawn with encoded flags"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "LATERAL_SWEEP",
+          "evidence": "Port 445 SMB sweep across subnet"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "DEGRADED",
+          "evidence": "Telemetry latency spike on clinical device"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "ACTIVE_DISRUPTION",
+          "evidence": "Observed multi-vector anomaly in progress"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "CONTAINMENT_TRIGGER_PENDING",
+          "evidence": "Awaiting deterministic boundary assertion"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "UNRESOLVED_ENDPOINT_B",
+          "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "evidence": "Policy invariant: Do not sever clinical telemetry"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "EVIDENCE_SEALED",
+          "evidence": "Raw payload digest: 06753992b70967cf..."
+        }
+      },
+      "context": {
+        "transition": "backward_provenance_bound",
+        "cartridge": "SECURITY_IR"
+      }
+    },
+    {
+      "id": "T5_OBSERVED_vs_T6_SUCCESSOR",
+      "baseline": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "COMPROMISED_TOKEN",
+          "evidence": "PowerShell invocation detected"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "ANOMALOUS_EXECUTION",
+          "evidence": "Suspicious process spawn with encoded flags"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "LATERAL_SWEEP",
+          "evidence": "Port 445 SMB sweep across subnet"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "DEGRADED",
+          "evidence": "Telemetry latency spike on clinical device"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "ACTIVE_DISRUPTION",
+          "evidence": "Observed multi-vector anomaly in progress"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "CONTAINMENT_TRIGGER_PENDING",
+          "evidence": "Awaiting deterministic boundary assertion"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "UNRESOLVED_ENDPOINT_B",
+          "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "evidence": "Policy invariant: Do not sever clinical telemetry"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "EVIDENCE_SEALED",
+          "evidence": "Raw payload digest: 06753992b70967cf..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Identity / Credentials",
+          "state": "TOKEN_REVOKED",
+          "evidence": "Security assertion applied"
+        },
+        "S2": {
+          "label": "Endpoint Execution",
+          "state": "QUARANTINED",
+          "evidence": "Host isolated"
+        },
+        "S3": {
+          "label": "Network Movement",
+          "state": "PORT_445_BLOCKED",
+          "evidence": "ACL rule asserted"
+        },
+        "S4": {
+          "label": "Critical-Service Condition",
+          "state": "LOCAL_LOOP_PROTECTED",
+          "evidence": "Fail-safe bus isolated"
+        },
+        "S5": {
+          "label": "Current Observed System State",
+          "state": "ACTIVE_DISRUPTION",
+          "evidence": "Observed multi-vector anomaly in progress"
+        },
+        "S6": {
+          "label": "Containment State",
+          "state": "CONTAINMENT_LOCKED",
+          "evidence": "Blast radius severed"
+        },
+        "S7": {
+          "label": "Unknown / Discovery",
+          "state": "UNRESOLVED_ENDPOINT_B",
+          "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Safety / Governing Constraints",
+          "state": "LIFE_SAFETY_PINNED",
+          "evidence": "Policy invariant: Do not sever clinical telemetry"
+        },
+        "S9": {
+          "label": "Evidence / Provenance",
+          "state": "EVIDENCE_SEALED",
+          "evidence": "Raw payload digest: 06753992b70967cf..."
+        }
+      },
+      "context": {
+        "transition": "forward_containment_candidate",
+        "cartridge": "SECURITY_IR"
+      }
+    }
+  ],
+  "temporal_space": {
+    "center": "T5_COMPOUNDING",
+    "cartridge_id": "SECURITY_IR",
+    "positions": {
+      "T1_ROOT": null,
+      "T2_VEIL": null,
+      "T3_PATH_IN": null,
+      "T4_STABILITY": {
+        "space_id": "T_MINUS_1_PREDECESSOR",
+        "phase": "T4_STABILITY",
+        "provenance_hash": "b08bc7d9cc5449bef798b13dcc0822efb1a48f1d0be6a22c19248b1e5fe3ab02",
+        "seeds": {
+          "S1": {
+            "label": "Identity / Credentials",
+            "state": "PRE_INTRUSION_VALID",
+            "evidence": "Baseline auth log"
+          },
+          "S2": {
+            "label": "Endpoint Execution",
+            "state": "IDLE",
+            "evidence": "No abnormal processes"
+          },
+          "S3": {
+            "label": "Network Movement",
+            "state": "INERT",
+            "evidence": "No lateral scan"
+          },
+          "S4": {
+            "label": "Critical-Service Condition",
+            "state": "DEGRADED",
+            "evidence": "Telemetry latency spike on clinical device"
+          },
+          "S5": {
+            "label": "Current Observed System State",
+            "state": "NOMINAL_STABLE",
+            "evidence": "Pre-incident steady state"
+          },
+          "S6": {
+            "label": "Containment State",
+            "state": "CONTAINMENT_TRIGGER_PENDING",
+            "evidence": "Awaiting deterministic boundary assertion"
+          },
+          "S7": {
+            "label": "Unknown / Discovery",
+            "state": "UNRESOLVED_ENDPOINT_B",
+            "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "Safety / Governing Constraints",
+            "state": "LIFE_SAFETY_PINNED",
+            "evidence": "Policy invariant: Do not sever clinical telemetry"
+          },
+          "S9": {
+            "label": "Evidence / Provenance",
+            "state": "EVIDENCE_SEALED",
+            "evidence": "Raw payload digest: 06753992b70967cf..."
+          }
+        }
+      },
+      "T5_COMPOUNDING": {
+        "space_id": "T0_OBSERVED",
+        "phase": "T5_COMPOUNDING",
+        "provenance_hash": "09620d454b802d6de1a2a8ebf247a4afe41bd65ad4ed3102df2ffee28c44dcfa",
+        "seeds": {
+          "S1": {
+            "label": "Identity / Credentials",
+            "state": "COMPROMISED_TOKEN",
+            "evidence": "PowerShell invocation detected"
+          },
+          "S2": {
+            "label": "Endpoint Execution",
+            "state": "ANOMALOUS_EXECUTION",
+            "evidence": "Suspicious process spawn with encoded flags"
+          },
+          "S3": {
+            "label": "Network Movement",
+            "state": "LATERAL_SWEEP",
+            "evidence": "Port 445 SMB sweep across subnet"
+          },
+          "S4": {
+            "label": "Critical-Service Condition",
+            "state": "DEGRADED",
+            "evidence": "Telemetry latency spike on clinical device"
+          },
+          "S5": {
+            "label": "Current Observed System State",
+            "state": "ACTIVE_DISRUPTION",
+            "evidence": "Observed multi-vector anomaly in progress"
+          },
+          "S6": {
+            "label": "Containment State",
+            "state": "CONTAINMENT_TRIGGER_PENDING",
+            "evidence": "Awaiting deterministic boundary assertion"
+          },
+          "S7": {
+            "label": "Unknown / Discovery",
+            "state": "UNRESOLVED_ENDPOINT_B",
+            "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "Safety / Governing Constraints",
+            "state": "LIFE_SAFETY_PINNED",
+            "evidence": "Policy invariant: Do not sever clinical telemetry"
+          },
+          "S9": {
+            "label": "Evidence / Provenance",
+            "state": "EVIDENCE_SEALED",
+            "evidence": "Raw payload digest: 06753992b70967cf..."
+          }
+        }
+      },
+      "T6_REFRACTING": {
+        "space_id": "T_PLUS_1_SUCCESSOR",
+        "phase": "T6_REFRACTING",
+        "provenance_hash": "e0bc8b0a8691763b0fa3081ae84ceb02a5c1f0a606b54171532dc995fa9bb57f",
+        "seeds": {
+          "S1": {
+            "label": "Identity / Credentials",
+            "state": "TOKEN_REVOKED",
+            "evidence": "Security assertion applied"
+          },
+          "S2": {
+            "label": "Endpoint Execution",
+            "state": "QUARANTINED",
+            "evidence": "Host isolated"
+          },
+          "S3": {
+            "label": "Network Movement",
+            "state": "PORT_445_BLOCKED",
+            "evidence": "ACL rule asserted"
+          },
+          "S4": {
+            "label": "Critical-Service Condition",
+            "state": "LOCAL_LOOP_PROTECTED",
+            "evidence": "Fail-safe bus isolated"
+          },
+          "S5": {
+            "label": "Current Observed System State",
+            "state": "ACTIVE_DISRUPTION",
+            "evidence": "Observed multi-vector anomaly in progress"
+          },
+          "S6": {
+            "label": "Containment State",
+            "state": "CONTAINMENT_LOCKED",
+            "evidence": "Blast radius severed"
+          },
+          "S7": {
+            "label": "Unknown / Discovery",
+            "state": "UNRESOLVED_ENDPOINT_B",
+            "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "Safety / Governing Constraints",
+            "state": "LIFE_SAFETY_PINNED",
+            "evidence": "Policy invariant: Do not sever clinical telemetry"
+          },
+          "S9": {
+            "label": "Evidence / Provenance",
+            "state": "EVIDENCE_SEALED",
+            "evidence": "Raw payload digest: 06753992b70967cf..."
+          }
+        }
+      },
+      "T7_FLAME": null,
+      "T8_PATH_OUT": null,
+      "T9_STONE": null
+    },
+    "relationships": [
+      {
+        "phase": "T4_STABILITY",
+        "status": "DERIVED",
+        "rule": "bounded_predecessor_inference"
+      },
+      {
+        "phase": "T6_REFRACTING",
+        "status": "POSSIBLE",
+        "rule": "forward_containment_candidate"
+      }
+    ],
+    "plain_english_report": null,
+    "grammar_envelope": null
+  }
+}

@@ -1,0 +1,4414 @@
+{
+  "observations": [
+    {
+      "id": "F9::M_JSON::.obsidian/app.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 3,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".obsidian/app.json",
+          "extension": ".json",
+          "sha256": "9dc80ab291ccf23efb141dd2536d07363e4e158b7f32b6424d0640f1c084f1a7",
+          "bytes": 34,
+          "lines": 3
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Agnostic_db::.vs/AirGapped_CodeWriter_KB/CopilotIndices/18.12.1524.48085/SemanticSymbols.db",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Agnostic (.db)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "Agnostic (.db)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".vs/AirGapped_CodeWriter_KB/CopilotIndices/18.12.1524.48085/SemanticSymbols.db",
+          "extension": ".db",
+          "sha256": "e9ca3864e6e7c3ec870bb964bebedc6ba2cb5fe998958619872a8afef45b7eaf",
+          "bytes": 77824,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_Agnostic_vsidx::.vs/AirGapped_CodeWriter_KB/FileContentIndex/932d9e79-bd6e-4bbd-a692-eafd2bdbef7f.vsidx",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Agnostic (.vsidx)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "Agnostic (.vsidx)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".vs/AirGapped_CodeWriter_KB/FileContentIndex/932d9e79-bd6e-4bbd-a692-eafd2bdbef7f.vsidx",
+          "extension": ".vsidx",
+          "sha256": "de248260e84a3afaf4455ae68b265e5c981772adc5d9202967177ec6f40a705c",
+          "bytes": 74101,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_Agnostic_extensionless::.vs/AirGapped_CodeWriter_KB/v18/.wsuo",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Agnostic (extensionless)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "Agnostic (extensionless)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".vs/AirGapped_CodeWriter_KB/v18/.wsuo",
+          "extension": "<extensionless>",
+          "sha256": "7cb25c2479f31215579b9c3d4e6af86d18e614face570e82763270ae84d8e2b1",
+          "bytes": 15872,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F3::M_JSON::.vs/AirGapped_CodeWriter_KB/v18/DocumentLayout.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 18,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": ".vs/AirGapped_CodeWriter_KB/v18/DocumentLayout.json",
+          "extension": ".json",
+          "sha256": "f2273cd75c9da7a7cb8cb11f40c142939c1bdb2c3f1461cc15ceb03de6929bae",
+          "bytes": 511,
+          "lines": 23
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F8::M_JSON::.vs/ProjectSettings.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 3,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".vs/ProjectSettings.json",
+          "extension": ".json",
+          "sha256": "debe308c356f9f0c649ccd3bd0c9a2e921566eb38aaaad97de07e6a0ce9a1b33",
+          "bytes": 37,
+          "lines": 3
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_Agnostic_sqlite::.vs/slnx.sqlite",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Agnostic (.sqlite)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "Agnostic (.sqlite)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".vs/slnx.sqlite",
+          "extension": ".sqlite",
+          "sha256": "bc4c2e339b46adc0123eeede4111e550c909ccc8b9d1620e3a9666814caaa436",
+          "bytes": 98304,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F9::M_JSON::.vs/VSWorkspaceState.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 4,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": ".vs/VSWorkspaceState.json",
+          "extension": ".json",
+          "sha256": "f8315c8ace58425aeca40c1c17b3be8d50894c55f561cd7e36266da5d5ea3d72",
+          "bytes": 78,
+          "lines": 6
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F3::M_Markdown::00_Control/Project Status.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 222,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 7,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 11,
+          "F4_artifacts_data_modeling": 13,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 6,
+          "F8_opposing_transition_testing": 3
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "00_Control/Project Status.md",
+          "extension": ".md",
+          "sha256": "485ff4a42a9d683c19be6cd10e4df2874f55c25f395ad36322cbde9c787e373e",
+          "bytes": 4357,
+          "lines": 49
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_JSON::00_MANIFEST/checksums.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 10,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "00_MANIFEST/checksums.json",
+          "extension": ".json",
+          "sha256": "e88da96bada88cf2cbfc63892bf01e24474f19b7fdfc933f012fc4526f4c6e21",
+          "bytes": 148,
+          "lines": 6
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_JSON::00_MANIFEST/kb_manifest.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 22,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "00_MANIFEST/kb_manifest.json",
+          "extension": ".json",
+          "sha256": "d0adf77c3573fe810ceeb29a479b974fb46cc5c000646a2c51f32b2b9ae31e9c",
+          "bytes": 455,
+          "lines": 19
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::00_MANIFEST/provenance.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 19,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "00_MANIFEST/provenance.json",
+          "extension": ".json",
+          "sha256": "734bb67547180af8ab046734208d5b683e2c9a88cdb7bc1eae339175da20ad6e",
+          "bytes": 259,
+          "lines": 9
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_JSON::00_MANIFEST/version.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 10,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "00_MANIFEST/version.json",
+          "extension": ".json",
+          "sha256": "c4295813c498b75cd1938994108834623de4418eee499f62ae21dbcb533ad637",
+          "bytes": 148,
+          "lines": 7
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_JSON::01_INVARIANTS/execution_line.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 7,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "01_INVARIANTS/execution_line.json",
+          "extension": ".json",
+          "sha256": "59598de1d313805cb0ac6044d65dcb52e92e6171bf00922b3f59e4ff91a34bf7",
+          "bytes": 123,
+          "lines": 7
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F5::M_JSON::01_INVARIANTS/f1_f9.schema.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 35,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 12,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "01_INVARIANTS/f1_f9.schema.json",
+          "extension": ".json",
+          "sha256": "2932eb857d29396020f61afdc420320181a3fc8f8cb7b33bf0891c460610a569",
+          "bytes": 630,
+          "lines": 15
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_JSON::01_INVARIANTS/human_os.schema.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 36,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 4,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 12,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "01_INVARIANTS/human_os.schema.json",
+          "extension": ".json",
+          "sha256": "0cabcaf5ddb6c0120c7d3b5e1b00a747c43559b8ee8247c4bc7f27b2c91943e1",
+          "bytes": 659,
+          "lines": 15
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F5::M_JSON::01_INVARIANTS/logical_engine.schema.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F5",
+        "canonical_role": "Governing / Reference (What governs or constrains it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 35,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 12,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "01_INVARIANTS/logical_engine.schema.json",
+          "extension": ".json",
+          "sha256": "0f30ae4015517d27bfbb8f56ee31b381721f0bca425786beeeac3e4d13a9a20a",
+          "bytes": 636,
+          "lines": 15
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_JSON::01_INVARIANTS/neutral_intent.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 8,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "01_INVARIANTS/neutral_intent.json",
+          "extension": ".json",
+          "sha256": "b80e6f9850e897700f9f61d29b7c6bbb6a701dcc780ddedb11116eb3a22e17e7",
+          "bytes": 143,
+          "lines": 8
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Markdown::01_Source_Evidence/Recovered Conversation Leads.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 117,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 6,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 9,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "01_Source_Evidence/Recovered Conversation Leads.md",
+          "extension": ".md",
+          "sha256": "580c60ee928811ea9b63dee8a13bcfc2d6a87fb459a6d83e7d602f15015dc42a",
+          "bytes": 2150,
+          "lines": 22
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_Markdown::02_Architecture/Knowledge Engine Writer Boundary.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 255,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 9,
+          "F3_evidence_functions_closures": 7,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 6,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 5,
+          "F8_opposing_transition_testing": 3
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "02_Architecture/Knowledge Engine Writer Boundary.md",
+          "extension": ".md",
+          "sha256": "5014c26b37c42622d642796ae4fb2e520690ed3549c61a38621b14827ec9f56c",
+          "bytes": 4468,
+          "lines": 67
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F1::M_Markdown::02_Architecture/Source-to-Target Pipeline.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 178,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 5,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 8,
+          "F4_artifacts_data_modeling": 8,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 3
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "02_Architecture/Source-to-Target Pipeline.md",
+          "extension": ".md",
+          "sha256": "b72aa12e85302e8a587d2535850aaecaf951198b4223b7e5230a4b4008beeefb",
+          "bytes": 3596,
+          "lines": 53
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::02_VOCABULARY/aliases.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "02_VOCABULARY/aliases.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::02_VOCABULARY/concepts.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "02_VOCABULARY/concepts.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::02_VOCABULARY/entities.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "02_VOCABULARY/entities.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::02_VOCABULARY/operations.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "02_VOCABULARY/operations.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::02_VOCABULARY/relationships.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "02_VOCABULARY/relationships.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Markdown::03_Discovery_KB/Discovery Process Record Template.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 69,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 22,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "03_Discovery_KB/Discovery Process Record Template.md",
+          "extension": ".md",
+          "sha256": "093c17ceda7190d9a17d8bb9c59f6444fad04ad9245db2626c1e759a11388fed",
+          "bytes": 1264,
+          "lines": 53
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::03_STATES/conditions.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "03_STATES/conditions.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSONL::03_STATES/states.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "03_STATES/states.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::03_STATES/successor_states.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "03_STATES/successor_states.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::03_STATES/transitions.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "03_STATES/transitions.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/bounded_result.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/bounded_result.flow.json",
+          "extension": ".json",
+          "sha256": "119b086c81b434da14cda66b77e7f0f80f651b9fb66e73e08536d8c5f14b9b10",
+          "bytes": 180,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/compound.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/compound.flow.json",
+          "extension": ".json",
+          "sha256": "63390effd8201940b4cee62fa292e25844eac35aff2fa17e75fef77f613131fe",
+          "bytes": 174,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F4::M_JSON::04_FLOWS/discovery.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/discovery.flow.json",
+          "extension": ".json",
+          "sha256": "aef6099cf26c7f8ff53ffbeb9310393ef65e4e76ea3a1ce986d3017a016cce94",
+          "bytes": 175,
+          "lines": 10
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/feedback.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/feedback.flow.json",
+          "extension": ".json",
+          "sha256": "10d8cc83c029cacc1d60521e3ae42586566b9b0450cdf4febe64df8ec3f44307",
+          "bytes": 174,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/observe.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/observe.flow.json",
+          "extension": ".json",
+          "sha256": "6e986a95651a2c3e9eb09d22296aee7f615b9282ebcafe907fb7db0b67ccae23",
+          "bytes": 173,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/position.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/position.flow.json",
+          "extension": ".json",
+          "sha256": "ccfef6a10e11b82cfa924361fb5c0858339e2253f35c44e2e2d789cb54e12be4",
+          "bytes": 174,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/possibilities.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/possibilities.flow.json",
+          "extension": ".json",
+          "sha256": "9c41d71d663f10bc748c3d34ebca0f44c53e62221add48358bccdfbbc60d6c01",
+          "bytes": 179,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/receive.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/receive.flow.json",
+          "extension": ".json",
+          "sha256": "b414d70391347db4e2a2c78fdde3dd1e28d963d9c87c20c8c8557f8287d57ebb",
+          "bytes": 173,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/relate.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/relate.flow.json",
+          "extension": ".json",
+          "sha256": "452acf635c60c5fae772281e8b61091fd488de228c4764049ebd1bad614fea8b",
+          "bytes": 172,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F2::M_JSON::04_FLOWS/seal.flow.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F2",
+        "canonical_role": "Chronology / Change (When did it exist or change?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "04_FLOWS/seal.flow.json",
+          "extension": ".json",
+          "sha256": "cec5e5fa0497279e680319262898fe717d880e456ac64168f405fef5a80f761c",
+          "bytes": 170,
+          "lines": 10
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Markdown::04_SeedSpace/README.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 57,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 3,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 1,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "04_SeedSpace/README.md",
+          "extension": ".md",
+          "sha256": "eabf218b324340baec1fb9f0a1d601caac562e8375eaf27d4f63ac8f18622e90",
+          "bytes": 734,
+          "lines": 14
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/admissions.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/admissions.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/claims.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/claims.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/contradictions.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/contradictions.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/defenses.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/defenses.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F7::M_JSON::05_DISCOVERY/discovery.schema.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F7",
+        "canonical_role": "Discovery / Unknown (What is unknown or still required?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F7",
+        "canonical_role": "Discovery / Unknown (What is unknown or still required?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 38,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 5,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 1,
+          "F4_artifacts_data_modeling": 14,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 3,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/discovery.schema.json",
+          "extension": ".json",
+          "sha256": "169706408b7764e6f2b4e55a2c806730c2e99cda4414f703f788ac0db542e276",
+          "bytes": 725,
+          "lines": 17
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/events.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/events.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/exhibits.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/exhibits.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/risks.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/risks.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/unknowns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/unknowns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::05_DISCOVERY/witnesses.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "05_DISCOVERY/witnesses.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F4::M_Markdown::05_Flows/Flow Record Template.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F4",
+        "canonical_role": "Direct Artifacts (What direct material exists?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 55,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 3,
+          "F4_artifacts_data_modeling": 2,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 21,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "05_Flows/Flow Record Template.md",
+          "extension": ".md",
+          "sha256": "68eb472bd6ee84582bb94db32fd0001421b48a72f8d3d9a5e756faafdc99ad75",
+          "bytes": 1028,
+          "lines": 43
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Markdown::06_Code_Writer/Writer Contract.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 6,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 133,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 2,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 3,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 5,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "06_Code_Writer/Writer Contract.md",
+          "extension": ".md",
+          "sha256": "e41b3519f77904a858eeb080fb1ba6d6df6800e0cb88c290dc177f4faf13b210",
+          "bytes": 2086,
+          "lines": 47
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F3::M_Markdown::06_Code_Writer/Writer Execution Pipeline.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 7,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 187,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 6,
+          "F2_chronology_scoping_control": 10,
+          "F3_evidence_functions_closures": 9,
+          "F4_artifacts_data_modeling": 6,
+          "F5_governing_rules_error_arch": 3,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 10,
+          "F8_opposing_transition_testing": 2
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "06_Code_Writer/Writer Execution Pipeline.md",
+          "extension": ".md",
+          "sha256": "6d843a28bb826198742d1a8aefbdd9c9323a6ebaed7a1b19fddd77f852f8d0e3",
+          "bytes": 4264,
+          "lines": 72
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::06_RELATIONSHIPS/compound_rules.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "06_RELATIONSHIPS/compound_rules.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::06_RELATIONSHIPS/contradiction_rules.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "06_RELATIONSHIPS/contradiction_rules.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::06_RELATIONSHIPS/dependency_rules.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "06_RELATIONSHIPS/dependency_rules.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::06_RELATIONSHIPS/position_relations.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "06_RELATIONSHIPS/position_relations.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::06_RELATIONSHIPS/relation_types.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 4,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "06_RELATIONSHIPS/relation_types.json",
+          "extension": ".json",
+          "sha256": "60162d5ca0d57f6f8cb8c1548cf8ae8a8bdfc87b51a5e9d69b94bb231f551457",
+          "bytes": 73,
+          "lines": 5
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::07_PATTERNS/architecture_patterns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "07_PATTERNS/architecture_patterns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::07_PATTERNS/binder_patterns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "07_PATTERNS/binder_patterns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::07_PATTERNS/cartridge_patterns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "07_PATTERNS/cartridge_patterns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::07_PATTERNS/interface_patterns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "07_PATTERNS/interface_patterns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::07_PATTERNS/routing_patterns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "07_PATTERNS/routing_patterns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::07_PATTERNS/state_machine_patterns.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "07_PATTERNS/state_machine_patterns.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F3::M_Markdown::07_Target_Adapters/README.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 55,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 3,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 2,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 1,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "07_Target_Adapters/README.md",
+          "extension": ".md",
+          "sha256": "e265b1b433dcc5c8863b0f94bf57a7361b7272b61c3b20e63ae3e282feb8052e",
+          "bytes": 679,
+          "lines": 15
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::08_CODE_SEMANTICS/control_flow.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/control_flow.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::08_CODE_SEMANTICS/data_structures.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/data_structures.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::08_CODE_SEMANTICS/error_behavior.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/error_behavior.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::08_CODE_SEMANTICS/functions.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/functions.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::08_CODE_SEMANTICS/io_operations.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/io_operations.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::08_CODE_SEMANTICS/persistence.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/persistence.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::08_CODE_SEMANTICS/validation.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "08_CODE_SEMANTICS/validation.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F3::M_Markdown::08_Offline_Package/Air-Gap Acceptance Checklist.md",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "syntax_family": "Markdown",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F3",
+        "canonical_role": "Support / Evidence (What supports it?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 5,
+        "syntax_family": "Markdown",
+        "paradigm": "declarative_specification",
+        "text_available": true,
+        "token_count": 117,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 1,
+          "F2_chronology_scoping_control": 4,
+          "F3_evidence_functions_closures": 4,
+          "F4_artifacts_data_modeling": 1,
+          "F5_governing_rules_error_arch": 1,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 2,
+          "F8_opposing_transition_testing": 1
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "08_Offline_Package/Air-Gap Acceptance Checklist.md",
+          "extension": ".md",
+          "sha256": "9c4d1d67ee4d291877e61493af7cbf5fe02a67e6906c1695079313f9c32a2260",
+          "bytes": 1420,
+          "lines": 23
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    },
+    {
+      "id": "F9::M_JSON::09_LANGUAGE_ADAPTERS/batch.adapter.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 11,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "09_LANGUAGE_ADAPTERS/batch.adapter.json",
+          "extension": ".json",
+          "sha256": "d1a4beaac29c0beb888e80fc71145760af0076e40f0e431c86e2cfbef9861f7a",
+          "bytes": 186,
+          "lines": 9
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F9::M_JSON::09_LANGUAGE_ADAPTERS/generic.adapter.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 3,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 12,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "09_LANGUAGE_ADAPTERS/generic.adapter.json",
+          "extension": ".json",
+          "sha256": "ac83d9702cc43957d26eed06922a6c274a15026db70b129fe8683c91d22fd4ab",
+          "bytes": 210,
+          "lines": 9
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F9::M_JSON::09_LANGUAGE_ADAPTERS/javascript.adapter.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 10,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "09_LANGUAGE_ADAPTERS/javascript.adapter.json",
+          "extension": ".json",
+          "sha256": "9a2d4d8aee18ae131451d150e596a1701ac2eb66a2fcd409d3bd337336d12c1e",
+          "bytes": 188,
+          "lines": 9
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F9::M_JSON::09_LANGUAGE_ADAPTERS/powershell.adapter.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 10,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "09_LANGUAGE_ADAPTERS/powershell.adapter.json",
+          "extension": ".json",
+          "sha256": "dcb10b5dccb55269fcad279d53f685055b1375a8a61083f5234d3ad19dfc5180",
+          "bytes": 188,
+          "lines": 9
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F9::M_JSON::09_LANGUAGE_ADAPTERS/python.adapter.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F9",
+        "canonical_role": "Ledger / Result (What bounded state was reached?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 10,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "09_LANGUAGE_ADAPTERS/python.adapter.json",
+          "extension": ".json",
+          "sha256": "9d3f3fbd343f6728ea9033d2b6702312e0859be34370e15e904791beca96f4a1",
+          "bytes": 180,
+          "lines": 9
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::10_BUILD_RECIPES/application.recipe.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 2,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "10_BUILD_RECIPES/application.recipe.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::10_BUILD_RECIPES/cartridge.recipe.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 2,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "10_BUILD_RECIPES/cartridge.recipe.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::10_BUILD_RECIPES/cli.recipe.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 2,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "10_BUILD_RECIPES/cli.recipe.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::10_BUILD_RECIPES/engine.recipe.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 2,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "10_BUILD_RECIPES/engine.recipe.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::10_BUILD_RECIPES/service.recipe.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 2,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "10_BUILD_RECIPES/service.recipe.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F8::M_JSONL::10_BUILD_RECIPES/single_file.recipe.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F8",
+        "canonical_role": "Opposing / Transition (What competes, contradicts, or can transition?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 2,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "10_BUILD_RECIPES/single_file.recipe.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::11_CONSTRAINTS/architectural_constraints.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 5,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "11_CONSTRAINTS/architectural_constraints.json",
+          "extension": ".json",
+          "sha256": "f3c9c6d891bf22d365f0beec9a075d106c48e29e2b2f8ae39b3bfdd4a055b1cc",
+          "bytes": 70,
+          "lines": 5
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::11_CONSTRAINTS/dependency_constraints.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 5,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "11_CONSTRAINTS/dependency_constraints.json",
+          "extension": ".json",
+          "sha256": "f3c9c6d891bf22d365f0beec9a075d106c48e29e2b2f8ae39b3bfdd4a055b1cc",
+          "bytes": 70,
+          "lines": 5
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::11_CONSTRAINTS/generation_constraints.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 5,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "11_CONSTRAINTS/generation_constraints.json",
+          "extension": ".json",
+          "sha256": "f3c9c6d891bf22d365f0beec9a075d106c48e29e2b2f8ae39b3bfdd4a055b1cc",
+          "bytes": 70,
+          "lines": 5
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::11_CONSTRAINTS/offline_constraints.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 2,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 5,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "11_CONSTRAINTS/offline_constraints.json",
+          "extension": ".json",
+          "sha256": "f3c9c6d891bf22d365f0beec9a075d106c48e29e2b2f8ae39b3bfdd4a055b1cc",
+          "bytes": 70,
+          "lines": 5
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_JSON::11_CONSTRAINTS/output_contracts.json",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "JSON",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "JSON",
+        "paradigm": "structured_state",
+        "text_available": true,
+        "token_count": 5,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "11_CONSTRAINTS/output_contracts.json",
+          "extension": ".json",
+          "sha256": "be2c79260e47b79f039ff3bc00075e5146e3c19b9eee5a592274dfb9760d3413",
+          "bytes": 68,
+          "lines": 5
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Agnostic_extensionless::12_EXAMPLES/expected_code/.keep",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Agnostic (extensionless)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "Agnostic (extensionless)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "12_EXAMPLES/expected_code/.keep",
+          "extension": "<extensionless>",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Agnostic_extensionless::12_EXAMPLES/expected_results/.keep",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Agnostic (extensionless)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "Agnostic (extensionless)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "12_EXAMPLES/expected_results/.keep",
+          "extension": "<extensionless>",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Agnostic_extensionless::12_EXAMPLES/expected_structure/.keep",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Agnostic (extensionless)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "Agnostic (extensionless)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "12_EXAMPLES/expected_structure/.keep",
+          "extension": "<extensionless>",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F1::M_Agnostic_extensionless::12_EXAMPLES/input/.keep",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "Agnostic (extensionless)",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 1,
+        "syntax_family": "Agnostic (extensionless)",
+        "paradigm": "domain_and_syntax_agnostic",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "12_EXAMPLES/input/.keep",
+          "extension": "<extensionless>",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::13_VALIDATION/acceptance_tests.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "13_VALIDATION/acceptance_tests.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::13_VALIDATION/behavioral_tests.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "13_VALIDATION/behavioral_tests.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::13_VALIDATION/invariant_tests.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "13_VALIDATION/invariant_tests.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::13_VALIDATION/regression_tests.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "13_VALIDATION/regression_tests.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    },
+    {
+      "id": "F6::M_JSONL::13_VALIDATION/structural_tests.jsonl",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "syntax_family": "JSONL",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F6",
+        "canonical_role": "Correspondence / Interaction (What was communicated or exchanged?)",
+        "positioning_basis": "neutral_deterministic_sha256_fallback",
+        "relationship_score": 0,
+        "syntax_family": "JSONL",
+        "paradigm": "structured_stream",
+        "text_available": false,
+        "token_count": 1,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 0,
+          "F2_chronology_scoping_control": 0,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 0,
+          "F5_governing_rules_error_arch": 0,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [
+          "opaque_or_binary_payload_requires_external_inspector",
+          "no_structural_keywords_matched_positioned_by_hash"
+        ],
+        "F9_production_provenance": {
+          "relative_path": "13_VALIDATION/structural_tests.jsonl",
+          "extension": ".jsonl",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "lines": 0
+        },
+        "status": "DISCOVERY_REQUIRED"
+      }
+    }
+  ]
+}

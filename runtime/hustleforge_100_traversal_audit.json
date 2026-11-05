@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-11-04T18:06:52Z",
+  "total_scenarios": 1,
+  "pass0_suspended_rate": "1/100",
+  "pass1_bounded_rate": "1/100",
+  "predecessor_chains_verified": "1/100",
+  "wall_time_seconds": 1.94,
+  "segment_distribution": {
+    "Freelancers": 1
+  },
+  "scenarios": [
+    {
+      "id": 42,
+      "name": "Tasha Williams",
+      "segment": "Freelancers",
+      "archetype": "Freelance Video Editor",
+      "niche": "Commercial Video Editing",
+      "target_mrr": "$4,500",
+      "pass0_status": "SUSPENDED",
+      "pass0_gap": "S7",
+      "pass1_status": "BOUNDED",
+      "predecessor_hash": "b78e50b49e80de3d...",
+      "sealed_hash": "b5782c29757fabb1...",
+      "receipt_verified": true
+    }
+  ]
+}

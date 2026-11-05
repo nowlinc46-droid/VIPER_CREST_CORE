@@ -1,0 +1,389 @@
+{
+  "case_id": "reader_extracted_legal",
+  "observations": [
+    {
+      "id": "T4_PREDECESSOR_vs_T5_OBSERVED",
+      "baseline": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "CONTRACT_IN_GOOD_STANDING",
+          "evidence": "Pre-breach active tenancy"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "EXECUTION_BASELINE",
+          "evidence": "Signed lease agreement"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "NOMINAL_RENT_PAYMENTS",
+          "evidence": "Timely monthly rental ledger"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "NO_DISPUTES",
+          "evidence": "Zero recorded maintenance notices"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "PERFORMING_CONTRACT",
+          "evidence": "Stable commercial occupancy"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "DISCOVERY_MOTION_COMPEL_PENDING",
+          "evidence": "Motion to compel maintenance contractor records and subpoena technician"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "UNPRODUCED_DISPATCH_LOGS",
+          "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_ASSERTED",
+          "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "BATES_VAULT_SEALED",
+          "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "PARTIES_JOINED_IN_DISPUTE",
+          "evidence": "Apex Properties LLC v. ByteCore Systems Inc (Civil Action No. 2026-CV-8812)"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "BREACH_CHRONOLOGY_ESTABLISHED",
+          "evidence": "2024-01-01 Lease -> 2026-06-12 Chiller Fail -> 2026-08-15 Notice -> 2026-09-01 Escrow"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "MUTUAL_ADMISSIONS_RECORDED",
+          "evidence": "Landlord admitted HVAC outage; Tenant admitted withholding rent into escrow"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "EVIDENTIARY_CONTRADICTION_FLAGGED",
+          "evidence": "Maintenance log (repair 2026-06-18) contradicts telemetry (overheating to 2026-07-20)"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "ACTIVE_DISPUTE_IN_CONTROVERSY",
+          "evidence": "Commercial lease default & warranty of habitability claim ($135,000 in controversy)"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "DISCOVERY_MOTION_COMPEL_PENDING",
+          "evidence": "Motion to compel maintenance contractor records and subpoena technician"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "UNPRODUCED_DISPATCH_LOGS",
+          "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_ASSERTED",
+          "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "BATES_VAULT_SEALED",
+          "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+        }
+      },
+      "context": {
+        "transition": "backward_provenance_bound",
+        "cartridge": "COURTFORGE_LEGAL"
+      }
+    },
+    {
+      "id": "T5_OBSERVED_vs_T6_SUCCESSOR",
+      "baseline": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "PARTIES_JOINED_IN_DISPUTE",
+          "evidence": "Apex Properties LLC v. ByteCore Systems Inc (Civil Action No. 2026-CV-8812)"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "BREACH_CHRONOLOGY_ESTABLISHED",
+          "evidence": "2024-01-01 Lease -> 2026-06-12 Chiller Fail -> 2026-08-15 Notice -> 2026-09-01 Escrow"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "MUTUAL_ADMISSIONS_RECORDED",
+          "evidence": "Landlord admitted HVAC outage; Tenant admitted withholding rent into escrow"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "EVIDENTIARY_CONTRADICTION_FLAGGED",
+          "evidence": "Maintenance log (repair 2026-06-18) contradicts telemetry (overheating to 2026-07-20)"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "ACTIVE_DISPUTE_IN_CONTROVERSY",
+          "evidence": "Commercial lease default & warranty of habitability claim ($135,000 in controversy)"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "DISCOVERY_MOTION_COMPEL_PENDING",
+          "evidence": "Motion to compel maintenance contractor records and subpoena technician"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "UNPRODUCED_DISPATCH_LOGS",
+          "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_ASSERTED",
+          "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "BATES_VAULT_SEALED",
+          "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+        }
+      },
+      "candidate": {
+        "S1": {
+          "label": "Case Ingress / Party Identity",
+          "state": "JUDICIALLY_MANAGED",
+          "evidence": "Case management order entered"
+        },
+        "S2": {
+          "label": "Chronological Timeline Events",
+          "state": "BREACH_CHRONOLOGY_ESTABLISHED",
+          "evidence": "2024-01-01 Lease -> 2026-06-12 Chiller Fail -> 2026-08-15 Notice -> 2026-09-01 Escrow"
+        },
+        "S3": {
+          "label": "Party Admissions & Key Testimony",
+          "state": "MUTUAL_ADMISSIONS_RECORDED",
+          "evidence": "Landlord admitted HVAC outage; Tenant admitted withholding rent into escrow"
+        },
+        "S4": {
+          "label": "Contradictions & Irreconcilable Conflicts",
+          "state": "CONTRADICTION_SUBMITTED_TO_TRIER_OF_FACT",
+          "evidence": "Fact-finder review"
+        },
+        "S5": {
+          "label": "Core Claims & Dispute State",
+          "state": "ESCROW_SETTLEMENT_ROUTING",
+          "evidence": "Funds held in court escrow"
+        },
+        "S6": {
+          "label": "Discovery Motions & Routing",
+          "state": "DISCOVERY_COMPELLED",
+          "evidence": "Subpoenas issued for contractor"
+        },
+        "S7": {
+          "label": "Unproduced Evidence / Unknown Claims",
+          "state": "UNPRODUCED_DISPATCH_LOGS",
+          "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+        },
+        "S8": {
+          "label": "Statutory Bedrock & Legal Authority",
+          "state": "STATUTORY_AUTHORITY_ASSERTED",
+          "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+        },
+        "S9": {
+          "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+          "state": "BATES_VAULT_SEALED",
+          "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+        }
+      },
+      "context": {
+        "transition": "forward_containment_candidate",
+        "cartridge": "COURTFORGE_LEGAL"
+      }
+    }
+  ],
+  "temporal_space": {
+    "center": "T5_COMPOUNDING",
+    "cartridge_id": "COURTFORGE_LEGAL",
+    "positions": {
+      "T1_ROOT": null,
+      "T2_VEIL": null,
+      "T3_PATH_IN": null,
+      "T4_STABILITY": {
+        "space_id": "T_MINUS_1_BASELINE_LEASE",
+        "phase": "T4_STABILITY",
+        "provenance_hash": "8b3e0fd7ea5c3adafe4ab023df3eb7d600607f4de113800227c9dbdf8fddcbba",
+        "seeds": {
+          "S1": {
+            "label": "Case Ingress / Party Identity",
+            "state": "CONTRACT_IN_GOOD_STANDING",
+            "evidence": "Pre-breach active tenancy"
+          },
+          "S2": {
+            "label": "Chronological Timeline Events",
+            "state": "EXECUTION_BASELINE",
+            "evidence": "Signed lease agreement"
+          },
+          "S3": {
+            "label": "Party Admissions & Key Testimony",
+            "state": "NOMINAL_RENT_PAYMENTS",
+            "evidence": "Timely monthly rental ledger"
+          },
+          "S4": {
+            "label": "Contradictions & Irreconcilable Conflicts",
+            "state": "NO_DISPUTES",
+            "evidence": "Zero recorded maintenance notices"
+          },
+          "S5": {
+            "label": "Core Claims & Dispute State",
+            "state": "PERFORMING_CONTRACT",
+            "evidence": "Stable commercial occupancy"
+          },
+          "S6": {
+            "label": "Discovery Motions & Routing",
+            "state": "DISCOVERY_MOTION_COMPEL_PENDING",
+            "evidence": "Motion to compel maintenance contractor records and subpoena technician"
+          },
+          "S7": {
+            "label": "Unproduced Evidence / Unknown Claims",
+            "state": "UNPRODUCED_DISPATCH_LOGS",
+            "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "Statutory Bedrock & Legal Authority",
+            "state": "STATUTORY_AUTHORITY_ASSERTED",
+            "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+          },
+          "S9": {
+            "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+            "state": "BATES_VAULT_SEALED",
+            "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+          }
+        }
+      },
+      "T5_COMPOUNDING": {
+        "space_id": "T0_LEGAL_DISPUTE",
+        "phase": "T5_COMPOUNDING",
+        "provenance_hash": "b252ae312b906fd8a1c9cd139f08072b34a4393d4922ae73114f7cf9ea742f72",
+        "seeds": {
+          "S1": {
+            "label": "Case Ingress / Party Identity",
+            "state": "PARTIES_JOINED_IN_DISPUTE",
+            "evidence": "Apex Properties LLC v. ByteCore Systems Inc (Civil Action No. 2026-CV-8812)"
+          },
+          "S2": {
+            "label": "Chronological Timeline Events",
+            "state": "BREACH_CHRONOLOGY_ESTABLISHED",
+            "evidence": "2024-01-01 Lease -> 2026-06-12 Chiller Fail -> 2026-08-15 Notice -> 2026-09-01 Escrow"
+          },
+          "S3": {
+            "label": "Party Admissions & Key Testimony",
+            "state": "MUTUAL_ADMISSIONS_RECORDED",
+            "evidence": "Landlord admitted HVAC outage; Tenant admitted withholding rent into escrow"
+          },
+          "S4": {
+            "label": "Contradictions & Irreconcilable Conflicts",
+            "state": "EVIDENTIARY_CONTRADICTION_FLAGGED",
+            "evidence": "Maintenance log (repair 2026-06-18) contradicts telemetry (overheating to 2026-07-20)"
+          },
+          "S5": {
+            "label": "Core Claims & Dispute State",
+            "state": "ACTIVE_DISPUTE_IN_CONTROVERSY",
+            "evidence": "Commercial lease default & warranty of habitability claim ($135,000 in controversy)"
+          },
+          "S6": {
+            "label": "Discovery Motions & Routing",
+            "state": "DISCOVERY_MOTION_COMPEL_PENDING",
+            "evidence": "Motion to compel maintenance contractor records and subpoena technician"
+          },
+          "S7": {
+            "label": "Unproduced Evidence / Unknown Claims",
+            "state": "UNPRODUCED_DISPATCH_LOGS",
+            "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "Statutory Bedrock & Legal Authority",
+            "state": "STATUTORY_AUTHORITY_ASSERTED",
+            "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+          },
+          "S9": {
+            "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+            "state": "BATES_VAULT_SEALED",
+            "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+          }
+        }
+      },
+      "T6_REFRACTING": {
+        "space_id": "T_PLUS_1_JUDICIAL_CANDIDATE",
+        "phase": "T6_REFRACTING",
+        "provenance_hash": "f73cc37f11bc6a33ed8469dc75b4496022f610e258cc0494b906e49c8ed20a93",
+        "seeds": {
+          "S1": {
+            "label": "Case Ingress / Party Identity",
+            "state": "JUDICIALLY_MANAGED",
+            "evidence": "Case management order entered"
+          },
+          "S2": {
+            "label": "Chronological Timeline Events",
+            "state": "BREACH_CHRONOLOGY_ESTABLISHED",
+            "evidence": "2024-01-01 Lease -> 2026-06-12 Chiller Fail -> 2026-08-15 Notice -> 2026-09-01 Escrow"
+          },
+          "S3": {
+            "label": "Party Admissions & Key Testimony",
+            "state": "MUTUAL_ADMISSIONS_RECORDED",
+            "evidence": "Landlord admitted HVAC outage; Tenant admitted withholding rent into escrow"
+          },
+          "S4": {
+            "label": "Contradictions & Irreconcilable Conflicts",
+            "state": "CONTRADICTION_SUBMITTED_TO_TRIER_OF_FACT",
+            "evidence": "Fact-finder review"
+          },
+          "S5": {
+            "label": "Core Claims & Dispute State",
+            "state": "ESCROW_SETTLEMENT_ROUTING",
+            "evidence": "Funds held in court escrow"
+          },
+          "S6": {
+            "label": "Discovery Motions & Routing",
+            "state": "DISCOVERY_COMPELLED",
+            "evidence": "Subpoenas issued for contractor"
+          },
+          "S7": {
+            "label": "Unproduced Evidence / Unknown Claims",
+            "state": "UNPRODUCED_DISPATCH_LOGS",
+            "evidence": "Landlord third-party contractor dispatch tickets unproduced; held in F7 UNRESOLVED"
+          },
+          "S8": {
+            "label": "Statutory Bedrock & Legal Authority",
+            "state": "STATUTORY_AUTHORITY_ASSERTED",
+            "evidence": "UCC Section 2-314 & Commercial Lease Section 14.2 habitability covenants"
+          },
+          "S9": {
+            "label": "Sealed Exhibit Vault / Bates-Stamped Records",
+            "state": "BATES_VAULT_SEALED",
+            "evidence": "Bates APEX-0001..APEX-0420 SHA256: 63770ddee081798c..."
+          }
+        }
+      },
+      "T7_FLAME": null,
+      "T8_PATH_OUT": null,
+      "T9_STONE": null
+    },
+    "relationships": [
+      {
+        "phase": "T4_STABILITY",
+        "status": "DERIVED",
+        "rule": "bounded_predecessor_contract_baseline"
+      },
+      {
+        "phase": "T6_REFRACTING",
+        "status": "POSSIBLE",
+        "rule": "forward_adjudication_candidate"
+      }
+    ],
+    "plain_english_report": null,
+    "grammar_envelope": null
+  }
+}

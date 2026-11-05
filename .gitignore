@@ -1,0 +1,71 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# IDE & Editor metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test & coverage artifacts
+.pytest_cache/
+**/__pycache__/
+**/.pytest_cache/
+.coverage
+htmlcov/
+
+# Obsidian workspace dynamic state
+.obsidian/workspace*
+.obsidian/cache/
+VIPER_CREST/
+VIPER_CREST_2.0/
+VIPER_CREST_2.01/
+scratch/
+runtime/aaos_staging/
+runtime/sim_aaos_state.db
+fixtures/*.wav
+
+# Large binary archives
+*.zip
+*.tar.gz
+*.7z
+*.iso
+
+# Dynamic runtime sessions and temporary staging
+runtime/sessions/
+runtime/staging/
+runtime/fixtures/
+runtime/dropzone/
+runtime/intents/
+runtime/probes/
+runtime/ai/
+runtime/signing_key.pem
+runtime/*.tmp
+runtime/*.log
+runtime/*.db-shm
+runtime/*.db-wal
+fixtures/ai_contract_*.json
+evm-smart-contracts/
+runtime/foundry_validation/out/
+runtime/foundry_validation/cache/
+
+# Archived consolidation dumps
+consolidated/
+consolidated_versions/
+consolidation/
+
+# Privileged Bug Hunts, Findings & Target Repositories
+targets/
+VIPER-LOMBARD-*/
+quarantine/
+QUARANTINE_BUG_HUNTS/
+*.env*
+cache/

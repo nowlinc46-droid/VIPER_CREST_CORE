@@ -1,0 +1,35 @@
+{
+  "system_identifier": "LAUNCH_X431_TORQUE_BEIJING_2024",
+  "hardware_platform": "ANDROID_AUTOMOTIVE_DIAGNOSTIC_TABLET",
+  "manufacturer": "CNLAUNCH_BEIJING_SHENZHEN",
+  "build_epoch": "2024",
+  "target_vci_serial": "989510052355",
+  "vci_category": 3,
+  "can_protocol": "CAN_FD_UDS_01.10",
+  "j2534_support": {
+    "enabled": true,
+    "device_name": "ViperCrest SmartLink J2534 (989510052355)",
+    "registry_path": "HKEY_LOCAL_MACHINE\\SOFTWARE\\PassThruSupport.04.04\\ViperCrest_SmartLink_989510052355",
+    "protocols": ["CAN", "CAN_FD", "ISO15765", "ISO9141", "ISO14230"]
+  },
+  "installed_apks": [
+    "X431_Torque_V_APP_V7_02_036_EN.apk",
+    "APP_Init_V1_00_006_EN.apk"
+  ],
+  "native_comm_layer": "libCOMM_ABSTRACT_LAYER.so",
+  "ecu_flashing_capabilities": {
+    "boot_mode": "BOOT_CONFIG.BIN",
+    "bench_mode": "BENCHMODE_CONFIG.BIN",
+    "uds_engine": "UDS_DSDATA.BIN",
+    "flashing_engine": "libDIAGPROGFUN.so"
+  },
+  "safety_invariants": {
+    "eps_max_torque_nm": 12.0,
+    "max_apps_divergence_pct": 5.0,
+    "fail_closed_torque_clamp_nm": 0.0,
+    "fail_closed_throttle_clamp_pct": 0.0,
+    "ecu_flash_checksum_enforced": true
+  },
+  "governor_binding": "TheStem_ViperCrest_AAOS_Interceptor",
+  "ledger_persistence": "/data/local/tmp/viper_stem/aaos_viper_state.db"
+}

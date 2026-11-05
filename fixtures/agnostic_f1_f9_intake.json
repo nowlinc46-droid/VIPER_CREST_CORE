@@ -1,0 +1,46 @@
+{
+  "observations": [
+    {
+      "id": "F1::M7_C::sample_os_scheduler.c",
+      "baseline": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "syntax_family": "C",
+        "status": "neutral_intake_reference"
+      },
+      "candidate": {
+        "engine": "HUMAN_OS_LOGICAL_ENGINE_F1_F9",
+        "neutral_intent": true,
+        "canonical_position": "F1",
+        "canonical_role": "Identity / Intake (What entered?)",
+        "positioning_basis": "dataset_relationship_match",
+        "relationship_score": 4,
+        "syntax_family": "C",
+        "paradigm": "static_procedural_systems",
+        "text_available": true,
+        "token_count": 29,
+        "F1_F8_stage_signals": {
+          "F1_identity_intake_primitives": 2,
+          "F2_chronology_scoping_control": 1,
+          "F3_evidence_functions_closures": 0,
+          "F4_artifacts_data_modeling": 6,
+          "F5_governing_rules_error_arch": 2,
+          "F6_interaction_collections": 0,
+          "F7_discovery_memory_concurrency": 0,
+          "F8_opposing_transition_testing": 0
+        },
+        "F7_discovery_flags": [],
+        "F9_production_provenance": {
+          "relative_path": "sample_os_scheduler.c",
+          "extension": ".c",
+          "sha256": "e7e0decc280d0c12aa70ebd09ec744b5f65a4e30c6dc013e8567edea1b16e392",
+          "bytes": 546,
+          "lines": 21
+        },
+        "status": "BOUNDED_OBSERVATION"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+Windows Registry Editor Version 5.00
+
+; ====================================================================
+; ViperCrest Sovereign SAE J2534-1 / J2534-2 Registry Registration
+; Target VCI Serial: 989510052355
+; ====================================================================
+
+; 64-bit Native Registration
+[HKEY_LOCAL_MACHINE\SOFTWARE\PassThruSupport.04.04\ViperCrest_SmartLink_989510052355]
+"Name"="ViperCrest SmartLink J2534 (989510052355)"
+"Vendor"="ViperCrest Sovereign Engine"
+"ConfigURL"="https://github.com/nowlinc46-droid/VIPER_CREST_2.0"
+"FunctionLibrary"="C:\ViperCrest\os_builder\j2534_bridge.dll"
+"CAN"=dword:00000001
+"ISO15765"=dword:00000001
+"ISO9141"=dword:00000001
+"ISO14230"=dword:00000001
+"CAN_FD"=dword:00000001
+"SCI_A_ENGINE"=dword:00000000
+"SCI_A_TRANS"=dword:00000000
+"SCI_B_ENGINE"=dword:00000000
+"SCI_B_TRANS"=dword:00000000
+
+; 32-bit WOW6432Node Registration (for 32-bit OEM software: Techstream, ODIS, GDS2)
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\PassThruSupport.04.04\ViperCrest_SmartLink_989510052355]
+"Name"="ViperCrest SmartLink J2534 (989510052355)"
+"Vendor"="ViperCrest Sovereign Engine"
+"ConfigURL"="https://github.com/nowlinc46-droid/VIPER_CREST_2.0"
+"FunctionLibrary"="C:\ViperCrest\os_builder\j2534_bridge.dll"
+"CAN"=dword:00000001
+"ISO15765"=dword:00000001
+"ISO9141"=dword:00000001
+"ISO14230"=dword:00000001
+"CAN_FD"=dword:00000001
+"SCI_A_ENGINE"=dword:00000000
+"SCI_A_TRANS"=dword:00000000
+"SCI_B_ENGINE"=dword:00000000
+"SCI_B_TRANS"=dword:00000000
