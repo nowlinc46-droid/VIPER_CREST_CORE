@@ -4,8 +4,15 @@
 
 ViperCrest is governed by a strict dual-licensing architecture designed to balance sovereign individual defense with commercial institutional monetization:
 
-* **Non-Commercial / Individual Citizens:** **Free ($0)** under the terms of the `PolyForm-Noncommercial-1.0.0` license. Any individual, student, or researcher is granted full, unrestricted access to inspect, audit, verify, and run the engine for personal and defensive use at zero cost.
-* **Commercial / Enterprise Entities:** Any commercial deployment, automated industrial operation, for-profit service, or enterprise integration requires an affirmative commercial license.
+> **"The people and institutions who carry life, learning, and their own cases get it free — the entities that profit from it pay $1,000."**
+
+### The Three Free Tiers ($0 Perpetual Under PolyForm Noncommercial):
+* **Citizens & Individual Defense (`PERSONAL`):** Free ($0). Any citizen or individual is granted full, unrestricted access to inspect, audit, verify, and run the engine for personal legal defense, privacy protection, and individual sovereignty.
+* **Healthcare & Hospitals (`LIFE_SAFETY`):** Free ($0). Hospital networks, clinical ICU wards, and public health practitioners carrying patient life-safety and emergency telemetry run the engine with zero software tollgates.
+* **Education & Students (`SCHOOL_STATE`):** Free ($0). Schools, universities, educators, and students researching formal verification, compiler safety, and deterministic robotics have unrestricted non-commercial access.
+
+### The Paid Tier (Commercial Profit):
+* **Commercial / For-Profit Entities (`WORK`):** Any commercial enterprise, automated manufacturing plant, for-profit service, or proprietary integration deploying ViperCrest for commercial gain must purchase an affirmative commercial license ($1,000 per node or negotiated enterprise site grant).
 
 ---
 
