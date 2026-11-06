@@ -25,11 +25,12 @@ echo   [4] Smart Contracts     : Immunefi V03/V05 exploit defense ^& Foundry bri
 echo   [5] Epistemic Tensor    : 1-line seeds -^> 81-state matrix -^> 729 coordinates
 echo   [6] Discovery Siege     : 100-Turn AbstentionBench & Invariant Gauntlet
 echo   [7] Multi-Style Demo    : Presentation Invariance across 7 styles (LOGIC != LANGUAGE)
-echo   [8] Execute ALL         : Run all compounds sequentially
+echo   [8] Machine Boundary    : Cross-Machine Semantic Round-Trip (10 Channel Attacks)
+echo   [9] Execute ALL         : Run all compounds sequentially
 echo   [Q] Quit
 echo.
 echo ========================================================================
-set /p "CHOICE=Enter choice [1-8, Q]: "
+set /p "CHOICE=Enter choice [1-9, Q]: "
 
 if /i "%CHOICE%"=="1" (
     call "%SCRIPT_DIR%vc-compound-robotics.cmd"
@@ -67,6 +68,11 @@ if /i "%CHOICE%"=="7" (
     goto MENU
 )
 if /i "%CHOICE%"=="8" (
+    "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_machine_semantic_roundtrip.py"
+    pause
+    goto MENU
+)
+if /i "%CHOICE%"=="9" (
     call "%SCRIPT_DIR%vc-compound-robotics.cmd"
     echo.
     call "%SCRIPT_DIR%vc-compound-treasury.cmd"
@@ -77,8 +83,14 @@ if /i "%CHOICE%"=="8" (
     echo.
     call "%SCRIPT_DIR%vc-compound-tensor.cmd"
     echo.
+    "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_known_unknown_siege.py"
+    echo.
+    "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_epistemic_transformation_invariant.py"
+    echo.
+    "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_machine_semantic_roundtrip.py"
+    echo.
     echo ========================================================================
-    echo   ALL 5 VIPERCREST COMPOUNDS VERIFIED: 100%% INVARIANT INTEGRITY
+    echo   ALL VIPERCREST COMPOUNDS & DISCOVERY TESTS VERIFIED: 100%% INVARIANT INTEGRITY
     echo ========================================================================
     pause
     goto MENU
