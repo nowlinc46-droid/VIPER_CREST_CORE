@@ -9,11 +9,13 @@ echo.
 echo [1] PLAIN-TERMS DAILY WORKFLOW (Single-Word Commands)
 echo   help                    : Display this master plain-terms command menu
 echo   status                  : Live operational dashboard (Kernels, Ledger, Air-Gap)
+echo   ask "[prompt]" [--style]: Epistemic Q^&A across 7 human/machine presentation styles
+echo   styles                  : Display all 7 presentation styles (plain, automotive, child, etc.)
 echo   robot [args]            : Live robotic brainstem governor (enforces kinetic torque gates)
 echo   wire [file/args]        : Live treasury settlement governor (enforces dual-auth ^& OFAC)
-echo   ask "[prompt]"          : Evaluate any plain-English claim, contract, or query
 echo   emit [c/rust/sol/en]    : Compile verified state into C99, Rust, Solidity, or English
 echo   verify                  : Run full 8-pillar asset verification ^& diligence suite
+echo   compounds               : Interactive menu of all unique compound demonstration capabilities
 echo   seed [seed/file]        : Minimal seed inversion engine (hydrates 729-coordinate tensor)
 echo   traversal [id]          : Autonomous life-path state traversal engine (F1-F9 loop)
 echo   discovery [query/file]  : Live open-ontological discovery engine (isolates S10+ into F7)

@@ -19,13 +19,24 @@ if not exist "!PYTHON_EXE!" (
 set "RAW_ARGS=%*"
 if not defined RAW_ARGS (
     echo [VIPERCREST PROMPT USAGE]
-    echo   vcprompt "<your precise natural language query or command>"
+    echo   ask "<natural language query or command>" [--style ^<style^>]
+    echo.
+    echo Supported Presentation Styles:
+    echo   --style plain          : Conversational context reconstruction (Default)
+    echo   --style automotive     : Vehicle diagnostic OBD-II / ECU telemetry analogy
+    echo   --style child          : Gentle mystery-box explanation (Zero guessing)
+    echo   --style spanish        : Spanish constructive context reconstruction
+    echo   --style mathematical   : Formal set-theoretic predicate evaluation
+    echo   --style pseudocode     : Algorithmic epistemic retrieval logic
+    echo   --style technical      : Stage F7 state machine coordinate brief
     echo.
     echo Examples:
-    echo   vcprompt "Verify discovery sanctions in case 2026-CV-99"
-    echo   vcprompt "Audit high-value wire settlement transfer $250,000"
-    echo   vcprompt "Scan block height continuity and parent hash"
-    echo   vcprompt "Check plant torque cutoff on sensor blinding"
+    echo   ask "How can I remember what I forgot?"
+    echo   ask "How can I remember what I forgot?" --style automotive
+    echo   ask "How can I remember what I forgot?" --style child
+    echo   ask "How can I remember what I forgot?" --style spanish
+    echo   ask "Audit high-value wire settlement transfer $250,000"
+    echo   ask "Check plant torque cutoff on sensor blinding"
     exit /b 1
 )
 

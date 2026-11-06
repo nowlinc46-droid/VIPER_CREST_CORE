@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use or evaluate ViperCrest 2.0 in academic research, please cite it as below."
+title: "ViperCrest 2.0: Deterministic 9x9 State Space Manifold & Hardware-Enforced Safety Invariant Architecture"
+authors:
+  - family-names: "Nowlin"
+    given-names: "Clifton"
+    affiliation: "ViperCrest Project Licensor & Sovereign Author"
+version: "2.0-academic"
+date-released: "2026-11-06"
+repository-code: "https://github.com/nowlinc46-droid/VIPERCREST_ACADEMIC_DISTRIBUTION"
+identifiers:
+  - type: "other"
+    value: "VC-ACADEMIC-000001"
+    description: "Carnegie Mellon University Academic Provenance Copy ID"
+  - type: "other"
+    value: "94a9bd317fad86b20266e5128587cbb770ddad16"
+    description: "Distribution Release Tag v1.0-academic Commit"
+  - type: "other"
+    value: "fe96fd4ac483b1f54779a6b08ebea0f210213521"
+    description: "Authoritative Core Engine Commit"
+license: "VC-LICENSE-ACADEMIC-1.0"
+keywords:
+  - "formal-verification"
+  - "autonomous-robotics"
+  - "deterministic-state-machines"
+  - "kinematic-safety-gates"
+  - "air-gapped-cryptography"

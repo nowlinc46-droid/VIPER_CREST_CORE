@@ -236,8 +236,40 @@ def translate_user_input(user_input: str) -> AIRequestEnvelope:
     return heuristic_translate_request(user_input)
 
 
-def explain_response(user_input: str, auth_resp: AuthoritativeResponseEnvelope) -> str:
-    """Explains authoritative sealed results back to concentrated plain English."""
+from epistemic_renderer import EpistemicState, render_epistemic_output, STYLE_MAP, verify_rendered_guardrail
+
+
+def explain_response(user_input: str, auth_resp: AuthoritativeResponseEnvelope, style: str = "plain") -> str:
+    """Explains authoritative sealed results back to human language under requested style."""
+    # 0. Check for Epistemic Invariant & Unknown Queries (Stage F7)
+    is_unknown_query = any(k in user_input.lower() for k in [
+        "forgot", "remember", "unknown", "missing", "unresolved", "f7", "gap", "can't remember", "cannot remember"
+    ])
+
+    has_unresolved_ans = False
+    unresolved_coord = "T5_COMPOUNDING:S7"
+    if auth_resp.question_answers:
+        for qa in auth_resp.question_answers:
+            ans = qa.get("authoritative_answer", {})
+            if ans.get("epistemic_status") == "UNRESOLVED":
+                has_unresolved_ans = True
+                unresolved_coord = ans.get("coordinate") or unresolved_coord
+                break
+
+    if is_unknown_query or has_unresolved_ans or style != "plain":
+        # Construct Bounded Epistemic State from authoritative engine verdict
+        ep_state = EpistemicState(
+            target_name="FORGOTTEN_ITEM" if is_unknown_query else "UNRESOLVED_COORDINATE",
+            exists=True,
+            value="UNKNOWN",
+            status="UNRESOLVED",
+            coordinate=unresolved_coord,
+            possibilities=[],
+            rejected_possibilities=[],
+        )
+        # Render through requested style matrix and verify through post-render guardrail
+        return render_epistemic_output(ep_state, style=style)
+
     # 1. Concentrated Plain English Report (Embedded Code Reader / Target Resolver)
     rep = auth_resp.plain_english_report
     if rep:
@@ -320,10 +352,17 @@ def explain_response(user_input: str, auth_resp: AuthoritativeResponseEnvelope) 
     return "\n".join(lines)
 
 
-def run_single_interaction(user_input: str) -> int:
+def run_single_interaction(user_input: str, default_style: str = "plain") -> int:
     """Processes a single human request through the complete typed contract."""
+    # Detect style flag in input string (e.g., --style automotive or style: child)
+    style = default_style
+    style_match = re.search(r"--style\s+([a-zA-Z0-9_-]+)|style:\s*([a-zA-Z0-9_-]+)", user_input, re.I)
+    if style_match:
+        style = (style_match.group(1) or style_match.group(2)).lower()
+        user_input = re.sub(r"--style\s+[a-zA-Z0-9_-]+|style:\s*[a-zA-Z0-9_-]+", "", user_input, flags=re.I).strip()
+
     print("VIPERCREST AI")
-    print(f"> {user_input}")
+    print(f"> {user_input} [Style: {style}]")
 
     if user_input.strip().lower() in {"help", "commands", "shorthand", "targets", "shorthands", "?"}:
         help_path = VIPER_ROOT / "vc-help.cmd"
@@ -404,7 +443,7 @@ def run_single_interaction(user_input: str) -> int:
         envelope = translate_user_input(user_input)
         executor = ViperCrestContractExecutor()
         auth_resp = executor.execute(envelope)
-        explanation = explain_response(user_input, auth_resp)
+        explanation = explain_response(user_input, auth_resp, style=style)
         print(explanation)
         return 0
     except ProtocolViolationError as e:
@@ -503,12 +542,13 @@ def interactive_loop() -> int:
 
 def main(argv: Optional[list[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="ViperCrest AI Language & Interface Wrapper")
+    parser.add_argument("--style", default="plain", help="Human explanation style: plain, technical, child, automotive, spanish, mathematical, pseudocode")
     parser.add_argument("command", nargs="*", help="Optional single instruction to execute")
     args = parser.parse_args(argv)
 
     if args.command:
         user_input = " ".join(args.command)
-        return run_single_interaction(user_input)
+        return run_single_interaction(user_input, default_style=args.style)
     return interactive_loop()
 
 

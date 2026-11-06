@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VerificationReceipt",
+  "description": "Cryptographic verification receipt for an issued academic copy.",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "copy_id",
+    "ledger_block_index",
+    "ledger_block_hash",
+    "artifact_zip_sha256",
+    "public_key_fingerprint",
+    "issued_utc",
+    "issuer_status",
+    "verification_verdict"
+  ],
+  "properties": {
+    "receipt_id": { "type": "string" },
+    "copy_id": { "type": "string" },
+    "ledger_block_index": { "type": "integer" },
+    "ledger_block_hash": { "type": "string" },
+    "artifact_zip_sha256": { "type": "string" },
+    "public_key_fingerprint": { "type": "string" },
+    "issued_utc": { "type": "string" },
+    "issuer_status": { "type": "string" },
+    "verification_verdict": { "type": "string" }
+  },
+  "additionalProperties": false
+}

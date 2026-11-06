@@ -23,11 +23,13 @@ echo   [2] Treasury Settlement : $500k wire dual-auth, OFAC, ^& EVM Solidity anc
 echo   [3] Tamper Defense      : 7-vector cryptographic attack suite (0.06s)
 echo   [4] Smart Contracts     : Immunefi V03/V05 exploit defense ^& Foundry bridge
 echo   [5] Epistemic Tensor    : 1-line seeds -^> 81-state matrix -^> 729 coordinates
-echo   [6] Execute ALL         : Run all 5 compounds sequentially
+echo   [6] Discovery Siege     : 100-Turn AbstentionBench & Invariant Gauntlet
+echo   [7] Multi-Style Demo    : Presentation Invariance across 7 styles (LOGIC != LANGUAGE)
+echo   [8] Execute ALL         : Run all compounds sequentially
 echo   [Q] Quit
 echo.
 echo ========================================================================
-set /p "CHOICE=Enter choice [1-6, Q]: "
+set /p "CHOICE=Enter choice [1-8, Q]: "
 
 if /i "%CHOICE%"=="1" (
     call "%SCRIPT_DIR%vc-compound-robotics.cmd"
@@ -55,6 +57,16 @@ if /i "%CHOICE%"=="5" (
     goto MENU
 )
 if /i "%CHOICE%"=="6" (
+    "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_known_unknown_siege.py"
+    pause
+    goto MENU
+)
+if /i "%CHOICE%"=="7" (
+    "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_epistemic_transformation_invariant.py"
+    pause
+    goto MENU
+)
+if /i "%CHOICE%"=="8" (
     call "%SCRIPT_DIR%vc-compound-robotics.cmd"
     echo.
     call "%SCRIPT_DIR%vc-compound-treasury.cmd"

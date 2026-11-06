@@ -188,13 +188,20 @@ C:\ViperCrest\
 ├── financial_adapter.py      # Domain expression layer for Policy FP-001
 ├── ai_contract.py            # Epistemic boundary & anti-usurpation protocol
 ├── domain_space.py           # TemporalMatrixSpace & Cartridge definitions
+├── epistemic_renderer.py     # Multi-style presentation renderer & guardrail (LOGIC != LANGUAGE)
 ├── audit_invariant_engine.py # Immunefi Top 10 invariant security audit
 ├── run_hustleforge_100.py    # 100-scenario life-path curriculum batch runner
 ├── runtime/
 │   ├── viper_state.db        # SQLite WAL state ledger (700+ audited runs)
 │   ├── signing_key.pem       # Sovereign Ed25519 root signing authority
 │   └── hustleforge_100_traversal_audit.json # Audited 100-scenario ledger
+├── verification/             # Standalone deliverable & ledger chain verifiers
+├── schemas/                  # Academic distribution & ledger JSON schemas
+├── templates/                # Institutional donation letters & legal templates
 └── tests/
+    ├── test_known_unknown_siege.py # 100-Turn AbstentionBench & Epistemic Invariant Gauntlet
+    ├── test_epistemic_transformation_invariant.py # Presentation invariance across 7 styles
+    ├── test_100_turn_invariant_siege.py # Deep 224-second multi-syntax compiler siege
     ├── test_adversarial_stress_vectors.py  # 8 adversarial attack vectors
     ├── test_embodied_physical_invariants.py # 4 physical robotics boundary tests
     ├── test_convergence_loop.py            # Core state recurrence unit tests
@@ -204,6 +211,16 @@ C:\ViperCrest\
 
 ---
 
-## 7. Commercial Value & Intellectual Property Transfer
+## 7. Public Academic Distribution & Provenance Layer
+
+For university evaluation and independent verification, official academic packages are distributed through the dedicated public provenance layer:
+* **Repository:** [VIPERCREST_ACADEMIC_DISTRIBUTION](https://github.com/nowlinc46-droid/VIPERCREST_ACADEMIC_DISTRIBUTION)
+* **First University Copy:** `VC-ACADEMIC-000001` (Carnegie Mellon University)
+* **Educational Tier:** $0.00 USD Non-Commercial Research Grant
+* **Commercial Entitlement:** Fixed $1,000 commercial license via [ViperCrest Whop](https://vipercrest.whop.site/)
+
+---
+
+## 8. Commercial Value & Intellectual Property Transfer
 
 ViperCrest 2.0 is an independent, self-contained sovereign software asset. It requires no closed-source third-party cloud APIs, external inference subscriptions, or proprietary GPU cluster runtimes. It runs deterministically on standard local CPU hardware and is packaged for immediate patent integration, autonomous mission-critical deployment, or intellectual property acquisition.
