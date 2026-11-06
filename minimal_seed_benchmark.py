@@ -72,7 +72,7 @@ def run_benchmark() -> int:
     print(" SPATIAL SEED INSTANTIATION AT T5_COMPOUNDING (Direct Evidence vs Contained Unknowns)")
     print("-" * 105)
     for s in ds.DOMAIN_SEEDS:
-        row = [f"  {s:<3} {tms_results['security'].cartridge.seed_meanings.get(s)[:17]:<17}"]
+        row = [f"  {s:<2} {tms_results['security'].cartridge.seed_meanings.get(s)[:17]:<17}"]
         for dom in domains:
             seed_data = tms_results[dom].positions["T5_COMPOUNDING"].seeds.get(s, {})
             st = seed_data.get("status", "UNRESOLVED")

@@ -86,7 +86,7 @@ def check_v06_resource_exhaustion() -> dict:
     max_bytes = cfg.get("MAX_RESPONSE_BYTES", 0)
     if max_bytes <= 0 or max_bytes > 50 * 1024 * 1024:
         return {"status": "FAIL", "reason": f"Unsafe response byte limit: {max_bytes}"}
-    return {"status": "PASS", "details": f"Network response bounded to {max_bytes} bytes (1MB default)"}
+    return {"status": "PASS", "details": f"Intake payload buffer bounded to {max_bytes} bytes (resource limit)"}
 
 
 def check_v07_fail_closed_error_handling() -> dict:
@@ -141,7 +141,7 @@ def check_v11_single_seal_license() -> dict:
         return {"status": "FAIL", "reason": "Missing single-seal license components"}
     try:
         digest = verify_single_seal_or_halt()
-        return {"status": "PASS", "details": f"Verified via public_seal.pem (digest: {digest[:16]}...)"}
+        return {"status": "PASS", "details": f"Verified via public_seal.pem (license.sig seal digest: {digest[:16]}...)"}
     except Exception as exc:
         return {"status": "FAIL", "reason": f"License verification failed: {exc}"}
 

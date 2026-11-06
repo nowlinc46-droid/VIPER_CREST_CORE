@@ -431,21 +431,21 @@ def emit_lattice_9x9(state_dict: Dict[str, Any]) -> SyntaxPackage:
 def translate_state_to_syntax(state_dict: Dict[str, Any], target_syntax: str) -> SyntaxPackage:
     """Routes state translation to the exact requested syntax family (9 total)."""
     syn = target_syntax.lower().strip()
-    if syn in {"c", "c99", "h", "cpp"}:
+    if syn in {"c", "c99", "h", "cpp"} or syn.endswith((".h", ".c", ".hpp")) or "state.h" in syn:
         return emit_c99(state_dict)
-    elif syn in {"rust", "rs", "no_std"}:
+    elif syn in {"rust", "rs", "no_std"} or syn.endswith(".rs") or "lib.rs" in syn:
         return emit_rust(state_dict)
-    elif syn in {"solidity", "sol", "evm"}:
+    elif syn in {"solidity", "sol", "evm"} or syn.endswith(".sol"):
         return emit_solidity(state_dict)
-    elif syn in {"english", "en", "text", "plain"}:
+    elif syn in {"english", "en", "text", "plain", "brief"} or syn.endswith((".txt", ".md")):
         return emit_english(state_dict)
-    elif syn in {"typescript", "ts", "js"}:
+    elif syn in {"typescript", "ts", "js"} or syn.endswith((".ts", ".js")):
         return emit_typescript(state_dict)
-    elif syn in {"go", "golang"}:
+    elif syn in {"go", "golang"} or syn.endswith(".go"):
         return emit_go(state_dict)
-    elif syn in {"vyper", "vy"}:
+    elif syn in {"vyper", "vy"} or syn.endswith(".vy"):
         return emit_vyper(state_dict)
-    elif syn in {"lattice", "9x9", "tensor"}:
+    elif syn in {"lattice", "9x9", "tensor"} or syn.endswith(".9x9"):
         return emit_lattice_9x9(state_dict)
     else:
         return emit_json_ast(state_dict)

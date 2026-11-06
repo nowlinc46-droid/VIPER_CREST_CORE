@@ -1,0 +1,32 @@
+=== ViperCrest close-out -- 2026-11-05 17:39 ===
+Root: C:\ViperCrest
+
+--- 1. V11 seal digest (public_seal.pem and license.sig SHA-256) ---
+File: C:\ViperCrest\runtime\public_seal.pem
+SHA-256 (public_seal.pem): bce4e2a249e2530a60557ca9aa19f5151941ef67914c60f110c8bb46844f711f
+Starts with 195fcfdc414 (photo prefix)? False
+
+File: C:\ViperCrest\runtime\license.sig
+SHA-256 (license.sig / V11 Seal Digest): 195fcfdc414d02c33d5f7a289d78091549c00e8863f413eba9b76c81fd3896f4
+Starts with 195fcfdc414 (photo prefix)? True
+
+--- 2. is_safe_to_actuate (emitted lib.rs, verbatim) ---
+File: C:\ViperCrest\lib.rs
+impl AttestedPlantGovernor {
+    #[inline(always)]
+    pub const fn is_safe_to_actuate(&self) -> bool {
+        match self.state {
+            EpistemicState::Suspended { .. } => false,
+            EpistemicState::Bounded { .. } | EpistemicState::Sealed { .. } => !self.is_tripped,
+        }
+    }
+}
+
+--- 3. rustc compile of the emitted lib.rs ---
+rustc: rustc 1.99.1 (58cf8f9c3 2026-10-13)
+cargo: cargo 1.99.1 (5f94df478 2026-08-27)
+Compiling: C:\ViperCrest\lib.rs
+rustc exit code: 0
+(Exit 0 = it compiles. Anything else, send the lines above verbatim -- do not paraphrase.)
+
+=== Done. Send back: C:\ViperCrest\closeout_2026-11-05.txt ===
