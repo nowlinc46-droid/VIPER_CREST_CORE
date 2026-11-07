@@ -217,7 +217,7 @@ For university evaluation and independent verification, official academic packag
 * **Repository:** [VIPERCREST_ACADEMIC_DISTRIBUTION](https://github.com/nowlinc46-droid/VIPERCREST_ACADEMIC_DISTRIBUTION)
 * **First University Copy:** `VC-ACADEMIC-000001` (Carnegie Mellon University)
 * **Educational Tier:** $0.00 USD Non-Commercial Research Grant
-* **Commercial Entitlement:** Fixed $1,000 commercial license via [ViperCrest Whop](https://vipercrest.whop.site/)
+* **Commercial Entitlement:** Fixed $1,000 commercial license via [VIPERCREST_COMMERCIAL](https://github.com/nowlinc46-droid/VIPERCREST_COMMERCIAL) & [ViperCrest Whop](https://vipercrest.whop.site/)
 
 ---
 
