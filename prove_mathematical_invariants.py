@@ -276,7 +276,10 @@ def prove_theorem_4_kinetic_clamping_latency() -> Dict[str, Any]:
     Theorem 4: Kinetic Clamping Latency Upper Bound.
     Evaluates execution time of the involuntary fail-closed governor gate
     across 1,000 cycles to confirm deterministic O(1) sub-millisecond execution.
+    Enforces strict supremum: max(Delta t) < 1.0 ms (1000.0 us).
     """
+    import gc
+
     gov = StemGovernor("LATENCY_PROOF_JOINT")
     cmd = ActuationCommand(
         joint_id="LATENCY_PROOF_JOINT",
@@ -301,33 +304,41 @@ def prove_theorem_4_kinetic_clamping_latency() -> Dict[str, Any]:
             acc_rad_s2=1.5,
         )
 
-    # Benchmark 1,000 involuntary clamping cycles
+    # Isolate from Python runtime GC collection jitter during microsecond timing
+    gc.collect()
+    gc.disable()
+
     iterations = 1000
     latencies_us = []
 
-    for i in range(iterations):
-        t0 = time.perf_counter_ns()
-        state, torque, msg = gov.evaluate_cycle(
-            command=cmd,
-            optical_reading=spoofed_opt,
-            encoder_reading=enc,
-            measured_current_amps=13.15,
-            measured_torque_sensor_nm=29.8,
-            pos_rad=0.5,
-            vel_rad_s=1.0,
-            acc_rad_s2=1.5,
-        )
-        t1 = time.perf_counter_ns()
-        duration_us = (t1 - t0) / 1000.0  # microseconds
-        latencies_us.append(duration_us)
+    try:
+        for i in range(iterations):
+            t0 = time.perf_counter_ns()
+            state, torque, msg = gov.evaluate_cycle(
+                command=cmd,
+                optical_reading=spoofed_opt,
+                encoder_reading=enc,
+                measured_current_amps=13.15,
+                measured_torque_sensor_nm=29.8,
+                pos_rad=0.5,
+                vel_rad_s=1.0,
+                acc_rad_s2=1.5,
+            )
+            t1 = time.perf_counter_ns()
+            duration_us = (t1 - t0) / 1000.0  # microseconds
+            latencies_us.append(duration_us)
+    finally:
+        gc.enable()
 
     mean_us = statistics.mean(latencies_us)
     p95_us = statistics.quantiles(latencies_us, n=100)[94]
     p99_us = statistics.quantiles(latencies_us, n=100)[98]
     max_us = max(latencies_us)
 
-    # Threshold: upper bound strictly sub-millisecond (< 1000 microseconds)
-    sub_ms_guarantee = (p99_us < 1000.0)
+    # Strict hard real-time supremum requirement: EVERY single cycle must be < 1000 us (1.0 ms)
+    strict_supremum_satisfied = (max_us < 1000.0)
+    p99_satisfied = (p99_us < 1000.0)
+    is_verified = strict_supremum_satisfied and p99_satisfied
 
     return {
         "theorem": "Theorem 4: Kinetic Clamping Latency Upper Bound",
@@ -337,8 +348,9 @@ def prove_theorem_4_kinetic_clamping_latency() -> Dict[str, Any]:
         "p99_latency_us": round(p99_us, 2),
         "max_latency_us": round(max_us, 2),
         "upper_bound_target_us": 1000.0,
-        "sub_millisecond_verified": sub_ms_guarantee,
-        "verified": sub_ms_guarantee,
+        "strict_supremum_satisfied": strict_supremum_satisfied,
+        "p99_satisfied": p99_satisfied,
+        "verified": is_verified,
     }
 
 
@@ -378,7 +390,8 @@ def run_all_mathematical_proofs() -> int:
     print(f"       Iterations Tested: {t4['iterations']} involuntary clamp cycles")
     print(f"       Mean Clamping Latency: {t4['mean_latency_us']} us ({t4['mean_latency_us']/1000.0:.4f} ms)")
     print(f"       P95 Latency: {t4['p95_latency_us']} us | P99 Latency: {t4['p99_latency_us']} us | Max: {t4['max_latency_us']} us")
-    print(f"       Sub-Millisecond Bound (< 1.0 ms): {'SATISFIED' if t4['sub_millisecond_verified'] else 'BREACHED'}\n")
+    print(f"       P99 Sub-Millisecond (< 1.0 ms): {'SATISFIED' if t4['p99_satisfied'] else 'BREACHED'}")
+    print(f"       Strict Supremum Bound (Max < 1.0 ms): {'SATISFIED' if t4['strict_supremum_satisfied'] else 'BREACHED'}\n")
 
     t_end = time.perf_counter()
     elapsed = t_end - t_start

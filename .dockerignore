@@ -1,0 +1,23 @@
+.git/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+consolidated/
+consolidated_versions/
+consolidation/
+VIPERCREST ON LINE/
+VIPER_CREST/
+VIPER_CREST_2.0/
+VIPER_CREST_2.01/
+runtime/
+targets/
+quarantine/
+scratch/
+cache/
+os_builder/
+*.zip
+*.tar.gz
+*.7z
+*.iso
