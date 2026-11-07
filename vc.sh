@@ -27,6 +27,7 @@ case "$cmd" in
         echo "  ./vc.sh sandbox              : Launch private local Anvil testnet node"
         echo "  ./vc.sh purge                : Safe self-scrub of ephemeral caches"
         echo "  ./vc.sh ledger               : Inspect SQLite state ledger and receipts"
+        echo "  ./vc.sh rpc [method]         : Typed JSON-RPC Dispatcher for EVM/Anvil nodes"
         echo "  ./vc.sh ai                   : Interactive Plain-English AI Security Shell"
         echo "  ./vc.sh matrix               : F1-F9 Temporal Matrix Engine sweep"
         echo "  ./vc.sh test                 : Run Complete Unit Test Suite (120/120 passing)"
@@ -62,6 +63,9 @@ case "$cmd" in
         ;;
     ledger|vcl)
         "$PYTHON" -B "$DIR/viper.py" offline --analytics "$@"
+        ;;
+    rpc|vcrpc)
+        "$PYTHON" -B "$DIR/rpc_dispatcher.py" "$@"
         ;;
     ai|vcai)
         "$PYTHON" -B "$DIR/ai_wrapper.py" "$@"

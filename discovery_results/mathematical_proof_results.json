@@ -1,5 +1,5 @@
 {
-  "timestamp_epoch": 1794026460.321394,
+  "timestamp_epoch": 1794029154.0007677,
   "all_passed": true,
   "theorems": [
     {
@@ -39,12 +39,13 @@
     {
       "theorem": "Theorem 4: Kinetic Clamping Latency Upper Bound",
       "iterations": 1000,
-      "mean_latency_us": 77.32,
-      "p95_latency_us": 117.99,
-      "p99_latency_us": 268.09,
-      "max_latency_us": 800.6,
+      "mean_latency_us": 64.5,
+      "p95_latency_us": 112.28,
+      "p99_latency_us": 168.97,
+      "max_latency_us": 373.25,
       "upper_bound_target_us": 1000.0,
-      "sub_millisecond_verified": true,
+      "strict_supremum_satisfied": true,
+      "p99_satisfied": true,
       "verified": true
     }
   ]

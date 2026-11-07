@@ -22,6 +22,7 @@ echo   seed [seed/file]        : Minimal seed inversion engine (hydrates 729-coo
 echo   traversal [id]          : Autonomous life-path state traversal engine (F1-F9 loop)
 echo   discovery [query/file]  : Live open-ontological discovery engine (isolates S10+ into F7)
 echo   bridge [file]           : Position any OS codebase, driver, or contract on grid
+echo   rpc [method]            : Typed JSON-RPC Dispatcher for EVM/Anvil nodes
 echo   drop [file]             : Ingest, SHA-256 hash ^& record file in tamper-evident ledger
 echo   clean                   : Safely scrub temporary dropzones ^& staging caches
 echo   siege                   : Run 100-Turn Invariant Siege (falsification against drift)
@@ -39,6 +40,7 @@ echo   seed                    (vcseed, vc-seed)
 echo   traversal               (vchf, vc-hustleforge)
 echo   discovery               (vcdisc, vc-discovery)
 echo   bridge                  (vcb, vc-bridge)
+echo   rpc                     (vcrpc, vc-rpc)
 echo   drop                    (vcdrop, vc-drop-intake)
 echo   clean                   (vcpurge, vc-purge)
 echo   siege                   (vcsiege, vc-siege)
