@@ -27,6 +27,8 @@ ViperCrest provides dual-layer execution: **Human Action `.cmd` scripts** and **
 | **`vc-matrix`** | `vcm` | Run F1–F9 matrix sweep on target fixture |
 | **`vc-foundry`** | `vcf` | Foundry EVM simulation bridge |
 | **`vc-bridge`** | `vcb` | Universal 9x9 syntax bridge |
+| **`vc-prove`** | `vcpv` | Run live mathematical invariant proof of 4 core theorems |
+| **`vc-demonstrate`** | `vcdemo` | Run master terminal demonstration across 5 invariant domains |
 | **`vc-test`** | `vct` | Run full unit test suite (120/120 passing) |
 | **`vc-probe`** | `vcp` | Run diagnostic stress probes (31 tests) |
 | **`vc-help`** | `vch` | Display terminal command index |

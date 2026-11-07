@@ -1,0 +1,51 @@
+{
+  "timestamp_epoch": 1794026460.321394,
+  "all_passed": true,
+  "theorems": [
+    {
+      "theorem": "Theorem 1: Topological Gap Monotonicity & Fail-Closed Bounds",
+      "formula": "P(BOUNDED | G(S) != empty) = 0.0",
+      "cases_tested": 9,
+      "violations": 0,
+      "governor_cases_tested": 50,
+      "governor_torque_violations": 0,
+      "p_bounded_given_gap": 0.0,
+      "verified": true
+    },
+    {
+      "theorem": "Theorem 2: Orthogonal Tensor Manifold Dimensionality & Bijective Projection",
+      "manifold_dimensions": "9 x 9 x 9",
+      "total_coordinates": 729,
+      "expected_coordinates": 729,
+      "is_bijective": true,
+      "coordinate_collisions": 0,
+      "reverse_projection_failures": 0,
+      "canonical_tensor_digest": "ae285aadcd4bb94cd4a5f48b8892f05d89e1d408311912fab0ebbcd73b6841e7",
+      "verified": true
+    },
+    {
+      "theorem": "Theorem 3: Cryptographic Lineage Hash Avalanche & Strict Monotonicity",
+      "mutations_evaluated": 128,
+      "mean_bit_diffusion_pct": 50.27,
+      "stdev_bit_diffusion_pct": 3.2,
+      "min_diffusion_pct": 42.97,
+      "max_diffusion_pct": 60.55,
+      "theoretical_sac_target_pct": 50.0,
+      "strict_avalanche_criterion_satisfied": true,
+      "lineage_depth_verified": 11,
+      "lineage_tail_hash": "af763ba202783850cb2ff2f28711665d290d0855e467c162aa2ced347b98ff04",
+      "verified": true
+    },
+    {
+      "theorem": "Theorem 4: Kinetic Clamping Latency Upper Bound",
+      "iterations": 1000,
+      "mean_latency_us": 77.32,
+      "p95_latency_us": 117.99,
+      "p99_latency_us": 268.09,
+      "max_latency_us": 800.6,
+      "upper_bound_target_us": 1000.0,
+      "sub_millisecond_verified": true,
+      "verified": true
+    }
+  ]
+}

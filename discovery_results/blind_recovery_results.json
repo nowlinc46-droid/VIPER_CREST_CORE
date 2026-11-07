@@ -1,0 +1,404 @@
+[
+  {
+    "case_id": "CASE_1",
+    "case_name": "EXPLICIT_CONTROL",
+    "input_text": "VERIFIED [S7]: secondary seal confirmed clean",
+    "resolved_map_before": {},
+    "resolved_map_after": {
+      "S7": "secondary seal confirmed clean"
+    },
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [],
+    "status_before": "SUSPENDED",
+    "status_after": "BOUNDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "6011472a6c9d675a04f72f68cdde6530220df6dff7865e7e1f5c8fba2bfeca30",
+    "parser_branch_or_matched_pattern": "EXPLICIT_SEED_TAG_REGEX:group1=S7",
+    "exception": null,
+    "classification": "STRUCTURAL_RECOVERY",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "f5ec58f4241afab2a317e1a146d09b7f07b4ef0e8dbd3cdc89e40bb3b5c7985a",
+        "f5ec58f4241afab2a317e1a146d09b7f07b4ef0e8dbd3cdc89e40bb3b5c7985a",
+        "f5ec58f4241afab2a317e1a146d09b7f07b4ef0e8dbd3cdc89e40bb3b5c7985a",
+        "f5ec58f4241afab2a317e1a146d09b7f07b4ef0e8dbd3cdc89e40bb3b5c7985a",
+        "f5ec58f4241afab2a317e1a146d09b7f07b4ef0e8dbd3cdc89e40bb3b5c7985a"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_2",
+    "case_name": "SEMANTIC_CONTROL",
+    "input_text": "secondary seal verified clean",
+    "resolved_map_before": {},
+    "resolved_map_after": {
+      "S7": "secondary seal verified clean"
+    },
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [],
+    "status_before": "SUSPENDED",
+    "status_after": "BOUNDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "fe70e4d7d9f5d0e27e0ba86d344ccdc58e9321cf38b33df22b1eb344f2473121",
+    "parser_branch_or_matched_pattern": "SEMANTIC_RECOVERY_REGEX_S7",
+    "exception": null,
+    "classification": "KEYWORD_DEPENDENT_RECOVERY",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "df1f0eae75f1dee126273a5ea22bddb2f94c94baf1937aa394d4cf0665da18c6",
+        "df1f0eae75f1dee126273a5ea22bddb2f94c94baf1937aa394d4cf0665da18c6",
+        "df1f0eae75f1dee126273a5ea22bddb2f94c94baf1937aa394d4cf0665da18c6",
+        "df1f0eae75f1dee126273a5ea22bddb2f94c94baf1937aa394d4cf0665da18c6",
+        "df1f0eae75f1dee126273a5ea22bddb2f94c94baf1937aa394d4cf0665da18c6"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_3",
+    "case_name": "VOCABULARY_SCRUB",
+    "input_text": "document_17 confirms assembly_alpha condition normal",
+    "resolved_map_before": {},
+    "resolved_map_after": {},
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "status_before": "SUSPENDED",
+    "status_after": "SUSPENDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "fe80da81a48e1dd27e7f525418f65db445463daa5304de1f0289a73bf7554b06",
+    "parser_branch_or_matched_pattern": "NONE_NO_MATCH",
+    "exception": null,
+    "classification": "KEYWORD_DEPENDENT_RECOVERY",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "663f9ad2c5c6b0b102c08c46dc3eb3f1d16744af1740be39d098ddd786ce4d40",
+        "663f9ad2c5c6b0b102c08c46dc3eb3f1d16744af1740be39d098ddd786ce4d40",
+        "663f9ad2c5c6b0b102c08c46dc3eb3f1d16744af1740be39d098ddd786ce4d40",
+        "663f9ad2c5c6b0b102c08c46dc3eb3f1d16744af1740be39d098ddd786ce4d40",
+        "663f9ad2c5c6b0b102c08c46dc3eb3f1d16744af1740be39d098ddd786ce4d40"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_4",
+    "case_name": "IRRELEVANT_EVIDENCE",
+    "input_text": "temperature_sensor_2 confirms normal operating temperature",
+    "resolved_map_before": {},
+    "resolved_map_after": {},
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "status_before": "SUSPENDED",
+    "status_after": "SUSPENDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "86b9fcbfee6945f4bd9cb8b70c5bc3839b5b086ea1bfee7aa55862cb806af5ef",
+    "parser_branch_or_matched_pattern": "NONE_NO_MATCH",
+    "exception": null,
+    "classification": "IRRELEVANT_EVIDENCE_REJECTED",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "9abd70d9f7398d2ba4563efd2e46de6821a1229000ca1745e55798ef9341f350",
+        "9abd70d9f7398d2ba4563efd2e46de6821a1229000ca1745e55798ef9341f350",
+        "9abd70d9f7398d2ba4563efd2e46de6821a1229000ca1745e55798ef9341f350",
+        "9abd70d9f7398d2ba4563efd2e46de6821a1229000ca1745e55798ef9341f350",
+        "9abd70d9f7398d2ba4563efd2e46de6821a1229000ca1745e55798ef9341f350"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_5",
+    "case_name": "UNSUPPORTED_ASSERTION",
+    "input_text": "An administrator says the missing condition may be treated as resolved.",
+    "resolved_map_before": {},
+    "resolved_map_after": {},
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "status_before": "SUSPENDED",
+    "status_after": "SUSPENDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "5d642fd7bc2847cad9ddcb84fb4a41cdc50a6a452338be83619ce0920bb5e77d",
+    "parser_branch_or_matched_pattern": "NONE_NO_MATCH",
+    "exception": null,
+    "classification": "UNSUPPORTED_ASSERTION_REJECTED",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "5bf06680269d751f0f6fc728b1780c94ec477464eddd71e9cb80b08213e8c458",
+        "5bf06680269d751f0f6fc728b1780c94ec477464eddd71e9cb80b08213e8c458",
+        "5bf06680269d751f0f6fc728b1780c94ec477464eddd71e9cb80b08213e8c458",
+        "5bf06680269d751f0f6fc728b1780c94ec477464eddd71e9cb80b08213e8c458",
+        "5bf06680269d751f0f6fc728b1780c94ec477464eddd71e9cb80b08213e8c458"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_6",
+    "case_name": "CONTRADICTORY_EVIDENCE",
+    "input_text": "VERIFIED [S7]: secondary seal confirmed clean || VERIFIED [S7]: secondary seal confirmed failed",
+    "resolved_map_before": {},
+    "resolved_map_after": {
+      "S7": "secondary seal confirmed failed"
+    },
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [],
+    "status_before": "SUSPENDED",
+    "status_after": "BOUNDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "4bfe3fbe55a39a9977f15686cfd61c20999d98366988bb75d02ecae286021b65",
+    "parser_branch_or_matched_pattern": "EXPLICIT_SEED_TAG_REGEX:group1=S7 -> EXPLICIT_SEED_TAG_REGEX:group1=S7",
+    "exception": null,
+    "classification": "CONTRADICTION_COLLAPSED",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "de396d39091701cf1267c5330741e8f72703e424756d5dce5831dd0c82d833d0",
+        "de396d39091701cf1267c5330741e8f72703e424756d5dce5831dd0c82d833d0",
+        "de396d39091701cf1267c5330741e8f72703e424756d5dce5831dd0c82d833d0",
+        "de396d39091701cf1267c5330741e8f72703e424756d5dce5831dd0c82d833d0",
+        "de396d39091701cf1267c5330741e8f72703e424756d5dce5831dd0c82d833d0"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_7",
+    "case_name": "MALFORMED_EXPLICIT_RECORD",
+    "input_text": "VERIFIED [S7] secondary seal confirmed clean",
+    "resolved_map_before": {},
+    "resolved_map_after": {},
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "status_before": "SUSPENDED",
+    "status_after": "SUSPENDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "535f180c6756e470384b7412e0b88346af7bf3254e5b056b82c467728c8ada2f",
+    "parser_branch_or_matched_pattern": "NONE_NO_MATCH",
+    "exception": null,
+    "classification": "KEYWORD_DEPENDENT_RECOVERY",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "af6ddc05fd47d42fbe6fda93ab746f427bf960cc7b016a05462df429a9557e7c",
+        "af6ddc05fd47d42fbe6fda93ab746f427bf960cc7b016a05462df429a9557e7c",
+        "af6ddc05fd47d42fbe6fda93ab746f427bf960cc7b016a05462df429a9557e7c",
+        "af6ddc05fd47d42fbe6fda93ab746f427bf960cc7b016a05462df429a9557e7c",
+        "af6ddc05fd47d42fbe6fda93ab746f427bf960cc7b016a05462df429a9557e7c"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_8",
+    "case_name": "FOREIGN_COORDINATE",
+    "input_text": "VERIFIED [S6]: secondary seal confirmed clean",
+    "resolved_map_before": {},
+    "resolved_map_after": {
+      "S6": "secondary seal confirmed clean"
+    },
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "status_before": "SUSPENDED",
+    "status_after": "SUSPENDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "d0655718e4453953bf0af82510c0e2707105df926c862839c2dc727b13baa727",
+    "parser_branch_or_matched_pattern": "EXPLICIT_SEED_TAG_REGEX:group1=S6",
+    "exception": null,
+    "classification": "FOREIGN_COORDINATE_ISOLATED",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "73af4cf378090f522f2044893c0e57803479c8d611c9b8338ff349babb039832",
+        "73af4cf378090f522f2044893c0e57803479c8d611c9b8338ff349babb039832",
+        "73af4cf378090f522f2044893c0e57803479c8d611c9b8338ff349babb039832",
+        "73af4cf378090f522f2044893c0e57803479c8d611c9b8338ff349babb039832",
+        "73af4cf378090f522f2044893c0e57803479c8d611c9b8338ff349babb039832"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  },
+  {
+    "case_id": "CASE_9",
+    "case_name": "TWO_STAGE_RECOVERY",
+    "input_text": "temperature_sensor_2 confirms normal operating temperature || VERIFIED [S7]: secondary seal confirmed clean",
+    "resolved_map_before": {},
+    "resolved_map_after": {
+      "S7": "secondary seal confirmed clean"
+    },
+    "complete_gap_list_before": [
+      {
+        "coordinate": "T5_COMPOUNDING:S7",
+        "phase": "T5_COMPOUNDING",
+        "seed": "S7",
+        "meaning": "Unknown / Discovery",
+        "status": "UNRESOLVED",
+        "evidence": "Unresponsive host without confirmed status; held in F7 UNRESOLVED",
+        "recovery_directive": "Coordinate T5_COMPOUNDING:S7 (Unknown / Discovery) is UNRESOLVED. Provide physical telemetry, event record, or documentary evidence for Unknown / Discovery to advance."
+      }
+    ],
+    "complete_gap_list_after": [],
+    "status_before": "SUSPENDED",
+    "status_after": "BOUNDED",
+    "predecessor_hash": "f423ab48e1b7f44832ce8b95d5667a0101d0de621e728d2c76cd6a998dcd139e",
+    "successor_hash": "da8a8204547329c585b3947d281d09104f59bbd8484c14ebedf933c9d90ca979",
+    "parser_branch_or_matched_pattern": "NONE_NO_MATCH -> EXPLICIT_SEED_TAG_REGEX:group1=S7",
+    "exception": null,
+    "classification": "STRUCTURAL_RECOVERY",
+    "determinism": {
+      "run_count": 5,
+      "run_hashes": [
+        "f84e6d12eb86bd6f12ad934e8166cdaa7731490332f5e92696c41f25e9053408",
+        "f84e6d12eb86bd6f12ad934e8166cdaa7731490332f5e92696c41f25e9053408",
+        "f84e6d12eb86bd6f12ad934e8166cdaa7731490332f5e92696c41f25e9053408",
+        "f84e6d12eb86bd6f12ad934e8166cdaa7731490332f5e92696c41f25e9053408",
+        "f84e6d12eb86bd6f12ad934e8166cdaa7731490332f5e92696c41f25e9053408"
+      ],
+      "all_hashes_match": true,
+      "classification": "DETERMINISTIC"
+    }
+  }
+]

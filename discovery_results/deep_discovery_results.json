@@ -1,0 +1,102 @@
+{
+  "probe_1_contradiction_escalation": {
+    "part_a": {
+      "layer": "bare_convergence_engine",
+      "status_after_contradiction": "BOUNDED",
+      "resolved_s7_value": "secondary seal confirmed failed",
+      "gaps_count": 0,
+      "classification": "CONTRADICTION_COLLAPSED"
+    },
+    "part_b": {
+      "layer": "financial_domain_adapter",
+      "status_before": "BOUNDED",
+      "status_after": "SUSPENDED",
+      "gap_seed": "S3",
+      "gap_evidence": "EVIDENTIARY CONTRADICTION: Earlier baseline [APPROVED] directly conflicts with later audit telemetry [REVOKED/NOT APPROVED]. Both preserved in lineage under F7/V07.",
+      "classification": "CONTRADICTION_PRESERVED"
+    },
+    "part_c": {
+      "layer": "statutory_invariant_gate",
+      "exception_raised": true,
+      "exception_type": "PolicyContradictionError",
+      "classification": "CONTRADICTION_PRESERVED"
+    }
+  },
+  "probe_2_multi_seed": {
+    "required_seeds": [
+      "S3",
+      "S4",
+      "S7"
+    ],
+    "pass_progression": [
+      {
+        "pass": 0,
+        "status": "SUSPENDED",
+        "gap_seeds": [
+          "S3",
+          "S4",
+          "S7"
+        ]
+      },
+      {
+        "pass": 1,
+        "status": "SUSPENDED",
+        "gap_seeds": [
+          "S4",
+          "S7"
+        ]
+      },
+      {
+        "pass": 2,
+        "status": "SUSPENDED",
+        "gap_seeds": [
+          "S7"
+        ]
+      },
+      {
+        "pass": 3,
+        "status": "BOUNDED",
+        "gap_seeds": []
+      }
+    ],
+    "classification": "STRUCTURAL_RECOVERY"
+  },
+  "probe_3_novel_phrasing": {
+    "total_phrases_tested": 25,
+    "resolved_count": 0,
+    "suspended_count": 25,
+    "brittleness_rate": "25/25 (100% keyword/tag dependent)",
+    "classification": "KEYWORD_DEPENDENT_RECOVERY"
+  },
+  "probe_4_overlapping_coordinates": {
+    "stage_1_resolved": {
+      "S6": "daily allocation within standard quota"
+    },
+    "stage_1_status": "SUSPENDED",
+    "stage_2_resolved": {
+      "S6": "daily allocation adjusted to emergency limits",
+      "S7": "secondary seal confirmed clean"
+    },
+    "stage_2_status": "BOUNDED",
+    "classification": "FOREIGN_COORDINATE_ISOLATED"
+  },
+  "probe_6_late_arriving_resolver": {
+    "run_1": {
+      "files": [
+        "system_telemetry_02.txt",
+        "telemetry_batch_01.log"
+      ],
+      "status": "SUSPENDED",
+      "gap_count": 1,
+      "state_hash": "b16b330fb1f852cf9a65e54c239d71ed06f263c2d915f099714fe53a0faf5ccf"
+    },
+    "run_2": {
+      "dropped_file": "secondary_seal_audit_03.sig",
+      "status": "BOUNDED",
+      "gap_count": 0,
+      "predecessor_hash": "b16b330fb1f852cf9a65e54c239d71ed06f263c2d915f099714fe53a0faf5ccf",
+      "state_hash": "649b49687b0fb7c2e2b28dcdfe1c7ac42e85c6194720899b652b5ca2d66a60da"
+    },
+    "classification": "STRUCTURAL_RECOVERY"
+  }
+}

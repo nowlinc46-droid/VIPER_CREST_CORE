@@ -15,6 +15,8 @@ echo   robot [args]            : Live robotic brainstem governor (enforces kinet
 echo   wire [file/args]        : Live treasury settlement governor (enforces dual-auth ^& OFAC)
 echo   emit [c/rust/sol/en]    : Compile verified state into C99, Rust, Solidity, or English
 echo   verify                  : Run full 8-pillar asset verification ^& diligence suite
+echo   demonstrate             : Run master terminal demonstration across 5 invariant domains
+echo   prove                   : Run live mathematical invariant proof of 4 core theorems
 echo   compounds               : Interactive menu of all unique compound demonstration capabilities
 echo   seed [seed/file]        : Minimal seed inversion engine (hydrates 729-coordinate tensor)
 echo   traversal [id]          : Autonomous life-path state traversal engine (F1-F9 loop)
@@ -31,6 +33,8 @@ echo   wire                    (vcfin, vc-financial)
 echo   ask                     (vcprompt, vc-prompt, vcai, vc-ai)
 echo   emit                    (vcemit, vc-emit)
 echo   verify                  (vcv, vc-verify)
+echo   demonstrate             (vcdemo, vc-demonstrate)
+echo   prove                   (vcpv, vc-prove)
 echo   seed                    (vcseed, vc-seed)
 echo   traversal               (vchf, vc-hustleforge)
 echo   discovery               (vcdisc, vc-discovery)

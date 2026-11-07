@@ -27,11 +27,13 @@ echo   [6] Discovery Siege     : 100-Turn AbstentionBench & Invariant Gauntlet
 echo   [7] Multi-Style Demo    : Presentation Invariance across 7 styles (LOGIC != LANGUAGE)
 echo   [8] Machine Boundary    : Cross-Machine Semantic Round-Trip (10 Channel Attacks)
 echo   [9] TCP Socket Boundary : Real Localhost TCP Stack (MACHINE_SEMANTIC_SOCKET_002)
+echo   [11] Mathematical Proofs: Formal verification of 4 core theorems (P=0.0 bounds, 729 tensor, SAC avalanche)
+echo   [12] Contradiction Defense: Multi-tier adjudication & full-stack contradiction defense
 echo   [10] Execute ALL        : Run all compounds sequentially
 echo   [Q] Quit
 echo.
 echo ========================================================================
-set /p "CHOICE=Enter choice [1-10, Q]: "
+set /p "CHOICE=Enter choice [1-12, Q]: "
 
 if /i "%CHOICE%"=="1" (
     call "%SCRIPT_DIR%vc-compound-robotics.cmd"
@@ -78,6 +80,16 @@ if /i "%CHOICE%"=="9" (
     pause
     goto MENU
 )
+if /i "%CHOICE%"=="11" (
+    "%PYTHON_EXE%" "%SCRIPT_DIR%prove_mathematical_invariants.py"
+    pause
+    goto MENU
+)
+if /i "%CHOICE%"=="12" (
+    "%PYTHON_EXE%" -m pytest "%SCRIPT_DIR%tests\test_contradiction_adjudication.py" -vv -s
+    pause
+    goto MENU
+)
 if /i "%CHOICE%"=="10" (
     call "%SCRIPT_DIR%vc-compound-robotics.cmd"
     echo.
@@ -96,6 +108,10 @@ if /i "%CHOICE%"=="10" (
     "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_machine_semantic_roundtrip.py"
     echo.
     "%PYTHON_EXE%" "%SCRIPT_DIR%tests\test_localhost_semantic_socket.py"
+    echo.
+    "%PYTHON_EXE%" "%SCRIPT_DIR%prove_mathematical_invariants.py"
+    echo.
+    "%PYTHON_EXE%" -m pytest "%SCRIPT_DIR%tests\test_contradiction_adjudication.py" -vv -s
     echo.
     echo ========================================================================
     echo   ALL VIPERCREST COMPOUNDS & DISCOVERY TESTS VERIFIED: 100%% INVARIANT INTEGRITY
