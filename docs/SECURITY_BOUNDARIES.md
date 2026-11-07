@@ -39,5 +39,5 @@ The ViperCrest architecture maintains a strict, unbreachable boundary between th
 ## 4. Public Verification Fingerprint
 The SHA-256 fingerprint of the authoritative public verification seal is:
 ```
-bce4e2a249e2530a60557ca9aa19f5151941ef67914c60f110c8bb46844f711f
+ba19d3b1333e80db581ea97296681af6fef1793f3fbcbbbbcabf920185a53e57
 ```
