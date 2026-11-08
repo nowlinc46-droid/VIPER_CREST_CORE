@@ -348,7 +348,6 @@ def explain_response(user_input: str, auth_resp: AuthoritativeResponseEnvelope, 
     lines.append(f"  Context  : {summ.get('derived_cells', 0)} historical baseline facts causally established")
     lines.append(f"  Outcome  : {summ.get('possible_cells', 0)} reachability candidate bounded without side effects")
     lines.append(f"  Unknowns : {summ.get('unresolved_f7_cells', 0)} background details held in F7 (Zero hallucination)")
-    lines.append("  Security : Cryptographic Ed25519 receipt chained to state ledger")
     return "\n".join(lines)
 
 
@@ -496,14 +495,8 @@ def interactive_loop() -> int:
                 "vc-stem-demo": "vc-stem-demo.cmd",
                 "vcstv": "vc-stem-verify.cmd",
                 "vc-stem-verify": "vc-stem-verify.cmd",
-                "vcv": "vc-verify.cmd",
-                "vc-verify": "vc-verify.cmd",
-                "verify": "vc-verify.cmd",
                 "vchf": "vc-hustleforge.cmd",
                 "vc-hustleforge": "vc-hustleforge.cmd",
-                "vca": "vc-audit-evm.cmd",
-                "vcae": "vc-audit-evm.cmd",
-                "vc-audit-evm": "vc-audit-evm.cmd",
                 "vcfin": "vc-financial.cmd",
                 "vc-financial": "vc-financial.cmd",
                 "vcm": "vc-matrix.cmd",
@@ -520,8 +513,6 @@ def interactive_loop() -> int:
                 "vc-probe": "vc-probe.cmd",
                 "vct": "vc-test.cmd",
                 "vc-test": "vc-test.cmd",
-                "vcs": "vc-status.cmd",
-                "vc-status": "vc-status.cmd",
                 "vcpurge": "vc-purge.cmd",
                 "vc-purge": "vc-purge.cmd",
             }

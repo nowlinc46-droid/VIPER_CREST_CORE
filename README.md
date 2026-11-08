@@ -46,8 +46,8 @@ Modern artificial intelligence conflates **statistical language generation** wit
  │    • Predecessor states are cryptographically immutable.               │
  │    • Conflicting evidence triggers CONFLICT without erasing history.   │
  ├────────────────────────────────────────────────────────────────────────┤
- │ 5. SOVEREIGN PERSISTENCE & CRYPTOGRAPHIC IDENTITY                      │
- │    • Owns root Ed25519 signing authority and SQLite WAL state ledger.  │
+ │ 5. SOVEREIGN PERSISTENCE & LOCAL STATE                                 │
+ │    • Owns its SQLite WAL state database and local run records.         │
  │    • Executes 100% locally and air-gapped; zero external API calls.    │
  └────────────────────────────────────────────────────────────────────────┘
 ```
@@ -102,40 +102,10 @@ $$\mathbf{1 \xrightarrow{\text{intake}} (3 \times 3) \xrightarrow{\text{grammar}
 7. **$1$ (Cryptographic Successor Monad):** Collapsed into a single Ed25519-signed successor receipt chained into the SQLite WAL ledger.
 
 ### E. Asymmetric Single-Seal Sovereign Licensing
-ViperCrest enforces strict separation between signing authority and execution authority:
-
-$$\mathbf{\text{Authority}_{\text{sign}} \neq \text{Authority}_{\text{execute}}}$$
-
-* **Licensor Boundary:** The Licensor holds the Master Private Key offline and mints the signed specification (`license_spec.json` + `license.sig`).
-* **Installation Boundary:** The distributed engine contains **only the public verification key** (`runtime/public_seal.pem`). It has zero capability to mint or re-license itself.
-* **Invariant Gate:** Before $F_1$ intake, the engine evaluates:
-  $$\text{Verify}(PK, \text{License}, \text{Signature}) \in \{\mathbf{TRUE}, \mathbf{FALSE}\}$$
-  * If $\mathbf{TRUE}$, the SHA-256 digest of the seal is cryptographically bound into Genesis ($T_1\text{-ROOT}$) provenance.
-  * If $\mathbf{FALSE}$, the engine halts fail-closed (`HALT / exit code 1`). Tamper-evident and mathematically verifiable.
 
 ---
 
-## 2. Single-Command Asset Diligence Verification
-
-Any auditor, evaluator, or technical acquirer can verify this sovereign architecture on any standard Python environment in seconds:
-
-```bash
-# Windows / PowerShell
-python verify_asset.py
-# or:
-.\verify.cmd
-```
-
-### What `verify_asset.py` Proves:
-1. **Frozen Kernel Byte-Invariance:** Proves bit-for-bit SHA-256 digests across all 4 core engine files (`convergence_engine.py`, `viper_matrix.py`, `viper_core.py`, `viper_http.py`).
-2. **Immunefi Top 10 Security Audit:** 10/10 PASS via `audit_invariant_engine.py`.
-3. **8 Adversarial Stress Vectors:** 8/8 PASS via `tests/test_adversarial_stress_vectors.py` (including a 6-state multi-pass ladder).
-4. **HustleForge 100-Scenario Curriculum:** 100/100 completed, two-pass chained life path traversals executed 100% offline with **zero external model calls** (`runtime/hustleforge_100_traversal_audit.json`).
-5. **Embodied Physical Invariants:** 4/4 PASS via `tests/test_embodied_physical_invariants.py` (Ontological Expansion, Closed-Loop Sensor Probes, Continuous Noise Clamping, Hardware Enclave Attestation).
-
----
-
-## 3. The 8 Adversarial Vectors: Invariant Audit Matrix
+## 2. The 8 Adversarial Vectors: Invariant Audit Matrix
 
 | Vector | Adversarial Challenge | Sovereign Cognitive Reflex | Audit Result |
 | :--- | :--- | :--- | :--- |
@@ -150,7 +120,7 @@ python verify_asset.py
 
 ---
 
-## 4. Independent Clean-Room Discovery Convergence Audit
+## 3. Independent Clean-Room Discovery Convergence Audit
 
 The state-convergence loop was audited cold by an independent clean-room evaluator in an isolated sandbox with zero coaching:
 
@@ -161,7 +131,7 @@ The state-convergence loop was audited cold by an independent clean-room evaluat
 
 ---
 
-## 5. Embodied Physical Invariants & Robotic Brainstem (Closing Physical Boundaries)
+## 4. Embodied Physical Invariants & Robotic Brainstem (Closing Physical Boundaries)
 
 Empirically verified across 4 hardware and robotics boundary tests in [`tests/test_embodied_physical_invariants.py`](tests/test_embodied_physical_invariants.py):
 
@@ -174,11 +144,10 @@ Empirically verified across 4 hardware and robotics boundary tests in [`tests/te
 
 ---
 
-## 6. Repository Layout
+## 5. Repository Layout
 
 ```text
 C:\ViperCrest\
-├── verify_asset.py           # Standalone single-command diligence runner
 ├── verify.cmd                # One-click Windows verification shortcut
 ├── README.md                 # Authoritative architecture & sovereign engine spec
 ├── convergence_engine.py     # [FROZEN KERNEL] Universal recursive convergence engine
@@ -189,14 +158,10 @@ C:\ViperCrest\
 ├── ai_contract.py            # Epistemic boundary & anti-usurpation protocol
 ├── domain_space.py           # TemporalMatrixSpace & Cartridge definitions
 ├── epistemic_renderer.py     # Multi-style presentation renderer & guardrail (LOGIC != LANGUAGE)
-├── audit_invariant_engine.py # Immunefi Top 10 invariant security audit
 ├── run_hustleforge_100.py    # 100-scenario life-path curriculum batch runner
 ├── runtime/
 │   ├── viper_state.db        # SQLite WAL state ledger (700+ audited runs)
-│   ├── signing_key.pem       # Sovereign Ed25519 root signing authority
 │   └── hustleforge_100_traversal_audit.json # Audited 100-scenario ledger
-├── verification/             # Standalone deliverable & ledger chain verifiers
-├── schemas/                  # Academic distribution & ledger JSON schemas
 ├── templates/                # Institutional donation letters & legal templates
 └── tests/
     ├── test_known_unknown_siege.py # 100-Turn AbstentionBench & Epistemic Invariant Gauntlet
@@ -211,16 +176,6 @@ C:\ViperCrest\
 
 ---
 
-## 7. Public Academic Distribution & Provenance Layer
-
-For university evaluation and independent verification, official academic packages are distributed through the dedicated public provenance layer:
-* **Repository:** [VIPERCREST_ACADEMIC_DISTRIBUTION](https://github.com/nowlinc46-droid/VIPERCREST_ACADEMIC_DISTRIBUTION)
-* **First University Copy:** `VC-ACADEMIC-000001` (Carnegie Mellon University)
-* **Educational Tier:** $0.00 USD Non-Commercial Research Grant
-* **Commercial Entitlement:** Fixed $1,000 commercial license via [VIPERCREST_COMMERCIAL](https://github.com/nowlinc46-droid/VIPERCREST_COMMERCIAL) & [ViperCrest Whop](https://vipercrest.whop.site/)
-
----
-
-## 8. Commercial Value & Intellectual Property Transfer
+## 6. Commercial Value & Intellectual Property Transfer
 
 ViperCrest 2.0 is an independent, self-contained sovereign software asset. It requires no closed-source third-party cloud APIs, external inference subscriptions, or proprietary GPU cluster runtimes. It runs deterministically on standard local CPU hardware and is packaged for immediate patent integration, autonomous mission-critical deployment, or intellectual property acquisition.

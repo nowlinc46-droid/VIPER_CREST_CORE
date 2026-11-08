@@ -1,11 +1,7 @@
 """
-Adversarial Cryptographic Provenance & License Gate Attack Suite (test_adversarial_provenance.py).
+Adversarial Cryptographic Provenance Attack Suite (test_adversarial_provenance.py).
 
-Rigorous adversarial verification testing the 7 cryptographic vectors:
-  1. ORIGINAL                  -> PASS
-  2. LICENSE SPEC MODIFIED     -> FAIL (HALT before execution)
-  3. SIGNATURE MODIFIED        -> FAIL (HALT before execution)
-  4. PUBLIC KEY REPLACED       -> FAIL (HALT before execution)
+Adversarial verification testing the 3 provenance vectors:
   5. INPUT MODIFIED            -> DIFFERENT DESCENDANT PROVENANCE
   6. PREDECESSOR MODIFIED      -> CHAIN VERIFICATION FAIL
   7. UNMODIFIED REPLAY         -> REPRODUCIBLE DETERMINISTIC RESULT
@@ -26,19 +22,13 @@ VIPER_ROOT = Path(__file__).resolve().parent.parent
 if str(VIPER_ROOT) not in sys.path:
     sys.path.insert(0, str(VIPER_ROOT))
 
-from license_gate import (
-    verify_single_seal_or_halt,
-    PUBLIC_SEAL_PATH,
-    LICENSE_SPEC_PATH,
-    LICENSE_SIG_PATH,
-)
 import viper_matrix
 import viper_core
 from session_router import load_session
 
 
 class AdversarialProvenanceAttackTests(unittest.TestCase):
-    """Executes the 7 adversarial attack vectors against ViperCrest."""
+    """Executes the 3 adversarial provenance attack vectors against ViperCrest."""
 
     def setUp(self):
         self.temp_dir = tempfile.TemporaryDirectory()
@@ -60,66 +50,6 @@ class AdversarialProvenanceAttackTests(unittest.TestCase):
 
     def tearDown(self):
         self.temp_dir.cleanup()
-
-    def test_01_original_valid_installation_passes(self):
-        """Vector 1: Original valid installation, valid license, valid PK -> PASS."""
-        digest = verify_single_seal_or_halt()
-        self.assertTrue(isinstance(digest, str) and len(digest) == 64)
-        print("\n  [ATTACK VECTOR 1] ORIGINAL -> PASS")
-
-    def test_02_license_spec_modified_fails(self):
-        """Vector 2: Tampering with license_spec.json -> FAIL-CLOSED."""
-        original_spec = LICENSE_SPEC_PATH.read_bytes()
-        try:
-            # Mutate one field in license spec
-            tampered_spec = json.loads(original_spec.decode("utf-8"))
-            tampered_spec["licensee"] = "ROGUE_OPERATOR"
-            LICENSE_SPEC_PATH.write_text(json.dumps(tampered_spec), encoding="utf-8")
-
-            # Must raise SystemExit(1)
-            with self.assertRaises(SystemExit) as ctx:
-                verify_single_seal_or_halt()
-            self.assertEqual(ctx.exception.code, 1)
-            print("  [ATTACK VECTOR 2] LICENSE SPEC MODIFIED -> FAIL (HALTED)")
-        finally:
-            # Restore original
-            LICENSE_SPEC_PATH.write_bytes(original_spec)
-
-    def test_03_signature_modified_fails(self):
-        """Vector 3: Tampering with 1 byte of license.sig -> FAIL-CLOSED."""
-        original_sig = LICENSE_SIG_PATH.read_bytes()
-        try:
-            # Flip 1 byte
-            tampered_sig = bytearray(original_sig)
-            tampered_sig[0] ^= 0xFF
-            LICENSE_SIG_PATH.write_bytes(bytes(tampered_sig))
-
-            with self.assertRaises(SystemExit) as ctx:
-                verify_single_seal_or_halt()
-            self.assertEqual(ctx.exception.code, 1)
-            print("  [ATTACK VECTOR 3] SIGNATURE MODIFIED -> FAIL (HALTED)")
-        finally:
-            LICENSE_SIG_PATH.write_bytes(original_sig)
-
-    def test_04_public_key_replaced_fails(self):
-        """Vector 4: Replacing public_seal.pem with a rogue key -> FAIL-CLOSED."""
-        from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
-        from cryptography.hazmat.primitives.serialization import Encoding, PublicFormat
-
-        original_pk = PUBLIC_SEAL_PATH.read_bytes()
-        try:
-            rogue_key = Ed25519PrivateKey.generate()
-            rogue_pk_bytes = rogue_key.public_key().public_bytes(
-                Encoding.PEM, PublicFormat.SubjectPublicKeyInfo
-            )
-            PUBLIC_SEAL_PATH.write_bytes(rogue_pk_bytes)
-
-            with self.assertRaises(SystemExit) as ctx:
-                verify_single_seal_or_halt()
-            self.assertEqual(ctx.exception.code, 1)
-            print("  [ATTACK VECTOR 4] PUBLIC KEY REPLACED -> FAIL (HALTED)")
-        finally:
-            PUBLIC_SEAL_PATH.write_bytes(original_pk)
 
     def test_05_input_modified_produces_different_descendants(self):
         """Vector 5: Modifying input payload produces a different descendant hash."""

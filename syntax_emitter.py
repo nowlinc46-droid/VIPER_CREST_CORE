@@ -242,7 +242,7 @@ def emit_english(state_dict: Dict[str, Any]) -> SyntaxPackage:
 
     brief = f"""========================================================================
 VIPERCREST 2.0 - AUTHORITATIVE EXECUTIVE BRIEF
-Domain Cartridge: {cartridge} | Attestation: Ed25519 Sealed
+Domain Cartridge: {cartridge}
 ========================================================================
 
 1. EXECUTIVE SUMMARY:
@@ -260,10 +260,9 @@ Domain Cartridge: {cartridge} | Attestation: Ed25519 Sealed
    - The engine strictly refuses to invent, speculate, or extrapolate missing data.
    - These coordinates remain safely quarantined in Stage F7.
 
-4. CRYPTOGRAPHIC PROVENANCE & LEDGER ATTESTATION:
+4. PROVENANCE RECORD:
    - Chained Receipt Digest : {receipt}
-   - Chain-of-Custody Record: Immutable entry logged in runtime/viper_state.db
-   - Attestation Verdict    : VERIFIED & SOUND
+   - Chain-of-Custody Record: entry logged in runtime/viper_state.db
 
 ========================================================================"""
     return SyntaxPackage(
@@ -284,7 +283,7 @@ def emit_typescript(state_dict: Dict[str, Any]) -> SyntaxPackage:
 
     code = f"""/**
  * VIPERCREST 2.0 - DETERMINISTIC EPISTEMIC STATE (TYPESCRIPT)
- * Immutable State Anchor & Attestation Receipt
+ * State Anchor & Receipt Digest
  */
 export type EpistemicState = "SUSPENDED" | "BOUNDED" | "SEALED";
 

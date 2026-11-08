@@ -74,17 +74,8 @@ def main() -> int:
     else:
         print("  [!] SQLite database not found (fresh state).")
 
-    # 3. Cryptographic Signing Key
-    print("\n[3] CRYPTOGRAPHIC ATTESTATION:")
-    key_path = VIPER_ROOT / "runtime" / "signing_key.pem"
-    if key_path.exists():
-        size = key_path.stat().st_size
-        print(f"  [+] Ed25519 Signing Key Active ({key_path.name}, {size} bytes)")
-    else:
-        print("  [!] Signing key not found (ephemeral generated on-demand).")
-
-    # 4. Standalone Tool: The Stem
-    print("\n[4] AUTONOMOUS ROBOTICS BRAINSTEM (the_stem):")
+    # 3. Standalone Tool: The Stem
+    print("\n[3] AUTONOMOUS ROBOTICS BRAINSTEM (the_stem):")
     stem_init = VIPER_ROOT / "the_stem" / "__init__.py"
     if stem_init.exists():
         try:
@@ -101,7 +92,7 @@ def main() -> int:
         print("  [!] The Stem package not found.")
 
     # 5. Air-Gap Mode
-    print("\n[5] AIR-GAP & BOUNDARY ENFORCEMENT:")
+    print("\n[4] AIR-GAP & BOUNDARY ENFORCEMENT:")
     try:
         from network_adapter import NetworkConfig
         cfg = NetworkConfig()

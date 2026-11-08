@@ -54,8 +54,6 @@ ViperCrest provides single-token shorthand commands and descriptive long-form la
 | :--- | :--- | :--- | :--- |
 | `vco` | `vc-online` | Controlled Online Intake Mode | `vco --url <URL> --case-id <ID>` |
 | `vcoff` | `vc-offline` | Strictly Air-Gapped Offline Mode (Default) | `vcoff --analytics` |
-| `vcl` | `vc-ledger` | Inspect SQLite Ledger (`runtime/viper_state.db`) | `vcl` |
-| `vcs` | `vc-status` | Quick State Database Block Counts & Receipts | `vcs` |
 | `vcpurge` | `vc-purge` | Safe Ephemeral Cache Scrub (Preserves Ledger DB) | `vcpurge` |
 | `vcai` | `vc-ai` | Interactive Plain-English AI Security Shell | `vcai` |
 | `vcprompt` | `vc-prompt` | Execute Precise Natural Language Prompt | `vcprompt "<PROMPT>"` |

@@ -83,7 +83,7 @@ def render_tri_cartridge_table(
         f"{'F7 Unknown Containment':<22} | {'UNRESOLVED (LOCKED)':<25} | {'UNRESOLVED (LOCKED)':<25} | {'UNRESOLVED (LOCKED)':<25}",
         f"{'Backward Transition':<22} | {'BOUNDED (T4->T5)':<25} | {'BOUNDED (T4->T5)':<25} | {'BOUNDED (T4->T5)':<25}",
         f"{'Forward Transition':<22} | {'BOUNDED (T5->T6)':<25} | {'BOUNDED (T5->T6)':<25} | {'BOUNDED (T5->T6)':<25}",
-        f"{'Audit Receipt':<22} | {'Ed25519 5-FILE SEALED':<25} | {'Ed25519 5-FILE SEALED':<25} | {'Ed25519 5-FILE SEALED':<25}",
+        f"{'Audit Receipt':<22} | {'SHA-256 MANIFEST':<25} | {'SHA-256 MANIFEST':<25} | {'SHA-256 MANIFEST':<25}",
         "=" * 105,
     ])
 

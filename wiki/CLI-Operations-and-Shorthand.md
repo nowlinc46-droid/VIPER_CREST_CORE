@@ -8,7 +8,6 @@ ViperCrest provides clean, single-command CLI launchers for rapid evaluation, se
 
 | Shorthand | Script | Target Script | Description |
 | :--- | :--- | :--- | :--- |
-| `vca` | `vca.cmd` | `audit_invariant_engine.py` | Runs the **11-vector Invariant Security Audit** (V01–V11). |
 | `vct` | `vct.cmd` | `tests/` | Runs the complete unit and integration regression test suite. |
 | `vcp` | `vcp.cmd` | `probes/` | Runs historical prototype boundary probes (31/31 passing). |
 | `vcs` | `vcs.cmd` | `session_router.py` | Inspects and audits the SQLite WAL ledger and 5-file session bundles. |
@@ -17,7 +16,6 @@ ViperCrest provides clean, single-command CLI launchers for rapid evaluation, se
 | `vcstv` | `vcstv.cmd` | `the_stem/verify_stem.py` | Runs standalone self-verification test suite for The Stem (5/5 PASS). |
 | `vcaaos` | `vcaaos.cmd`| `os_builder/aaos_cli.py` | Launches Android Automotive OS (AAOS) VHAL safety monitor. |
 | `vchf` | `vchf.cmd` | `run_hustleforge_100.py` | Executes the complete HustleForge 100-scenario curriculum. |
-| `vcv` | `verify.cmd`| `verify_asset.py` | Single-command master asset diligence runner across all 8 pillars. |
 
 ---
 

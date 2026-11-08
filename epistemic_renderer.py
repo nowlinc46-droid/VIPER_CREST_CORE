@@ -91,6 +91,8 @@ def render_plain(state: EpistemicState) -> str:
     """Conversational, constructive context-reconstruction guidance."""
     lines = []
     if state.exists and state.value == "UNKNOWN":
+        lines.append(f"Status: UNRESOLVED — the value at {state.coordinate} is not known and remains in Stage F7.")
+        lines.append("")
         lines.append("You know that something is missing, even though you don't know its identity.")
         lines.append("So do not try to guess the missing item directly—speculation creates false memory.")
         lines.append("")

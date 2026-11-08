@@ -19,7 +19,7 @@ case "$cmd" in
         echo "================================================================================"
         echo "              VIPERCREST REAL-WORLD ACTION COMMANDS (LINUX)                     "
         echo "================================================================================"
-        echo "  ./vc.sh scan <target>        : Universal Scanner for any contract, file, or address"
+        echo "  ./vc.sh sweep <path>         : Search a drive or folder for crypto wallet artifacts (read-only)"
         echo "  ./vc.sh audit-evm            : Immunefi Top 10 Invariant Audit for EVM targets"
         echo "  ./vc.sh audit-solana <file>  : Invariant Audit for Solana / Anchor Rust targets"
         echo "  ./vc.sh device-audit         : Live Hardware Forensic and Rootkit Detection"
@@ -34,8 +34,8 @@ case "$cmd" in
         echo "  ./vc.sh probe                : Run Diagnostic Stress Probes"
         echo "================================================================================"
         ;;
-    scan)
-        "$PYTHON" -B "$DIR/ai_wrapper.py" "Scan $*"
+    sweep|vcsw)
+        "$PYTHON" -B "$DIR/viper.py" sweep "$@"
         ;;
     audit-evm|vcae)
         "$PYTHON" -B "$DIR/audit_immunefi.py" "$@"

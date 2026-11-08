@@ -15,7 +15,6 @@ ViperCrest provides dual-layer execution: **Human Action `.cmd` scripts** and **
 | **`vc-drop-intake`** | `vcdrop` | Ingest & Hash Dropzone Files | `.\vc-drop-intake` |
 | **`vc-sandbox`** | `vcsb` | Local Anvil Blockchain Node | `.\vc-sandbox` |
 | **`vc-purge`** | `vcpurge` | Instant Self-Scrub (0.1s) | `.\vc-purge` |
-| **`vc-ledger`** | `vcl` | SQLite State Ledger Health | `.\vc-ledger` |
 
 ---
 

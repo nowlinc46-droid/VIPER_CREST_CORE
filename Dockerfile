@@ -18,7 +18,6 @@ COPY vc.sh ./
 COPY the_stem/ ./the_stem/
 COPY tests/ ./tests/
 COPY discovery_results/ ./discovery_results/
-COPY schemas/ ./schemas/
 COPY templates/ ./templates/
 
 # Ensure Linux runners are executable

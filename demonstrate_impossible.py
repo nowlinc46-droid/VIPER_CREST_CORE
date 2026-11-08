@@ -169,7 +169,7 @@ def run_demonstration():
     print("    4. Crucible Apex  (81)   : 81 Tensor Coordinates fully evaluated")
     print("    5. Collision Grid (9x9)  : Zero cross-sector contradictions found")
     print("    6. Forensic Gate  (3x3)  : Proof standards satisfied across all tiers")
-    print("    7. Sovereign Seal (1)    : Collapsed into Ed25519 cryptographic successor receipt")
+    print("    7. Successor State  (1)   : Collapsed into the successor state record")
     print(f"\n    State Status       : {state_2.status} (MATHEMATICALLY BOUNDED)")
     print(f"    Remaining Gaps     : {len(state_2.gaps)} (G(S) == empty_set)")
     print(f"    Convergence Speed  : {lat_2:.2f} ms")

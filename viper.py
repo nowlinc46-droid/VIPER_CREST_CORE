@@ -13,6 +13,7 @@ COMMANDS = {
     "reader": "reader_engine",
     "benchmark": "benchmark_runner",
     "rpc": "rpc_dispatcher",
+    "sweep": "wallet_sweep",
 }
 
 ALIASES = {
@@ -27,6 +28,7 @@ ALIASES = {
     "bench": "benchmark",
     "evm": "rpc",
     "eth": "rpc",
+    "sw": "sweep",
 }
 
 
@@ -35,7 +37,7 @@ def main(argv: list[str] | None = None) -> int:
     if arguments and arguments[0] in ALIASES:
         arguments[0] = ALIASES[arguments[0]]
     parser = argparse.ArgumentParser(
-        description="ViperCrest: controlled HTTPS intake and signed F1-F9 fixture evaluation."
+        description="ViperCrest: controlled HTTPS intake and F1-F9 fixture evaluation."
     )
     parser.add_argument("command", choices=COMMANDS)
     if not arguments or arguments[0] not in COMMANDS:
